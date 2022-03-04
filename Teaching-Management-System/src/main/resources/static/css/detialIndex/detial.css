@@ -1,0 +1,28 @@
+.schedule-content-btn {
+    width: 94vw;
+    height: 8vh;
+    border: 1px solid gray;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #bbb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.schedule-content-btn p {
+    font: bold 20px arial;
+    /*float: left;*/
+    margin: 18px;
+    text-align: center;
+    /*padding: 5% auto;*/
+}
+
+.schedule-content-message {
+    text-align: center;
+    width: 80vw;
+    height: 70vh;
+    border: 1px solid blue;
+    margin: 1rem auto;
+    /*margin-top: 5px;*/
+}

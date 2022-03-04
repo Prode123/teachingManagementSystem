@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>syllabus</title>
+    <link rel="stylesheet" th:href="@{/css/detialIndex/index.css}" href="../../../static/css/detialIndex/index.css" />
+    <link rel="stylesheet" th:href="@{/css/detialIndex/detial.css}" href="../../../static/css/detialIndex/detial.css" />
+    <script type="text/javascript" th:href="@{/js/detialIndex/detail.js}" src="../../../static/js/detialIndex/detail.js"></script>
+    <script type="text/javascript" src="../../../static/js/detialIndex/detial/build/template.js" th:href="@{/js/detialIndex/detial/build/template.js}"></script>
+    <script type="text/javascript" src="../../../static/js/detialIndex/detial/title.js" th:href="@{/js/detialIndex/detial/title.js}"></script>
+</head>
+
+<body>
+    <!--
+        module：课程大纲
+        function：预览详情页
+        author:董诗杰
+        version: 1.0
+        date:2022-02-09
+     -->
+    <div class="header">
+        <div class="header-left">
+            <img src="../../../static/img/commen/logo.png" th:src="@{/img/commen/logo.png}" alt="" />
+            <span>河南财政金融学院教学管理系统</span>
+        </div>
+        <div class="header-right">
+            <div class="user-img">
+                <img src="../../../static/img/lee.png" th:src="@{/img/lee.png}" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper-right">
+            <div class="syllabus">
+                <!-- 模板渲染区域 -->
+            </div>
+
+        </div>
+    </div>
+    <script src="../../../static/js/commen/axios.js" th:src="@{/js/commen/axios.js}"></script>
+    <script th:src="@{/js/utils/request.js}" src="../../../static/js/utils/request.js"></script>
+    <script>
+        // 获取单个文件详情
+        const fileName = document.querySelector('.fileName');
+        request.get('/manangmentSystem/fileOperate/getOneFile?did=1').then((res) => {
+            console.log(res);
+            res = res.data.data;
+            let name = `${res.grade}  ${res.faculty} ${res.fileName}`;
+            const span = document.createElement('span');
+            span.innerHTML = name
+            fileName.appendChild(span);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+2022-02-20 16:34:29,168 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 7896 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:34:29,171 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:34:30,377 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:34:30,377 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:34:30,378 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:34:30,378 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:34:30,379 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:34:30,379 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:34:30,379 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:34:30,379 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:34:32,021 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@303f1234, org.springframework.security.web.context.SecurityContextPersistenceFilter@41853299, org.springframework.security.web.header.HeaderWriterFilter@78e17a99, org.springframework.security.web.authentication.logout.LogoutFilter@27fe9713, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bb15351, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e5b7fba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ab4ae59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24d61e4, org.springframework.security.web.session.SessionManagementFilter@41dc0598, org.springframework.security.web.access.ExceptionTranslationFilter@2d38edfd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@404db674]
+2022-02-20 16:34:32,607 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:34:33,012 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 4.407 seconds (JVM running for 6.367)
+2022-02-20 16:35:46,795 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 32304 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:35:46,796 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:35:47,495 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:35:47,495 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:35:47,496 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:35:47,496 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:35:47,496 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:35:47,496 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:35:47,496 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:35:47,497 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:35:49,038 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@661d88a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e43ddd6, org.springframework.security.web.header.HeaderWriterFilter@22a10ac6, org.springframework.security.web.authentication.logout.LogoutFilter@7ab4ae59, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c601d50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d38edfd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6614bd4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b0b64cc, org.springframework.security.web.session.SessionManagementFilter@503df2d0, org.springframework.security.web.access.ExceptionTranslationFilter@7ff8a9dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4288d98e]
+2022-02-20 16:35:49,546 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:35:49,867 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.435 seconds (JVM running for 4.566)
+2022-02-20 16:40:46,307 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 16360 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:40:46,308 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:40:46,984 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:40:46,984 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:40:46,984 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:40:46,985 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:40:46,985 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:40:46,985 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:40:46,985 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:40:46,986 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:40:48,449 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c601d50, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f37b6d9, org.springframework.security.web.header.HeaderWriterFilter@2cde651b, org.springframework.security.web.authentication.logout.LogoutFilter@6a2c717f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44b21f9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22a10ac6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c269425, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79b2852b, org.springframework.security.web.session.SessionManagementFilter@3bb87d36, org.springframework.security.web.access.ExceptionTranslationFilter@2fdf17dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@600f5704]
+2022-02-20 16:40:48,972 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:40:49,340 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.408 seconds (JVM running for 4.482)
+2022-02-20 16:41:47,088 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 26044 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:41:47,090 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:41:47,798 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:41:47,798 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:41:47,798 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:41:47,799 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:41:47,799 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:41:47,799 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:41:47,799 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:41:47,800 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:41:49,294 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@661d88a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e43ddd6, org.springframework.security.web.header.HeaderWriterFilter@22a10ac6, org.springframework.security.web.authentication.logout.LogoutFilter@7ab4ae59, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c601d50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d38edfd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6614bd4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b0b64cc, org.springframework.security.web.session.SessionManagementFilter@503df2d0, org.springframework.security.web.access.ExceptionTranslationFilter@7ff8a9dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4288d98e]
+2022-02-20 16:41:49,807 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:41:50,155 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.432 seconds (JVM running for 4.607)
+2022-02-20 16:46:44,730 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 10596 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:46:44,732 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:46:45,544 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:46:45,544 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:46:45,544 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:46:45,544 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:46:45,544 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:46:45,545 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:46:45,545 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:46:45,545 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:46:46,941 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cc9d3d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@26fb4d06, org.springframework.security.web.header.HeaderWriterFilter@7f37b6d9, org.springframework.security.web.authentication.logout.LogoutFilter@4f0cab0a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285c6918, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e43ddd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@655a01d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c2dfa2, org.springframework.security.web.session.SessionManagementFilter@22a10ac6, org.springframework.security.web.access.ExceptionTranslationFilter@7d904ff1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ee8130e]
+2022-02-20 16:46:47,545 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:46:47,984 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.672 seconds (JVM running for 4.933)
+2022-02-20 16:47:08,297 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 27308 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:47:08,298 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:47:08,988 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:08,989 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:08,989 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:08,990 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:08,990 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:08,990 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:08,991 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:08,991 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:47:10,568 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@303f1234, org.springframework.security.web.context.SecurityContextPersistenceFilter@41853299, org.springframework.security.web.header.HeaderWriterFilter@78e17a99, org.springframework.security.web.authentication.logout.LogoutFilter@27fe9713, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bb15351, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e5b7fba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ab4ae59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24d61e4, org.springframework.security.web.session.SessionManagementFilter@41dc0598, org.springframework.security.web.access.ExceptionTranslationFilter@2d38edfd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@404db674]
+2022-02-20 16:47:11,076 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:47:11,428 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.505 seconds (JVM running for 4.651)
+2022-02-20 16:47:37,699 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 24580 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:47:37,700 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:47:38,425 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:38,425 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:38,426 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:38,426 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:38,426 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:38,426 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:38,426 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:47:38,427 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:47:39,977 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@303f1234, org.springframework.security.web.context.SecurityContextPersistenceFilter@41853299, org.springframework.security.web.header.HeaderWriterFilter@78e17a99, org.springframework.security.web.authentication.logout.LogoutFilter@27fe9713, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bb15351, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e5b7fba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ab4ae59, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24d61e4, org.springframework.security.web.session.SessionManagementFilter@41dc0598, org.springframework.security.web.access.ExceptionTranslationFilter@2d38edfd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@404db674]
+2022-02-20 16:47:40,463 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:47:40,836 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.517 seconds (JVM running for 4.636)
+2022-02-20 16:58:43,892 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 25304 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 16:58:43,893 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 16:58:44,627 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:58:44,628 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:58:44,628 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:58:44,628 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:58:44,629 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:58:44,629 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:58:44,630 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-20 16:58:44,631 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-20 16:58:46,235 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cc9d3d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@26fb4d06, org.springframework.security.web.header.HeaderWriterFilter@7f37b6d9, org.springframework.security.web.authentication.logout.LogoutFilter@4f0cab0a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@285c6918, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e43ddd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@655a01d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c2dfa2, org.springframework.security.web.session.SessionManagementFilter@22a10ac6, org.springframework.security.web.access.ExceptionTranslationFilter@7d904ff1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ee8130e]
+2022-02-20 16:58:46,728 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 16:58:47,072 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.558 seconds (JVM running for 4.645)
+2022-02-20 17:10:53,346 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 27656 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 17:10:53,348 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 17:10:54,228 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 17:10:54,235 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 17:10:54,235 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 17:10:54,235 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 17:10:54,323 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 17:10:54,323 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 937 ms
+2022-02-20 17:10:54,931 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79fd6f95, org.springframework.security.web.context.SecurityContextPersistenceFilter@4715ae33, org.springframework.security.web.header.HeaderWriterFilter@a2ddf26, org.springframework.security.web.authentication.logout.LogoutFilter@44b18fe4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e43e323, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fac1d5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@704641e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48840594, org.springframework.security.web.session.SessionManagementFilter@6daf7d37, org.springframework.security.web.access.ExceptionTranslationFilter@1e86a5a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cf518cf]
+2022-02-20 17:10:55,075 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 17:10:55,208 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 17:10:55,221 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 17:10:55,228 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.327 seconds (JVM running for 3.244)
+2022-02-20 17:11:23,073 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 17:11:23,073 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 17:11:23,074 INFO (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-02-20 17:11:23,272 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 17:11:24,046 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 17:11:24,148 ERROR (AbstractAuthenticationProcessingFilter.java:236)- An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: 账号错误，请重新访问
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201)
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:223)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.hafu.edu.teachingmanagementsystem.Exception.ex.getUserNullPointerException: 账号错误，请重新访问
+	at com.hafu.edu.teachingmanagementsystem.service.impl.UserServiceImpl.getUserByNumber(UserServiceImpl.java:114)
+	at com.hafu.edu.teachingmanagementsystem.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$64708453.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.hafu.edu.teachingmanagementsystem.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$4dac8a7a.getUserByNumber(<generated>)
+	at com.hafu.edu.teachingmanagementsystem.Config.MyuserDetailsService.loadUserByUsername(MyuserDetailsService.java:41)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93)
+	... 54 common frames omitted
+2022-02-20 17:12:47,346 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 29076 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 17:12:47,349 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 17:12:48,250 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 17:12:48,256 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 17:12:48,256 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 17:12:48,256 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 17:12:48,336 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 17:12:48,336 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 952 ms
+2022-02-20 17:12:48,897 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79fd6f95, org.springframework.security.web.context.SecurityContextPersistenceFilter@4715ae33, org.springframework.security.web.header.HeaderWriterFilter@a2ddf26, org.springframework.security.web.authentication.logout.LogoutFilter@44b18fe4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e43e323, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fac1d5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@704641e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48840594, org.springframework.security.web.session.SessionManagementFilter@6daf7d37, org.springframework.security.web.access.ExceptionTranslationFilter@1e86a5a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cf518cf]
+2022-02-20 17:12:49,059 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 17:12:49,195 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 17:12:49,208 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 17:12:49,215 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.317 seconds (JVM running for 3.101)
+2022-02-20 17:14:25,461 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 17:14:25,462 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 17:14:25,462 INFO (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-02-20 17:14:25,544 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 17:14:25,950 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:29:25,538 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 29484 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:29:25,542 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:29:26,465 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:29:26,471 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:29:26,471 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:29:26,471 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:29:26,576 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:29:26,577 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 984 ms
+2022-02-20 18:29:27,147 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c7f96b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@704641e3, org.springframework.security.web.header.HeaderWriterFilter@7a8406c2, org.springframework.security.web.authentication.logout.LogoutFilter@3fe46690, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14823f76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4207609e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16e7b402, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7979b8b7, org.springframework.security.web.session.SessionManagementFilter@6850b758, org.springframework.security.web.access.ExceptionTranslationFilter@4715ae33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eca6a74]
+2022-02-20 18:29:27,336 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:29:27,479 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:29:27,491 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:29:27,498 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.396 seconds (JVM running for 3.226)
+2022-02-20 18:29:36,314 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:29:36,314 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:29:36,315 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:29:36,388 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:29:36,789 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:30:20,206 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 28924 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:30:20,209 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:30:21,150 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:30:21,157 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:30:21,158 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:30:21,158 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:30:21,239 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:30:21,239 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 995 ms
+2022-02-20 18:30:21,951 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ad4a7d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@741f8dbe, org.springframework.security.web.header.HeaderWriterFilter@66f0548d, org.springframework.security.web.authentication.logout.LogoutFilter@534c6767, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3414a8c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a2ddf26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fac1d5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e43e323, org.springframework.security.web.session.SessionManagementFilter@1e86a5a7, org.springframework.security.web.access.ExceptionTranslationFilter@51841ac6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@304d0259]
+2022-02-20 18:30:22,121 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:30:22,265 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:30:22,276 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:30:22,285 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.5 seconds (JVM running for 3.332)
+2022-02-20 18:30:27,001 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:30:27,002 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:30:27,003 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:30:27,079 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:30:27,480 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:31:48,137 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 27488 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:31:48,139 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:31:49,088 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:31:49,094 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:31:49,095 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:31:49,095 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:31:49,169 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:31:49,169 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 996 ms
+2022-02-20 18:31:49,884 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79fd6f95, org.springframework.security.web.context.SecurityContextPersistenceFilter@4715ae33, org.springframework.security.web.header.HeaderWriterFilter@a2ddf26, org.springframework.security.web.authentication.logout.LogoutFilter@44b18fe4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e43e323, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fac1d5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@704641e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48840594, org.springframework.security.web.session.SessionManagementFilter@6daf7d37, org.springframework.security.web.access.ExceptionTranslationFilter@1e86a5a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cf518cf]
+2022-02-20 18:31:50,034 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:31:50,172 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:31:50,185 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:31:50,192 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.425 seconds (JVM running for 3.297)
+2022-02-20 18:31:56,495 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:31:56,495 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:31:56,496 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:31:56,573 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:31:56,995 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:32:35,103 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 25260 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:32:35,106 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:32:35,985 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:32:35,991 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:32:35,991 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:32:35,992 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:32:36,072 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:32:36,072 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 930 ms
+2022-02-20 18:32:36,615 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bc49bc5, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f77b5cc, org.springframework.security.web.header.HeaderWriterFilter@2a2ef072, org.springframework.security.web.authentication.logout.LogoutFilter@5b22d8a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1442f788, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75961f16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29a1505c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b6e5c12, org.springframework.security.web.session.SessionManagementFilter@2f00f851, org.springframework.security.web.access.ExceptionTranslationFilter@108a46d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49c675f0]
+2022-02-20 18:32:36,866 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:32:37,034 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:32:37,048 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:32:37,056 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.384 seconds (JVM running for 3.271)
+2022-02-20 18:32:45,039 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:32:45,039 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:32:45,040 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:32:45,113 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:32:45,515 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:37:06,996 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 6492 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:37:06,997 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:37:07,997 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:37:08,003 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:37:08,004 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:37:08,004 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:37:08,097 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:37:08,097 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1054 ms
+2022-02-20 18:37:08,767 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a67b4ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@a2ddf26, org.springframework.security.web.header.HeaderWriterFilter@1e86a5a7, org.springframework.security.web.authentication.logout.LogoutFilter@29a1505c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@cf518cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6daf7d37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a8406c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10643593, org.springframework.security.web.session.SessionManagementFilter@741f8dbe, org.springframework.security.web.access.ExceptionTranslationFilter@435e60ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2133661d]
+2022-02-20 18:37:08,944 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:37:09,093 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:37:09,106 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:37:09,115 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.663 seconds (JVM running for 3.514)
+2022-02-20 18:37:12,191 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:37:12,191 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:37:12,192 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:37:12,264 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:37:12,814 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:39:42,166 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 31556 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:39:42,169 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:39:43,142 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:39:43,148 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:39:43,149 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:39:43,149 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:39:43,228 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:39:43,228 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1024 ms
+2022-02-20 18:39:43,822 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c7f96b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@704641e3, org.springframework.security.web.header.HeaderWriterFilter@7a8406c2, org.springframework.security.web.authentication.logout.LogoutFilter@3fe46690, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14823f76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4207609e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16e7b402, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7979b8b7, org.springframework.security.web.session.SessionManagementFilter@6850b758, org.springframework.security.web.access.ExceptionTranslationFilter@4715ae33, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eca6a74]
+2022-02-20 18:39:43,991 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:39:44,158 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:39:44,172 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:39:44,180 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.397 seconds (JVM running for 3.151)
+2022-02-20 18:40:14,135 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:40:14,136 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:40:14,137 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:40:14,215 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:40:14,618 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:40:49,861 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 2324 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:40:49,864 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:40:50,947 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:40:50,954 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:40:50,955 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:40:50,955 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:40:51,035 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:40:51,036 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1125 ms
+2022-02-20 18:40:51,603 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eca6a74, org.springframework.security.web.context.SecurityContextPersistenceFilter@23a5818e, org.springframework.security.web.header.HeaderWriterFilter@212dfd39, org.springframework.security.web.authentication.logout.LogoutFilter@67b100fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ad4a7d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9fc9f91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a2ef072, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79fd6f95, org.springframework.security.web.session.SessionManagementFilter@65d57e4e, org.springframework.security.web.access.ExceptionTranslationFilter@2e6f610d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36cc9385]
+2022-02-20 18:40:51,754 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:40:51,903 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:40:51,915 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:40:51,922 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.568 seconds (JVM running for 3.673)
+2022-02-20 18:41:04,292 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 14496 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:41:04,294 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:41:05,291 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:41:05,297 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:41:05,297 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:41:05,297 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:41:05,379 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:41:05,379 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1049 ms
+2022-02-20 18:41:06,025 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a04fea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4207609e, org.springframework.security.web.header.HeaderWriterFilter@6850b758, org.springframework.security.web.authentication.logout.LogoutFilter@3b4d50b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ed16657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7ca698, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bddc676, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bc49bc5, org.springframework.security.web.session.SessionManagementFilter@704641e3, org.springframework.security.web.access.ExceptionTranslationFilter@1fac1d5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48840594]
+2022-02-20 18:41:06,221 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:41:06,374 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:41:06,389 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:41:06,400 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.476 seconds (JVM running for 3.294)
+2022-02-20 18:41:18,232 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:41:18,232 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:41:18,233 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:41:18,304 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:41:18,704 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:43:18,121 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 30188 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:43:18,124 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:43:19,055 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:43:19,061 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:43:19,062 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:43:19,062 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:43:19,138 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:43:19,138 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 974 ms
+2022-02-20 18:43:19,639 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a04fea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4207609e, org.springframework.security.web.header.HeaderWriterFilter@6850b758, org.springframework.security.web.authentication.logout.LogoutFilter@3b4d50b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ed16657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7ca698, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bddc676, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bc49bc5, org.springframework.security.web.session.SessionManagementFilter@704641e3, org.springframework.security.web.access.ExceptionTranslationFilter@1fac1d5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48840594]
+2022-02-20 18:43:19,794 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:43:19,938 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:43:19,950 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:43:19,957 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.321 seconds (JVM running for 3.097)
+2022-02-20 18:43:34,883 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-20 18:43:34,883 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-20 18:43:34,884 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-20 18:43:34,960 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-20 18:43:35,424 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-20 18:45:10,261 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 1536 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-20 18:45:10,264 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-20 18:45:11,162 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-20 18:45:11,169 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-20 18:45:11,169 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-20 18:45:11,169 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-20 18:45:11,248 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-20 18:45:11,249 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 952 ms
+2022-02-20 18:45:11,829 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a04fea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4207609e, org.springframework.security.web.header.HeaderWriterFilter@6850b758, org.springframework.security.web.authentication.logout.LogoutFilter@3b4d50b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ed16657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7ca698, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bddc676, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bc49bc5, org.springframework.security.web.session.SessionManagementFilter@704641e3, org.springframework.security.web.access.ExceptionTranslationFilter@1fac1d5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48840594]
+2022-02-20 18:45:11,976 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-20 18:45:12,120 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-20 18:45:12,132 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-20 18:45:12,140 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.229 seconds (JVM running for 3.18)

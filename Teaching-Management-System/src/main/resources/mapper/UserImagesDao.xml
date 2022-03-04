@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao">
+
+    <resultMap type="com.hafu.edu.teachingmanagementsystem.entity.UserImages" id="UserImagesMap">
+        <result property="useId" column="use_id" jdbcType="INTEGER"/>
+        <result property="path" column="path" jdbcType="VARCHAR"/>
+        <result property="size" column="size" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UserImagesMap">
+        select use_id,
+               path, size, create_time, modified_time
+        from user_images
+        where use_id = #{useId}
+    </select>
+    <!--通过用户id查询个人头像 -->
+    <!--    author lt    -->
+    <select id="selectByUserId" resultType="com.hafu.edu.teachingmanagementsystem.entity.UserImages">
+        select use_id,
+               path, size, create_time, modified_time,uid
+        from user_images
+        where uid = #{uid}
+    </select>
+
+
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UserImagesMap">
+        select
+        use_id, path, size, create_time, modified_time
+        from user_images
+        <where>
+            <if test="useId != null">
+                and use_id = #{useId}
+            </if>
+            <if test="path != null and path != ''">
+                and path = #{path}
+            </if>
+            <if test="size != null">
+                and size = #{size}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from user_images
+        <where>
+            <if test="useId != null">
+                and use_id = #{useId}
+            </if>
+            <if test="path != null and path != ''">
+                and path = #{path}
+            </if>
+            <if test="size != null">
+                and size = #{size}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+        </where>
+    </select>
+
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="useId" useGeneratedKeys="true">
+        insert into user_images(path, size, create_time, modified_time)
+        values (#{path}, #{size}, #{createTime}, #{modifiedTime})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="useId" useGeneratedKeys="true">
+        insert into user_images(path, size, create_time, modified_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.path}, #{entity.size}, #{entity.createTime}, #{entity.modifiedTime})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="useId" useGeneratedKeys="true">
+        insert into user_images(path, size, create_time, modified_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.path}, #{entity.size}, #{entity.createTime}, #{entity.modifiedTime})
+        </foreach>
+        on duplicate key update
+        path = values(path),
+        size = values(size),
+        create_time = values(create_time),
+        modified_time = values(modified_time)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update user_images
+        <set>
+            <if test="path != null and path != ''">
+                path = #{path},
+            </if>
+            <if test="size != null">
+                size = #{size},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="modifiedTime != null">
+                modified_time = #{modifiedTime},
+            </if>
+        </set>
+        where use_id = #{useId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from user_images
+        where use_id = #{useId}
+    </delete>
+
+
+    <!--     通过用户uid修改头像 -->
+    <!--    author lt-->
+    <update id="updateHeadImage">
+        update user_images
+        <set>
+            <if test="path != null and path != ''">
+                path = #{path},
+            </if>
+            <if test="size != null">
+                size = #{size},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="modifiedTime != null">
+                modified_time = #{modifiedTime},
+            </if>
+        </set>
+        where uid = #{uid}
+    </update>
+
+</mapper>
+

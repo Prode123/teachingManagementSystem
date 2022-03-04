@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hafu.edu.teachingmanagementsystem.dao.CourseinformationDao">
+
+    <resultMap type="com.hafu.edu.teachingmanagementsystem.entity.Courseinformation" id="CourseinformationMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="courseName" column="course_Name" jdbcType="VARCHAR"/>
+        <result property="major" column="major" jdbcType="VARCHAR"/>
+        <result property="grade" column="grade" jdbcType="VARCHAR"/>
+        <result property="semester" column="semester" jdbcType="VARCHAR"/>
+        <result property="level" column="level" jdbcType="VARCHAR"/>
+        <result property="collegeName" column="college_Name" jdbcType="VARCHAR"/>
+        <result property="waitingVariable1" column="waiting_Variable1" jdbcType="VARCHAR"/>
+        <result property="waitingVariable2" column="waiting_Variable2" jdbcType="VARCHAR"/>
+        <result property="waitingVariable3" column="waiting_Variable3" jdbcType="VARCHAR"/>
+        <result property="roleId" column="role_id" jdbcType="VARCHAR"/>
+        <result property="describe" column="describe" jdbcType="VARCHAR"/>
+        <result property="cid" column="cid" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="CourseinformationMap">
+        select id,
+               course_Name,
+               major,
+               grade,
+               semester,
+               level,
+               college_Name,
+               waiting_Variable1,
+               waiting_Variable2,
+               waiting_Variable3,
+               role_id, describe, cid
+        from courseinformation
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="CourseinformationMap">
+        select
+        id, course_Name, major, grade, semester, level, college_Name, waiting_Variable1, waiting_Variable2,
+        waiting_Variable3, role_id, describe, cid
+        from courseinformation
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="courseName != null and courseName != ''">
+                and course_Name = #{courseName}
+            </if>
+            <if test="major != null and major != ''">
+                and major = #{major}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="semester != null and semester != ''">
+                and semester = #{semester}
+            </if>
+            <if test="level != null and level != ''">
+                and level = #{level}
+            </if>
+            <if test="collegeName != null and collegeName != ''">
+                and college_Name = #{collegeName}
+            </if>
+            <if test="waitingVariable1 != null and waitingVariable1 != ''">
+                and waiting_Variable1 = #{waitingVariable1}
+            </if>
+            <if test="waitingVariable2 != null and waitingVariable2 != ''">
+                and waiting_Variable2 = #{waitingVariable2}
+            </if>
+            <if test="waitingVariable3 != null and waitingVariable3 != ''">
+                and waiting_Variable3 = #{waitingVariable3}
+            </if>
+            <if test="roleId != null and roleId != ''">
+                and role_id = #{roleId}
+            </if>
+            <if test="describe != null and describe != ''">
+                and describe = #{describe}
+            </if>
+            <if test="cid != null">
+                and cid = #{cid}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from courseinformation
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="courseName != null and courseName != ''">
+                and course_Name = #{courseName}
+            </if>
+            <if test="major != null and major != ''">
+                and major = #{major}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="semester != null and semester != ''">
+                and semester = #{semester}
+            </if>
+            <if test="level != null and level != ''">
+                and level = #{level}
+            </if>
+            <if test="collegeName != null and collegeName != ''">
+                and college_Name = #{collegeName}
+            </if>
+            <if test="waitingVariable1 != null and waitingVariable1 != ''">
+                and waiting_Variable1 = #{waitingVariable1}
+            </if>
+            <if test="waitingVariable2 != null and waitingVariable2 != ''">
+                and waiting_Variable2 = #{waitingVariable2}
+            </if>
+            <if test="waitingVariable3 != null and waitingVariable3 != ''">
+                and waiting_Variable3 = #{waitingVariable3}
+            </if>
+            <if test="roleId != null and roleId != ''">
+                and role_id = #{roleId}
+            </if>
+            <if test="describe != null and describe != ''">
+                and describe = #{describe}
+            </if>
+            <if test="cid != null">
+                and cid = #{cid}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into courseinformation(course_Name, major, grade, semester, level, college_Name, waiting_Variable1,
+                                      waiting_Variable2, waiting_Variable3, role_id, describe, cid)
+        values (#{courseName}, #{major}, #{grade}, #{semester}, #{level}, #{collegeName}, #{waitingVariable1},
+                #{waitingVariable2}, #{waitingVariable3}, #{roleId}, #{describe}, #{cid})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into courseinformation(course_Name, major, grade, semester, level, college_Name, waiting_Variable1,
+        waiting_Variable2, waiting_Variable3, role_id, describe, cid)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.courseName}, #{entity.major}, #{entity.grade}, #{entity.semester}, #{entity.level},
+            #{entity.collegeName}, #{entity.waitingVariable1}, #{entity.waitingVariable2}, #{entity.waitingVariable3},
+            #{entity.roleId}, #{entity.describe}, #{entity.cid})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into courseinformation(course_Name, major, grade, semester, level, college_Name, waiting_Variable1,
+        waiting_Variable2, waiting_Variable3, role_id, describe, cid)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.courseName}, #{entity.major}, #{entity.grade}, #{entity.semester}, #{entity.level},
+            #{entity.collegeName}, #{entity.waitingVariable1}, #{entity.waitingVariable2}, #{entity.waitingVariable3},
+            #{entity.roleId}, #{entity.describe}, #{entity.cid})
+        </foreach>
+        on duplicate key update
+        course_Name = values(course_Name),
+        major = values(major),
+        grade = values(grade),
+        semester = values(semester),
+        level = values(level),
+        college_Name = values(college_Name),
+        waiting_Variable1 = values(waiting_Variable1),
+        waiting_Variable2 = values(waiting_Variable2),
+        waiting_Variable3 = values(waiting_Variable3),
+        role_id = values(role_id),
+        describe = values(describe),
+        cid = values(cid)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update courseinformation
+        <set>
+            <if test="courseName != null and courseName != ''">
+                course_Name = #{courseName},
+            </if>
+            <if test="major != null and major != ''">
+                major = #{major},
+            </if>
+            <if test="grade != null and grade != ''">
+                grade = #{grade},
+            </if>
+            <if test="semester != null and semester != ''">
+                semester = #{semester},
+            </if>
+            <if test="level != null and level != ''">
+                level = #{level},
+            </if>
+            <if test="collegeName != null and collegeName != ''">
+                college_Name = #{collegeName},
+            </if>
+            <if test="waitingVariable1 != null and waitingVariable1 != ''">
+                waiting_Variable1 = #{waitingVariable1},
+            </if>
+            <if test="waitingVariable2 != null and waitingVariable2 != ''">
+                waiting_Variable2 = #{waitingVariable2},
+            </if>
+            <if test="waitingVariable3 != null and waitingVariable3 != ''">
+                waiting_Variable3 = #{waitingVariable3},
+            </if>
+            <if test="roleId != null and roleId != ''">
+                role_id = #{roleId},
+            </if>
+            <if test="describe != null and describe != ''">
+                describe = #{describe},
+            </if>
+            <if test="cid != null">
+                cid = #{cid},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from courseinformation
+        where id = #{id}
+    </delete>
+
+
+
+    <!--程世玉 ： 根据指定条件查询所有的-->
+    <select id="queryByLimit" resultType="string">
+        select
+        course_Name
+        from courseinformation
+        <where>
+            <if test="courseName != null">
+                and courseinformation.course_Name = #{courseName}
+            </if>
+            <if test="major != null">
+                and courseinformation.major = #{major}
+            </if>
+            <if test="grade != null">
+                and courseinformation.grade = #{grade}
+            </if>
+            <if test="semester != null">
+                and courseinformation.semester = #{semester}
+            </if>
+            <if test="level != null">
+                and courseinformation.level = #{level}
+            </if>
+            <if test="collegeName != null">
+                and courseinformation.college_Name = #{collegeName}
+            </if>
+        </where>
+    </select>
+</mapper>
+

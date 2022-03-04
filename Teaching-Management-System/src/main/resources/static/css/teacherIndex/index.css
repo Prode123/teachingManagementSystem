@@ -1,0 +1,33 @@
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.wrapper-form {
+	display: flex;
+	justify-content: flex-end;
+	width: 90%;
+}
+#upload {
+	display: none;
+}
+#btn {
+	height: 30px;
+	margin: 10px 0; 
+}
+.table {
+	width: 90%;
+	margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-style: 14px;
+}
+thead tr{
+	height: 30px;
+  	background-color: skyblue;
+}
+tbody tr {
+	height: 30px;
+}
+tbody td {
+	border-bottom: 1px solid black;
+}

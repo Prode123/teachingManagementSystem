@@ -1,0 +1,34 @@
+2022-02-16 02:59:31,376 WARN (HikariPool.java:788)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s774ms135µs200ns).
+2022-02-16 09:39:26,552 WARN (HikariPool.java:788)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h40m10s498ms291µs199ns).
+2022-02-16 10:15:54,930 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 59304 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-16 10:15:54,933 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-16 10:15:56,337 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-16 10:15:56,345 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-16 10:15:56,345 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-16 10:15:56,346 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-16 10:15:56,433 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-16 10:15:56,434 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1458 ms
+2022-02-16 10:15:57,046 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36cc9385, org.springframework.security.web.context.SecurityContextPersistenceFilter@66f0548d, org.springframework.security.web.header.HeaderWriterFilter@7c251f90, org.springframework.security.web.authentication.logout.LogoutFilter@75961f16, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@304d0259, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e86a5a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6daf7d37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cf518cf, org.springframework.security.web.session.SessionManagementFilter@435e60ff, org.springframework.security.web.access.ExceptionTranslationFilter@29138d3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@109a2025]
+2022-02-16 10:15:57,204 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-16 10:15:57,373 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-16 10:15:57,385 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-16 10:15:57,393 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 3.168 seconds (JVM running for 4.425)
+2022-02-16 10:17:40,313 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-16 10:17:40,313 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-16 10:17:40,314 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-16 10:17:40,387 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-16 10:17:42,489 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-16 10:17:42,531 WARN (ExcelHeadProperty.java:82)- The table has no header set and all annotations will not be read.If you want to use annotations, please use set head class in ExcelWriterBuilder/ExcelWriterSheetBuilder/ExcelWriterTableBuilder
+2022-02-16 10:19:15,673 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 55788 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-16 10:19:15,677 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-16 10:19:16,658 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-16 10:19:16,670 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-16 10:19:16,671 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-16 10:19:16,671 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-16 10:19:16,748 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-16 10:19:16,749 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1026 ms
+2022-02-16 10:19:17,319 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79fd6f95, org.springframework.security.web.context.SecurityContextPersistenceFilter@4715ae33, org.springframework.security.web.header.HeaderWriterFilter@a2ddf26, org.springframework.security.web.authentication.logout.LogoutFilter@44b18fe4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e43e323, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fac1d5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@704641e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48840594, org.springframework.security.web.session.SessionManagementFilter@6daf7d37, org.springframework.security.web.access.ExceptionTranslationFilter@1e86a5a7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cf518cf]
+2022-02-16 10:19:17,507 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-16 10:19:17,667 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-16 10:19:17,680 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-16 10:19:17,687 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.416 seconds (JVM running for 3.205)

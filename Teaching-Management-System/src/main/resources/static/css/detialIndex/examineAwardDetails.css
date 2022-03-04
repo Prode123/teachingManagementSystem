@@ -1,0 +1,241 @@
+/* 审查奖项是否通过详情页 */
+
+.review-award {
+    width: 100%;
+}
+
+.review-detail {
+    display: flex;
+}
+
+.review-detail p {
+    width: 90%;
+    height: 5vh;
+    /*background-color:  #0078d4;*/
+    background-color: #cccccc;
+    text-align: center;
+    /*font-size: 18px;*/
+    font: bold 18px arial;
+    line-height: 35px;
+    margin: auto 5%;
+    /*margin-top: 1vh;*/
+}
+
+#review-form {
+    /*width: 50%;*/
+    display: flex;
+    width: calc(100% +40x);
+    /* width: 100%; */
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    font-size: 1rem;
+    /* overflow-x: scroll; */
+    margin-left: 5vw;
+}
+
+.review-info {
+    /*width: 70%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* flex-shrink: 0; */
+    /* flex: 1; */
+}
+
+.review-info>div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+
+.review-info label {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.review-info>div>label:first-child {
+    width: 85px;
+}
+
+.review-info>div input[type='radio'] {
+    margin-top: 15px;
+}
+
+.review-info>div input[type='text'] {
+    /* width: 100%; */
+    width: calc(100% - 115px);
+    margin: 5px;
+    padding: 2px;
+    height: 30px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+
+/*.review-info .contest-type {
+    margin-bottom: 10px;
+}
+*/
+
+.review-info .contest-type input {
+    margin-left: 10px;
+}
+
+.review-info #awade-type-info {
+    margin: 10px;
+}
+
+.review-info .awade-type {
+    flex-shrink: 1;
+}
+
+
+/*.examineAward form .review-info,{
+    display: inline-block;
+}*/
+
+
+/*奖项照片预览*/
+
+#review-form .preview-awardimg {
+    /* position: relative; */
+    width: 50%;
+    height: 40vh;
+    margin-top: 1%;
+    margin-right: 8%;
+    border: 2px dashed #f0ecec;
+    /* float: right; */
+    display: flex;
+    flex-direction: column;
+}
+
+#review-form .preview-awardimg>div {
+    margin: 10px;
+}
+
+
+/*通过与不通过样式*/
+
+.box-check {
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin: 10px auto;
+    background-color: #cccccc;
+    border: 1px solid gray;
+}
+
+.box-check ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.box-check ul li {
+    /* float: left; */
+    /*width: 200px;*/
+    /*height: 50px;*/
+    margin: 20px 0;
+    line-height: 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+#btn-success,
+#btn-fail {
+    height: 50px;
+    width: 120px;
+    margin: 10px;
+    font-size: 16px;
+    color: #cccccc;
+    background-color: #09f;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box-check #selector {
+    height: 40px;
+    margin: 10px;
+}
+
+.check-text {
+    margin: 20px;
+    height: 100%;
+}
+
+.check-text label {
+    float: left;
+    /*  font: 20px Arial, sans-serif ;*/
+    color: black;
+}
+
+.check-text textarea {
+    width: 100%;
+    height: 80%;
+    /*float: left;*/
+}
+
+
+/*添加样式*/
+
+.review-info span {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.box-check ul li .li-select {
+    margin: 2vh auto;
+}
+
+.check-text textarea {
+    font-size: 16px;
+}
+
+
+/* 添加 */
+
+.preview-awardimg #btn-img {
+    width: 100px;
+    height: 30px;
+    align-self: flex-start;
+    max-width: 50px;
+    word-break: break-all;
+    margin-left: 4%;
+    background: #09f;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin-right: 4%;
+}
+
+.preview-awardimg #box-img {
+    display: none;
+    /* position: relative; */
+    position: absolute;
+    top: 200px;
+    right: 400px;
+    width: 600px;
+    height: 500px;
+}
+
+.preview-awardimg #box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preview-awardimg #box-img .close {
+    position: absolute;
+    right: 4px;
+    top: 8px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 800;
+}

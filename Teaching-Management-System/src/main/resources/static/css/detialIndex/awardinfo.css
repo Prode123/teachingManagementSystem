@@ -1,0 +1,17 @@
+.review-info>div>label:first-child{
+    width: 105px;
+}
+.review-info,span{
+    font-size: 20px;
+}
+.review-detail p{
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+}
+.preview-awardimg #btn-img{
+    font-size: 20px;
+    max-width: 100px;
+    width: 100px;
+    height: 40px;
+}

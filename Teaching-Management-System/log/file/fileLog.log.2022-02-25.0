@@ -1,0 +1,714 @@
+2022-02-25 10:39:27,163 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 30880 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 10:39:27,172 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 10:39:28,694 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:39:28,695 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:39:28,695 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:39:28,696 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:39:28,696 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:39:28,696 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:39:28,696 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:39:28,697 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 10:39:30,189 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4860827a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1507c3c3, org.springframework.security.web.header.HeaderWriterFilter@26fb4d06, org.springframework.security.web.authentication.logout.LogoutFilter@6f76c2cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d499d65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c29fe36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b5c665c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@404db674, org.springframework.security.web.session.SessionManagementFilter@6e43ddd6, org.springframework.security.web.access.ExceptionTranslationFilter@3bb87d36, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78a0ff63]
+2022-02-25 10:39:30,759 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 10:39:31,128 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 4.433 seconds (JVM running for 6.173)
+2022-02-25 10:39:31,579 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 10:39:32,399 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-25 10:39:32,509 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-02-25 10:39:32,530 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-02-25 10:50:48,499 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 13824 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 10:50:48,501 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 10:50:49,281 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:50:49,282 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:50:49,283 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:50:49,284 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:50:49,284 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:50:49,285 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:50:49,285 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:50:49,285 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 10:50:50,707 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fa822ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b5c665c, org.springframework.security.web.header.HeaderWriterFilter@655a01d8, org.springframework.security.web.authentication.logout.LogoutFilter@441b8382, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59ce792e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@625a4ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41853299, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@597f0937, org.springframework.security.web.session.SessionManagementFilter@6614bd4b, org.springframework.security.web.access.ExceptionTranslationFilter@12fe1f28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5cc9d3d0]
+2022-02-25 10:50:51,260 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 10:50:51,629 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.612 seconds (JVM running for 4.898)
+2022-02-25 10:54:51,981 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 25464 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 10:54:51,982 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 10:54:52,667 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:54:52,668 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:54:52,669 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:54:52,669 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:54:52,669 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:54:52,669 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:54:52,670 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:54:52,670 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 10:54:53,998 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fa822ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b5c665c, org.springframework.security.web.header.HeaderWriterFilter@655a01d8, org.springframework.security.web.authentication.logout.LogoutFilter@441b8382, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59ce792e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@625a4ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41853299, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@597f0937, org.springframework.security.web.session.SessionManagementFilter@6614bd4b, org.springframework.security.web.access.ExceptionTranslationFilter@12fe1f28, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5cc9d3d0]
+2022-02-25 10:54:54,491 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 10:54:54,829 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.26 seconds (JVM running for 4.482)
+2022-02-25 10:56:14,124 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 17380 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 10:56:14,125 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 10:56:14,740 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:56:14,740 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:56:14,740 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:56:14,741 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:56:14,741 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:56:14,741 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:56:14,741 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:56:14,741 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 10:56:16,139 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@661d88a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e43ddd6, org.springframework.security.web.header.HeaderWriterFilter@22a10ac6, org.springframework.security.web.authentication.logout.LogoutFilter@7ab4ae59, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c601d50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d38edfd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6614bd4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b0b64cc, org.springframework.security.web.session.SessionManagementFilter@503df2d0, org.springframework.security.web.access.ExceptionTranslationFilter@7ff8a9dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4288d98e]
+2022-02-25 10:56:16,753 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 10:56:17,108 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.343 seconds (JVM running for 4.461)
+2022-02-25 10:57:00,522 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 31168 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 10:57:00,523 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 10:57:01,182 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:57:01,183 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:57:01,183 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:57:01,183 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:57:01,183 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:57:01,184 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:57:01,184 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 10:57:01,184 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 10:57:01,843 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myuserDetailsService': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\com\hafu\edu\teachingmanagementsystem\dao\UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+2022-02-25 10:57:01,851 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-25 10:57:01,965 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myuserDetailsService': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\com\hafu\edu\teachingmanagementsystem\dao\UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\com\hafu\edu\teachingmanagementsystem\dao\UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 88 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\com\hafu\edu\teachingmanagementsystem\dao\UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 99 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 113 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 126 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:179)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9eea600f.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9eea600f$$FastClassBySpringCGLIB$$80ad3986.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9eea600f.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 127 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611)
+	... 140 common frames omitted
+Caused by: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.apache.ibatis.mapping.ResultMapping$Builder.validate(ResultMapping.java:151)
+	at org.apache.ibatis.mapping.ResultMapping$Builder.build(ResultMapping.java:140)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.buildResultMapping(MapperBuilderAssistant.java:446)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildResultMappingFromContext(XMLMapperBuilder.java:393)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:280)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 142 common frames omitted
+2022-02-25 10:57:01,983 ERROR (TestContextManager.java:252)- Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@50378a4] to prepare test instance [com.hafu.edu.teachingmanagementsystem.TeachingManagementSystemApplicationTests@2b8bb184]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myuserDetailsService': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\com\hafu\edu\teachingmanagementsystem\dao\UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 69 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\com\hafu\edu\teachingmanagementsystem\dao\UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 88 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\com\hafu\edu\teachingmanagementsystem\dao\UserDao.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1534)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 99 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1519)
+	... 113 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 126 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:179)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9eea600f.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9eea600f$$FastClassBySpringCGLIB$$80ad3986.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9eea600f.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 127 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes\mapper\PrizeDao.xml]'. Cause: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611)
+	... 140 common frames omitted
+Caused by: java.lang.IllegalStateException: No typehandler found for property sta
+	at org.apache.ibatis.mapping.ResultMapping$Builder.validate(ResultMapping.java:151)
+	at org.apache.ibatis.mapping.ResultMapping$Builder.build(ResultMapping.java:140)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.buildResultMapping(MapperBuilderAssistant.java:446)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildResultMappingFromContext(XMLMapperBuilder.java:393)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:280)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119)
+	... 142 common frames omitted
+2022-02-25 17:03:23,691 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 28860 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:03:23,693 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:03:24,354 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:03:24,355 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:03:24,355 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:03:24,356 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:03:24,356 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:03:24,356 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:03:24,356 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:03:24,357 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:03:25,646 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65d8dff8, org.springframework.security.web.context.SecurityContextPersistenceFilter@196ae579, org.springframework.security.web.header.HeaderWriterFilter@7847ef2c, org.springframework.security.web.authentication.logout.LogoutFilter@2aaf152b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7add838c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41853299, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f0cab0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@444f44c5, org.springframework.security.web.session.SessionManagementFilter@78e17a99, org.springframework.security.web.access.ExceptionTranslationFilter@6e43ddd6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59ce792e]
+2022-02-25 17:03:26,188 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:03:26,532 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.328 seconds (JVM running for 4.484)
+2022-02-25 17:04:52,704 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 11812 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:04:52,705 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:04:53,375 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:04:53,375 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:04:53,376 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:04:53,376 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:04:53,376 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:04:53,376 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:04:53,376 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:04:53,377 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:04:54,719 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bb15351, org.springframework.security.web.context.SecurityContextPersistenceFilter@7847ef2c, org.springframework.security.web.header.HeaderWriterFilter@1507c3c3, org.springframework.security.web.authentication.logout.LogoutFilter@7da39774, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b0b64cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78e17a99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a2c717f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fa822ad, org.springframework.security.web.session.SessionManagementFilter@c29fe36, org.springframework.security.web.access.ExceptionTranslationFilter@22a10ac6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@313f8301]
+2022-02-25 17:04:55,263 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:04:55,585 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.26 seconds (JVM running for 4.518)
+2022-02-25 17:14:04,126 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 25540 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:14:04,127 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:14:04,823 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:14:04,823 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:14:04,823 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:14:04,824 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:14:04,824 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:14:04,824 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:14:04,825 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:14:04,825 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:14:06,351 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@404db674, org.springframework.security.web.context.SecurityContextPersistenceFilter@655a01d8, org.springframework.security.web.header.HeaderWriterFilter@c269425, org.springframework.security.web.authentication.logout.LogoutFilter@306f6f1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@313f8301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6614bd4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78e17a99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50f097b5, org.springframework.security.web.session.SessionManagementFilter@51d719bc, org.springframework.security.web.access.ExceptionTranslationFilter@1b495d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c601d50]
+2022-02-25 17:14:06,838 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:14:07,158 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.393 seconds (JVM running for 4.557)
+2022-02-25 17:21:12,321 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 8412 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:21:12,322 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:21:12,955 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:21:12,955 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:21:12,956 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:21:12,956 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:21:12,956 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:21:12,956 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:21:12,956 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:21:12,957 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:21:14,559 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4860827a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1507c3c3, org.springframework.security.web.header.HeaderWriterFilter@26fb4d06, org.springframework.security.web.authentication.logout.LogoutFilter@6f76c2cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d499d65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c29fe36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b5c665c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@404db674, org.springframework.security.web.session.SessionManagementFilter@6e43ddd6, org.springframework.security.web.access.ExceptionTranslationFilter@3bb87d36, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78a0ff63]
+2022-02-25 17:21:15,127 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:21:15,487 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.512 seconds (JVM running for 4.684)
+2022-02-25 17:22:43,134 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 25164 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:22:43,136 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:22:43,797 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:22:43,798 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:22:43,798 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:22:43,799 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:22:43,799 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:22:43,799 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:22:43,800 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:22:43,800 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:22:45,314 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4860827a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d38edfd, org.springframework.security.web.header.HeaderWriterFilter@503df2d0, org.springframework.security.web.authentication.logout.LogoutFilter@5d96bdf8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d499d65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@655a01d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7847ef2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@404db674, org.springframework.security.web.session.SessionManagementFilter@c269425, org.springframework.security.web.access.ExceptionTranslationFilter@534e58b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@285c6918]
+2022-02-25 17:22:45,812 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:22:46,148 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.412 seconds (JVM running for 4.534)
+2022-02-25 17:23:53,308 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 9264 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:23:53,309 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:23:53,984 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:23:53,984 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:23:53,984 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:23:53,984 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:23:53,985 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:23:53,985 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:23:53,985 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:23:53,985 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:23:55,488 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4860827a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d38edfd, org.springframework.security.web.header.HeaderWriterFilter@503df2d0, org.springframework.security.web.authentication.logout.LogoutFilter@5d96bdf8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d499d65, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@655a01d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7847ef2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@404db674, org.springframework.security.web.session.SessionManagementFilter@c269425, org.springframework.security.web.access.ExceptionTranslationFilter@534e58b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@285c6918]
+2022-02-25 17:23:56,031 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:23:56,349 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.43 seconds (JVM running for 4.697)
+2022-02-25 17:23:56,591 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 17:23:57,094 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-25 17:23:57,191 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-02-25 17:23:57,194 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-02-25 17:26:02,958 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 18308 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:26:02,959 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:26:03,618 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:26:03,619 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:26:03,619 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:26:03,619 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:26:03,619 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:26:03,620 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:26:03,620 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:26:03,620 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:26:05,092 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bb15351, org.springframework.security.web.context.SecurityContextPersistenceFilter@7847ef2c, org.springframework.security.web.header.HeaderWriterFilter@1507c3c3, org.springframework.security.web.authentication.logout.LogoutFilter@7da39774, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b0b64cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78e17a99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a2c717f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fa822ad, org.springframework.security.web.session.SessionManagementFilter@c29fe36, org.springframework.security.web.access.ExceptionTranslationFilter@22a10ac6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@313f8301]
+2022-02-25 17:26:05,709 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:26:06,095 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.486 seconds (JVM running for 4.641)
+2022-02-25 17:26:06,338 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 17:26:06,841 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-25 17:26:06,906 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-02-25 17:26:06,908 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-02-25 17:27:29,522 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 5492 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:27:29,837 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:27:30,433 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:27:30,433 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:27:30,434 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:27:30,434 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:27:30,434 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:27:30,434 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:27:30,434 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:27:30,435 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:27:31,739 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c2dfa2, org.springframework.security.web.context.SecurityContextPersistenceFilter@c269425, org.springframework.security.web.header.HeaderWriterFilter@71e35c4, org.springframework.security.web.authentication.logout.LogoutFilter@fe7b6b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78a0ff63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51d719bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c29fe36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@661d88a, org.springframework.security.web.session.SessionManagementFilter@12fe1f28, org.springframework.security.web.access.ExceptionTranslationFilter@4f94e148, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6296474f]
+2022-02-25 17:27:32,227 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:27:32,583 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.416 seconds (JVM running for 4.539)
+2022-02-25 17:27:32,819 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 17:27:33,314 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-25 17:27:33,384 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-02-25 17:27:33,387 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-02-25 17:30:03,771 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 14216 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:30:03,772 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:30:04,430 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:30:04,430 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:30:04,430 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:30:04,430 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:30:04,430 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:30:04,431 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:30:04,431 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:30:04,431 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:30:05,755 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bb15351, org.springframework.security.web.context.SecurityContextPersistenceFilter@7847ef2c, org.springframework.security.web.header.HeaderWriterFilter@1507c3c3, org.springframework.security.web.authentication.logout.LogoutFilter@7da39774, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b0b64cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78e17a99, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a2c717f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fa822ad, org.springframework.security.web.session.SessionManagementFilter@c29fe36, org.springframework.security.web.access.ExceptionTranslationFilter@22a10ac6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@313f8301]
+2022-02-25 17:30:06,260 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:30:06,598 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.201 seconds (JVM running for 4.405)
+2022-02-25 17:30:06,866 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 17:30:07,472 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-25 17:30:07,535 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-02-25 17:30:07,538 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-02-25 17:31:42,843 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 6908 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 17:31:42,844 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 17:31:43,488 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:31:43,489 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:31:43,489 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:31:43,489 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:31:43,489 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:31:43,489 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:31:43,490 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 17:31:43,490 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 17:31:44,755 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c2dfa2, org.springframework.security.web.context.SecurityContextPersistenceFilter@c269425, org.springframework.security.web.header.HeaderWriterFilter@71e35c4, org.springframework.security.web.authentication.logout.LogoutFilter@fe7b6b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78a0ff63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51d719bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c29fe36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@661d88a, org.springframework.security.web.session.SessionManagementFilter@12fe1f28, org.springframework.security.web.access.ExceptionTranslationFilter@4f94e148, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6296474f]
+2022-02-25 17:31:45,231 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 17:31:45,563 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.074 seconds (JVM running for 4.163)
+2022-02-25 17:31:45,784 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 17:31:46,262 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-25 17:31:46,323 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-02-25 17:31:46,326 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-02-25 19:58:21,141 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 30052 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 19:58:21,142 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 19:58:21,831 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,832 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseinformationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseinformationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,832 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,832 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,832 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,832 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,833 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,833 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:21,833 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 19:58:23,439 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50f097b5, org.springframework.security.web.context.SecurityContextPersistenceFilter@c29fe36, org.springframework.security.web.header.HeaderWriterFilter@6e43ddd6, org.springframework.security.web.authentication.logout.LogoutFilter@7d7cac8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cc9d3d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d266391, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@625a4ff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7add838c, org.springframework.security.web.session.SessionManagementFilter@2d38edfd, org.springframework.security.web.access.ExceptionTranslationFilter@5e1dde44, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79b2852b]
+2022-02-25 19:58:23,983 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 19:58:24,321 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.563 seconds (JVM running for 4.863)
+2022-02-25 19:58:24,590 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 19:58:26,079 ERROR (HikariPool.java:594)- HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy126.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy74.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy85.testStatus(Unknown Source)
+	at com.hafu.edu.teachingmanagementsystem.TeachingManagementSystemApplicationTests.abc(TeachingManagementSystemApplicationTests.java:170)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+2022-02-25 19:58:49,325 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 27712 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-25 19:58:49,326 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-25 19:58:50,107 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,107 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseinformationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseinformationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,107 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,108 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,108 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,108 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,108 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,108 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-25 19:58:50,109 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-25 19:58:51,633 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24d61e4, org.springframework.security.web.context.SecurityContextPersistenceFilter@60d40ff4, org.springframework.security.web.header.HeaderWriterFilter@625a4ff, org.springframework.security.web.authentication.logout.LogoutFilter@11c3ff67, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4fa822ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27755487, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77681ce4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2149594a, org.springframework.security.web.session.SessionManagementFilter@196ae579, org.springframework.security.web.access.ExceptionTranslationFilter@1507c3c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50f097b5]
+2022-02-25 19:58:52,157 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-25 19:58:52,515 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.614 seconds (JVM running for 4.839)
+2022-02-25 19:58:52,771 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-25 19:58:53,294 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-25 19:58:53,359 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-02-25 19:58:53,362 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.

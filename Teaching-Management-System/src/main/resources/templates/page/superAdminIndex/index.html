@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>superAdminIndex</title>
+    <link rel="stylesheet" th:href="@{/css/commen/commenPageIndex.css}" href="../../../static/css/commen/commenPageIndex.css" />
+    <link rel="stylesheet" th:href="@{/css/superAdminIndex/index.css}" href="../../../static/css/superAdminIndex/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../../static/css/commen/commenform.css">
+    <script type="text/javascript" src="../../../static/js/commen/form.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <img src="../../../static/img/commen/logo.png" th:href="@{/img/commen/logo.png}" alt="" />
+        <span>河南财政金融学院教学管理系统</span>
+      </div>
+      <div class="header-right">
+        <div class="user-img">
+          <img src="../../../static/img/lee.png" th:href="@{/img/lee.png}" alt="" />
+          <ul>
+            <li>superAdmin</li>
+            <li>退出登录</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="center"></div>
+    <div class="wrapper">
+      <div class="wrapper-nav">
+        <ul></ul>
+      </div>
+      <div class="wrapper-right">
+
+        <div class="wrapper-right-item show">首页</div>
+        <!-- 网站模块管理 -->
+        <div class="wrapper-right-item">网站模块管理</div>
+        <!-- 网站布局管理 -->
+        <div class="wrapper-right-item">
+          <input type="color">
+        </div>
+        <!-- 添加管理员 -->
+        <div class="wrapper-right-item">
+          <div class="my-form">
+            <form action="服务器端程序">
+              <div class="form-item">
+                <label for="institute-select">学院</label>
+                <select name="institute-select" id="institute-select">
+                <option value="0">请选择学院</option>
+                <option value="1">计算机与信息技术学院</option>
+              </select>
+              </div>
+              <div class="form-item">
+                <label for="admin-user">用户名</label>
+                <input type="text" disabled>
+                <label for="admin-pwd">密码</label>
+                <input type="text" disabled>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- 用户反馈 -->
+        <div class="wrapper-right-item">用户反馈</div>
+        <!-- 后期扩招功能 -->
+        <div class="wrapper-right-item">6</div>
+        <div class="wrapper-right-item">7</div>
+        <div class="wrapper-right-item">8</div>
+        <div class="wrapper-right-item">9</div>
+        <div class="wrapper-right-item">10</div>
+        <div class="wrapper-right-item">11</div>
+        <!-- top right nav 个人信息 -->
+        <!-- top right nav 退出登录 -->
+        <div class="wrapper-right-item">退出登录</div>
+        <!-- 后期扩展功能 -->
+        <div class="wrapper-right-item">14</div>
+      </div>
+    </div>
+
+    <script src="../../../static/js/commen/axios.js" th:src="@{/js/commen/axios.js}"></script>
+    <script th:src="@{/js/utils/request.js}" src="../../../static/js/utils/request.js"></script>
+    <script src="../../../static/js/commen/generationLeftNav.js" th:src="@{/js/commen/generationLeftNav.js}"></script>
+    <script src="../../../static/js/superAdminIndex/index.js" th:src="@{/js/superAdminIndex/index.js}"></script>
+  </body>
+</html>

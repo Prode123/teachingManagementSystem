@@ -1,0 +1,276 @@
+2022-02-24 11:53:05,101 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 12432 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-24 11:53:05,104 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-24 11:53:06,801 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-24 11:53:06,808 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-24 11:53:06,808 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-24 11:53:06,809 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 11:53:06,886 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-24 11:53:06,887 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1746 ms
+2022-02-24 11:53:07,511 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2133661d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ba26eb0, org.springframework.security.web.header.HeaderWriterFilter@6dbcf214, org.springframework.security.web.authentication.logout.LogoutFilter@4207609e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2241f05b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17d32e9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@212dfd39, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c9320c2, org.springframework.security.web.session.SessionManagementFilter@7c251f90, org.springframework.security.web.access.ExceptionTranslationFilter@2412a42b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a331b46]
+2022-02-24 11:53:07,658 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int) mapped.
+2022-02-24 11:53:07,661 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-02-24 11:53:07,668 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-24 11:53:07,686 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.hafu.edu.teachingmanagementsystem.TeachingManagementSystemApplication.main(TeachingManagementSystemApplication.java:17)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2022-02-24 11:53:42,297 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 25284 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-24 11:53:42,299 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-24 11:53:43,188 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-24 11:53:43,195 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-24 11:53:43,196 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-24 11:53:43,197 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 11:53:43,274 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-24 11:53:43,275 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 939 ms
+2022-02-24 11:53:43,824 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a04fea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4207609e, org.springframework.security.web.header.HeaderWriterFilter@6850b758, org.springframework.security.web.authentication.logout.LogoutFilter@3b4d50b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ed16657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7ca698, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bddc676, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bc49bc5, org.springframework.security.web.session.SessionManagementFilter@704641e3, org.springframework.security.web.access.ExceptionTranslationFilter@1fac1d5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48840594]
+2022-02-24 11:53:43,984 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+2022-02-24 11:53:43,987 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-02-24 11:53:43,995 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-24 11:53:44,011 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.hafu.edu.teachingmanagementsystem.TeachingManagementSystemApplication.main(TeachingManagementSystemApplication.java:17)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2022-02-24 11:56:05,787 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 7516 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-24 11:56:05,790 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-24 11:56:06,666 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-24 11:56:06,671 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-24 11:56:06,672 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-24 11:56:06,672 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 11:56:06,750 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-24 11:56:06,750 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 923 ms
+2022-02-24 11:56:07,244 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b6e5c12, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d7ca698, org.springframework.security.web.header.HeaderWriterFilter@704641e3, org.springframework.security.web.authentication.logout.LogoutFilter@476ee5b3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@113e13f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c6c82aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24db6ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f66ffc8, org.springframework.security.web.session.SessionManagementFilter@4207609e, org.springframework.security.web.access.ExceptionTranslationFilter@7a8406c2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14823f76]
+2022-02-24 11:56:07,377 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+2022-02-24 11:56:07,380 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-02-24 11:56:07,387 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-24 11:56:07,402 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.hafu.edu.teachingmanagementsystem.TeachingManagementSystemApplication.main(TeachingManagementSystemApplication.java:17)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2022-02-24 11:59:03,714 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 3156 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-24 11:59:03,716 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-24 11:59:04,560 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-24 11:59:04,566 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-24 11:59:04,567 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-24 11:59:04,567 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 11:59:04,635 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-24 11:59:04,635 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 883 ms
+2022-02-24 11:59:05,114 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a04fea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4207609e, org.springframework.security.web.header.HeaderWriterFilter@6850b758, org.springframework.security.web.authentication.logout.LogoutFilter@3b4d50b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ed16657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7ca698, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bddc676, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bc49bc5, org.springframework.security.web.session.SessionManagementFilter@704641e3, org.springframework.security.web.access.ExceptionTranslationFilter@1fac1d5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48840594]
+2022-02-24 11:59:05,244 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+2022-02-24 11:59:05,246 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-02-24 11:59:05,254 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-24 11:59:05,268 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:414)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.hafu.edu.teachingmanagementsystem.TeachingManagementSystemApplication.main(TeachingManagementSystemApplication.java:17)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'filesOperateController' method 
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload(MultipartFile[], Prize, int)
+to {POST [/fileOperate/restartUpload]}: There is already 'filesOperateController' bean method
+com.hafu.edu.teachingmanagementsystem.controller.FilesOperateController#restartUpload1(MultipartFile[], Prize) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2022-02-24 11:59:52,102 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 11240 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-24 11:59:52,104 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-24 11:59:52,996 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-24 11:59:53,002 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-24 11:59:53,003 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-24 11:59:53,003 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 11:59:53,079 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-24 11:59:53,079 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 938 ms
+2022-02-24 11:59:53,621 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eca6a74, org.springframework.security.web.context.SecurityContextPersistenceFilter@23a5818e, org.springframework.security.web.header.HeaderWriterFilter@212dfd39, org.springframework.security.web.authentication.logout.LogoutFilter@67b100fe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ad4a7d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9fc9f91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a2ef072, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79fd6f95, org.springframework.security.web.session.SessionManagementFilter@65d57e4e, org.springframework.security.web.access.ExceptionTranslationFilter@2e6f610d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36cc9385]
+2022-02-24 11:59:53,779 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-24 11:59:53,930 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-24 11:59:53,942 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-24 11:59:53,950 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.221 seconds (JVM running for 2.994)
+2022-02-24 12:00:11,176 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-24 12:00:11,177 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-24 12:00:11,178 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-02-24 12:00:11,374 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-24 12:00:12,106 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-02-24 12:32:51,944 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 26444 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-24 12:32:51,945 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-24 12:32:52,657 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:32:52,657 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:32:52,658 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:32:52,658 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:32:52,658 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:32:52,658 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:32:52,658 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:32:52,659 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-24 12:32:54,439 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@313f8301, org.springframework.security.web.context.SecurityContextPersistenceFilter@503df2d0, org.springframework.security.web.header.HeaderWriterFilter@5e1dde44, org.springframework.security.web.authentication.logout.LogoutFilter@27755487, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@169268a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c269425, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1507c3c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cc9d3d0, org.springframework.security.web.session.SessionManagementFilter@71e35c4, org.springframework.security.web.access.ExceptionTranslationFilter@79c5460e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44b21f9f]
+2022-02-24 12:32:55,004 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-24 12:32:55,392 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.825 seconds (JVM running for 5.16)
+2022-02-24 12:33:28,174 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplicationTests using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 21692 (started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-24 12:33:28,175 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-24 12:33:28,865 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'courseDao' and 'com.hafu.edu.teachingmanagementsystem.dao.CourseDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:33:28,866 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'documentDao' and 'com.hafu.edu.teachingmanagementsystem.dao.DocumentDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:33:28,866 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'organizationDao' and 'com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:33:28,867 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'permissionDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PermissionDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:33:28,867 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'prizeDao' and 'com.hafu.edu.teachingmanagementsystem.dao.PrizeDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:33:28,867 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:33:28,868 WARN (Logger.java:44)- Skipping MapperFactoryBean with name 'userImagesDao' and 'com.hafu.edu.teachingmanagementsystem.dao.UserImagesDao' mapperInterface. Bean already defined with the same name!
+2022-02-24 12:33:28,868 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem.dao]' package. Please check your configuration.
+2022-02-24 12:33:30,389 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@78a0ff63, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e1dde44, org.springframework.security.web.header.HeaderWriterFilter@7ff8a9dc, org.springframework.security.web.authentication.logout.LogoutFilter@196ae579, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e1fc42f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e35c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26fb4d06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c601d50, org.springframework.security.web.session.SessionManagementFilter@534e58b6, org.springframework.security.web.access.ExceptionTranslationFilter@2d64c100, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ef60710]
+2022-02-24 12:33:30,871 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-24 12:33:31,179 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplicationTests in 3.369 seconds (JVM running for 4.53)

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../static/js/commen/axios.js"></script>
+    <script th:src="@{/js/utils/request.js}" src="../static/js/utils/request.js"></script>
+  </head>
+  <body>
+    <input type="file" />
+
+    <script>
+      const input = document.querySelector('input');
+      input.addEventListener('change', function () {
+        //     console.log('拿到文件了');
+        //     console.log(input.files[0]);
+        //
+        //     // 修改图像
+        //     var data = new FormData();
+        //     data.append('fileName', input.files[0]);
+        //     data.append('uid', '1');
+        //
+        //     request
+        //       .post(
+        //         '/manangmentSystem/user/updateHeadImage',
+        //         data,
+        //         // { contentType: 'multipart/form-data'}
+        //         { headers: { 'Content-Type': 'multipart/form-data' } }
+        //       )
+        //       .then((res) => {
+        //         console.log('修改图像', res);
+        //       });
+        //
+        //     // 重新上传奖项
+        // var data = new FormData();
+        // data.append('file', input.files[0]);
+        // data.append('pizId', '1');
+        // data.append('pwinner', '张三');
+        // data.append('ptime', '2022/02/15');
+        // data.append('psponsor', '河南财政金融学院');
+        // data.append('plevel', 'A');
+        // data.append('pname', '挑战杯');
+        // data.append('tid', '1');
+        // data.append('uid', '1');
+        // data.append('category', '1');
+        // data.append('title', '2');
+        // data.append('number', '201925025');
+        // data.append('tname', '张思1');
+        // data.append('faculty', '计算机与信息技术学院');
+        // data.append('grade', '2019');
+        //
+        // request
+        //     .post('/manangmentSystem/fileOperate/restartUpload', data, {
+        //         contentType: 'multipart/form-data',
+        //     })
+        //     .then((res) => {
+        //         console.log('重新上传奖项', res);
+        //     });
+        //
+        //     上传奖项
+        // var data = new FormData();
+        // data.append('file', input.files[0]);
+        // data.append('pizId', '1');
+        // data.append('pwinner', '张三');
+        // data.append('ptime', '2022/02/14');
+        // data.append('psponsor', '河南财政金融学院');
+        // data.append('plevel', 'A');
+        // data.append('pname', '挑战杯');
+        // data.append('tid', '1');
+        // data.append('uid', '1');
+        // data.append('category', '1');
+        // data.append('title', '2');
+        // data.append('number', '201925025');
+        // data.append('tname', '张思');
+        // data.append('faculty', '计算机与信息技术学院');
+        // data.append('grade', '2019');
+        // request.post('/manangmentSystem/fileOperate/uploadPrize', data, {
+        //     // contentType: 'multipart/form-data',
+        //     // 有可能是这样写的
+        //     headers: { 'Content-Type': 'multipart/form-data' }
+        // }).then((res) => {
+        //     console.log('上传奖项', res)
+        // });
+        //
+        //     // 上传文件
+        //     var data = new FormData();
+        //     data.append('uid', '1');
+        //     data.append('file', input.files[0]);
+        //     data.append('fileType', '11');
+        //     data.append('grade', '<grade>');
+        //     data.append('faculty', '<faculty>');
+        //     data.append('major', '<major>');
+        //     data.append('course', '<course>');
+        //     request
+        //       .post('/manangmentSystem/fileOperate/uploadFile', data, {
+        //           headers: { 'Content-Type': 'multipart/form-data' }
+        //       })
+        //       .then((res) => {
+        //         console.log('上传文件', res);
+        //       });
+        //
+        // 管理员批量添加用户信息
+        // var data = new FormData();
+        // data.append('excelFile', input.files[0]);
+        // request.post('/manangmentSystem/admin/batchAddUsers', data, {
+        //     headers: {'Content-Type': 'multipart/form-data'}
+        // });
+      });
+
+      // request
+      //     .get(
+      //         '/manangmentSystem/admin/addUser?username=%3Cusername%3E&roleId=%3CroleId%3E&passwd=%3Cpasswd%3E&number=%3Cnumber%3E&identityCard=%3CidentityCard%3E&phoneNumber=%3CphoneNumber%3E&status=%3Cstatus%3E&sex=%3Csex%3E&clazz=%3Cclazz%3E&faculty=%3Cfaculty%3E&title=%3Ctitle%3E&grade=%3Cgrade%3E&major=%3Cmajor%3E&level=%3Clevel%3E&teachingResearch=%3CteachingResearch%3E'
+      //     )
+      //     .then((res) => {
+      //         console.log('添加一个用户', res);
+      //     });
+      //
+      // request
+      //     .put(
+      //         '/manangmentSystem/verify/failedDocument?did=%3Cdid%3E&auditId=%3CauditId%3E&reason=%3Creason%3E'
+      //     )
+      //     .then((res) => {
+      //         console.log('审核文件不通过', res);
+      //     });
+      //
+      // // 审核奖项不通过
+      // request
+      //     .request({
+      //         url: '/manangmentSystem/verify/failedPrize',
+      //         params: {
+      //             pizId: '00',
+      //             auditId: '111',
+      //             resaon: 'bbb',
+      //         },
+      //         method:'put'
+      //     })
+      //     .then((res) => {
+      //         console.log('审核奖项不通过', res);
+      //     });
+      //
+      // // 查询多个文件
+      // request
+      //     .get(
+      //         '/manangmentSystem/fileOperate/getAllFiles?pageNum=1&pageSize=5&uid=1&condition=1&fileType=11&major=计算机科学与技术&fileName=2019级Java课程设计&status=0'
+      //     )
+      //     .then((res) => {
+      //         console.log('查询多个文件', res);
+      //     });
+      //
+      // // 超级管理员添加管理员
+      // request
+      //     .get(
+      //         '/manangmentSystem/admin/addPowerUser?username=%3Cusername%3E&roleId=%3CroleId%3E&passwd=%3Cpasswd%3E&number=%3Cnumber%3E&identityCard=%3CidentityCard%3E&phoneNumber=%3CphoneNumber%3E&status=%3Cstatus%3E&sex=%3Csex%3E&clazz=%3Cclazz%3E&faculty=%3Cfaculty%3E&title=%3Ctitle%3E&grade=%3Cgrade%3E&major=%3Cmajor%3E&level=%3Clevel%3E&teachingResearch=%3CteachingResearch%3E'
+      //     )
+      //     .then((res) => {
+      //         console.log('超级管理员添加管理员', res);
+      //     });
+      //
+      // //管理员更改配色方案
+      request.put('/manangmentSystem/admin/updateColor?colorId=2').then((res) => {
+        console.log('管理员更改配色方案', res);
+      });
+      // 审核文件通过
+      request
+        .request({
+          url: '/manangmentSystem/vereify/successDocument',
+          params: { didList: '9,10', auditId: 2 },
+          method: 'put',
+        })
+        .then((res) => {
+          console.log('审核文件通过', res);
+        });
+      // 管理员删除用户信息
+      // request.delete('/manangmentSystem/admin/deleteUser?uid=2544').then((res) => {
+      //     console.log('管理员删除用户信息', res);
+      // });
+      // 删除单个或多个文件
+      request
+        .request({
+          url: '/manangmentSystem/fileOperate/deleteFile',
+          params: { uid: '001', did: '1' },
+          method: 'delete',
+        })
+        .then((res) => {
+          console.log('删除单个或多个文件', res);
+        });
+      // 审核奖项通过
+      request
+        .request({
+          url: '/manangmentSystem/verify/successPrize',
+          params: { pizIdList: '2', auditId: '2' },
+          method: 'put',
+        })
+        .then((res) => {
+          console.log('审核奖项通过', res);
+        });
+      // 查询单个奖项
+      request
+        .request({
+          url: '/manangmentSystem/prize/getOnePrize',
+          params: { pizId: '18' },
+          method: 'get',
+        })
+        .then((res) => {
+          console.log('查询单个奖项', res);
+        });
+      // 管理员修改用户信息
+      request.put('/manangmentSystem/admin/updateUser?uid=2239&username=张三').then((res) => {
+        console.log('管理员修改用户信息', res);
+      });
+      // 查询获奖人名字
+      request
+        .request({
+          url: '/manangmentSystem/prize/getPrizeWinner',
+          params: { username: '张三' },
+          method: 'get',
+        })
+        .then((res) => {
+          console.log('查询获奖人名字', res);
+        });
+      // 删除单个或多个奖项
+      request
+        .request({
+          url: '/manangmentSystem/prize/deletePrize',
+          params: { pizIdList: '17' },
+          method: 'delete',
+        })
+        .then((res) => {
+          console.log('删除单个或多个奖项', res);
+        });
+
+      // 查询学院列表
+      // request.get('/manangmentSystem/user/getCollegeList').then((res) => {
+      //     console.log('查询学院列表', res);
+      // });
+
+      // 获取单个文件详情
+      request
+        .request({
+          url: '/manangmentSystem/fileOperate/getOneFile',
+          params: { did: '8' },
+          method: 'get',
+        })
+        .then((res) => {
+          console.log('获取单个文件详情', res);
+        });
+
+      // 获取人才培养方案
+      request
+        .get(
+          '/manangmentSystem/fileOperate/getStudentFile?pageNum=%3CpageNum%3E&pageSize=%3CpageSize%3E&fileType=%3CfileType%3E&faculty=%3Cfaculty%3E&grade=%3Cgrade%3E&major=%3Cmajor%3E&level=%3Clevel%3E&uid=%3Cuid%3E'
+        )
+        .then((res) => {
+          console.log('获取人才培养方案', res);
+        });
+
+      // 修改密码
+      request
+        .request({
+          url: '/manangmentSystem/user/updatePw',
+          params: {
+            number: '001',
+            newPasswd: '123456',
+            oldPasswd: '123456',
+          },
+          method: 'put',
+        })
+        .then((res) => {
+          console.log('修改密码', res);
+        });
+
+      // // 查询个人信息
+      request.post('/manangmentSystem/user/getUser', { number: '001' }).then((res) => {
+        console.log('查询个人信息', res);
+      });
+
+      // // 查询图像
+      request
+        .request({
+          url: '/manangmentSystem/user/getHeadImage',
+          params: { uid: '1' },
+          method: 'get',
+        })
+        .then((res) => {
+          console.log('查询图像', res);
+        });
+
+      // 登录接口
+      // request
+      //     .post('/manangmentSystem/user/tologin?number=001&passwd=123456', {})
+      //     .then((res) => {
+      //         console.log('登录接口', res);
+      //     });
+
+      // 登录接口
+      request
+        .request({
+          method: 'POST',
+          url: '/manangmentSystem/user/tologin',
+          params: {
+            number: '001',
+            passwd: '123456',
+          },
+        })
+        .then((res) => {
+          console.log(res);
+        });
+
+      // 获取验证码
+      request.get('/manangmentSystem/user/getCode').then((res) => {
+        console.log('获取验证码', res);
+      });
+
+      // 下载奖项到处excal
+      request
+        .request({
+          url: '/manangmentSystem/downloadExcel',
+          method: 'GET',
+          params: {
+            faculty: '',
+            grade: '',
+            tid: '0',
+          },
+        })
+        .then((res) => {
+          console.log('下载excal', res);
+        });
+    </script>
+  </body>
+</html>

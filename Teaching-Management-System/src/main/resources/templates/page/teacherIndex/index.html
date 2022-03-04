@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeachertIndex</title>
+    <link rel="stylesheet" href="../../../static/css/commen/commenPageIndex.css" th:href="@{/css/commen/commenPageIndex.css}">
+    <link rel="stylesheet" href="../../../static/css/teacherIndex/index.css" th:href="@{/css/teacherIndex/index.css}">
+    <!-- <link rel="stylesheet" href="../../../static/css/teacherIndex/teachingProgram.css" th:href="@{/css/teacherIndex/teachingProgram.css}"> -->
+    <!-- <link rel="stylesheet" href="../../../static/css/commen/commenform.css" th:href="@{/css/commen/commenform.css}"> -->
+    <link rel="stylesheet" href="../../../static/css/commen/commenPageIndex.css"
+    th:href="@{/css/commen/commenPageIndex.css}">
+  <!-- <link rel="stylesheet" href="../../../static/css/studentIndex/index.css" th:href="@{/css/studentIndex/index.css}"> -->
+  <link rel="stylesheet" href="../../../static/css/teacherIndex/teaNew.css"
+    th:href="@{/css/teacherIndex/teaNew.css}">
+  <!-- <script src="../../../static/js/studentIndex/build/template.js"
+    th:src="@{/js/studentIndex/build/template.js}"></script> -->
+  <link rel="stylesheet" href="../../../static/css/studentIndex/iconfont-add/iconfont.css"
+    th:href="@{/css/studentIndex/iconfont-add/iconfont.css}">
+    <link rel="stylesheet" href="../../../static/css/commen/font-search/iconfont.css" th:href="@{/css/commen/font-search/iconfont.css}">
+
+  <link rel="stylesheet" href="../../../static/css/commen/commenform.css" th:src="@{/css/commen/commenform.css}">
+  <link rel="stylesheet" href="../../../static/css/commen/iconfont/iconfont.css" th:src="@{/css/commen/iconfont/iconfont.css}">
+  <link rel="stylesheet" href="../../../static/css/teacherIndex/teachingProgram.css" th:href="@{/css/teacherIndex/teachingProgram.css}">
+  <script type="text/javascript" src="../../../static/js/teacherIndex/build/template.js" th:src ="@{/js/teacherIndex/build}"></script>
+  <!-- <script type="text/javascript" src="../../../static/js/teacherIndex/tableTemplate.js"></script> -->
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <img src="../../../static/img/commen/logo.png" th:src="@{/img/commen/logo.png}" alt="" />
+        <span>河南财政金融学院教学管理系统</span>
+      </div>
+      <div class="header-right">
+        <div class="user-img">
+          <img src="../../../static/img/lee.png" th:src="@{/img/lee.png}" alt="" class="userImg"/>
+          <ul>
+            <li>Teacher</li>
+            <li>个人信息</li>
+            <li>我的信箱</li>
+            <li>修改密码</li>
+            <li>修改图像</li>
+            <li>退出登录</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="center"></div>
+    <div class="wrapper">
+      <div class="wrapper-nav">
+        <ul></ul>
+      </div>
+      <div class="wrapper-right">
+        <div class="wrapper-right-item show">首页</div>
+        <!-- 教学大纲 -->
+        <div class="wrapper-right-item">
+          <!--    author: 常博文
+                  date: 2022/  02 / 11
+                  function： 教学大纲
+                  part；教师模块
+                  version: 1.0
+          -->
+
+          <div class="teaching-program">
+            <div id="wrapper-tab">
+              <span class="tab-manage bgc">课程介绍</span>
+              <span class="tab-manage">理论教学大纲</span>
+              <span class="tab-manage">考试大纲</span>
+              <span class="tab-manage">实验教学大纲</span>
+            </div>
+            <div class="wrapper-contact-table" id="list">
+              <div class="hidden wrapper-div-table show">
+                <form action="" class="wrapper-contact-filter status-form outline-checkbox-form1">
+                  <div class="wrapper-filter-box">筛选状态:
+                    <input type="checkbox" class="outline-checkbox1" checked name="status" id="outline-green1" value="审核通过"><label for="outline-green1">审核通过</label>
+                    <input type="checkbox" class="outline-checkbox1" checked name="status" id="outline-red1" value="审核未通过"><label for="outline-red1">审核未通过</label>
+                    <input type="checkbox" class="outline-checkbox1" checked name="status" id="outline-yellow1" value="待审核"><label for="outline-yellow1">待审核</label>
+                  </div>
+                </form>
+                <form class="wrapper-table-button form-box" id="outline-form1">
+                  <div class="wrapper-query-drop academic">
+                    <label>学院：</label><span>计算机与信息技术学院</span>
+                  </div>
+                  <div class="my-form">
+                    <div class="wrapper-table-query">
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-grade">学期：</label>
+                        <select name="semester" id="wrapper-contact-grade" class="drop-single select">
+                          <option value="0">全部</option>
+                          <option value="1">2020-2021第1学期</option>
+                          <option value="2">2020-2021第2学期</option>
+                          <option value="3">2021-2022第1学期</option>
+                          <option value="4">2021-2022第2学期</option>
+                          <option value="5">2022-2023第1学期</option>
+                          <option value="6">2022-2023第2学期</option>
+                          <option value="7">2023-2024第1学期</option>
+                          <option value="8">2023-2024第2学期</option>
+                        </select>
+                      </div>
+                      <!-- 这里是学院接口，先伪装成专业接口 -->
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-major">专业：</label>
+                        <select name="major" id="wrapper-contact-major" class="drop-single faculty select">
+                        </select>
+                      </div>
+                        <!-- <div class="wrapper-query-drop">
+                          <span>专业：</span>
+                          <select name="major" id="wrapper-contact-major" class="drop-single">
+                            <option value="1">计算机科学与技术</option>
+                            <option value="2">计算机网络</option>
+                            <option value="3">数据科学与大数据技术</option>
+                          </select>
+                        </div> -->
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">年级：</label>
+                          <select name="grade" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="2017">2017级</option>
+                            <option value="2018">2018级</option>
+                            <option value="2019">2019级</option>
+                            <option value="2020">2020级</option>
+                            <option value="2021">2021级</option>
+                            <option value="2022">2022级</option>
+                            <option value="2023">2023级</option>
+                            <option value="2024">2024级</option>
+                            <option value="2025">2025级</option>
+                            <option value="2026">2026级</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">课程：</label>
+                          <select name="fileName" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="《电路基础》">《电路基础》</option>
+                            <option value="《数字逻辑》">《数字逻辑》</option>
+                            <option value="《编译原理》">《编译原理》</option>
+                            <option value="《软件工程》">《软件工程》</option>
+                            <option value="《数据结构》">《数据结构》</option>
+                            <option value="《计算机网络》">《计算机网络》</option>
+                            <option value="《集合论和图论》">《集合论和图论》</option>
+                            <option value="《C语言课程设计》">《C语言课程设计》</option>
+                            <option value="《计算机组成原理》">《计算机组成原理》</option>
+                            <option value="《数据结构与算法》">《数据结构与算法》</option>
+                            <option value="《面向对象程序设计》">《面向对象程序设计》</option>
+                            <option value="《操作系统原理及应用》">《操作系统原理及应用》</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">层次：</label>
+                          <select name="level" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                          </select>
+                        </div>
+                          <div class="wrapper-operation">
+                            <input type="button" value="查询" class="operation-btn" id="outline-btn1">
+                            <input type="button" value="上传" class="operation-btn load-button">
+                          </div>
+                    </div>
+
+                </div>
+                </form>
+                <table class="wrapper-table">
+                  <thead>
+                    <th>序号</th>
+                    <th>学期</th>
+                    <th>学院</th>
+                    <th>专业</th>
+                    <th>年级</th>
+                    <th>课程名称</th>
+                    <th>层次</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </thead>
+                  <tbody id="checkBox" class="wrapper-table-tbody tea-class-tbody">
+
+                  </tbody>
+                </table>
+                <div class="pageation">
+                  <div class="pageation-info">
+                      <button  class="batch-button">最前页</button>
+                      <button class="batch-button">上一页</button>
+                      <button class="batch-button">当前第1页</button>
+                      <button class="batch-button">下一页</button>
+                      <button class="batch-button">最末页</button>
+                  </div>
+                </div>
+          <!-- -------------------------------------------以下是弹出层---------------------------------------- -->
+          <div class="outer-box hidden">
+            <div class="my-form pop-window">
+              <div class="pop-back pop-back-active">返回</div>
+              <form action="服务器端程序" class="pop-form">
+                <div class="form-item outline-layer-span">
+                  <label for="">学院：</label>
+                  <span>计算机与信息技术</span>
+                </div>
+                <div class="form-item outline-layer-span">
+                  <label for="">类型：</label>
+                  <span>课程介绍</span>
+                </div>
+                <div class="form-item outline-layer">
+                  <label for="">学期：</label>
+                  <select name="institute" id="" class="item-select select">
+                    <option value="请选择学期">请选择学期</option>
+                    <option value="1">2020-2021第1学期</option>
+                    <option value="2">2020-2021第2学期</option>
+                    <option value="3">2021-2022第1学期</option>
+                    <option value="4">2021-2022第2学期</option>
+                    <option value="5">2022-2023第1学期</option>
+                    <option value="6">2022-2023第2学期</option>
+                    <option value="7">2023-2024第1学期</option>
+                    <option value="8">2023-2024第2学期</option>
+                  </select>
+                </div>
+                <div class="form-item outline-layer">
+                  <label for="">年级：</label>
+                  <select name="institute" id="" class="item-select select">
+                    <option value="请选择年级">请选择年级</option>
+                    <option value="2017">2017级</option>
+                    <option value="2018">2018级</option>
+                    <option value="2019">2019级</option>
+                    <option value="2020">2020级</option>
+                    <option value="2021">2021级</option>
+                    <option value="2022">2022级</option>
+                    <option value="2023">2023级</option>
+                    <option value="2024">2024级</option>
+                    <option value="2025">2025级</option>
+                  </select>
+                </div>
+                <div class="form-item outline-layer">
+                  <label for="">专业：</label>
+                  <select name="institute" id="" class="item-select select faculty"></select>
+                </div>
+                <div class="form-item outline-layer">
+                  <label for="">课程：</label>
+                  <select name="institute" id="" class="item-select select"></select>
+                </div>
+                <div class="form-item outline-layer">
+                  <label for="">层次：</label>
+                  <select name="institute" id="" class="item-select select">
+                    <option value="请选择层次">请选择层次</option>
+                    <option value="0">本科</option>
+                    <option value="1">专科</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <input type="file" class="upload-file-files">
+                  <div class="upload-doc">
+                    <div class="text-button">
+                      <span>文件上传：</span>
+                      <input type="button" value="点击此处上传" class="upload-file-btn">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ---------------------------------------------以上是弹出层---------------------------------- -->
+
+        </div>
+              <div class="hidden wrapper-div-table">
+                <form action="" class="wrapper-contact-filter status-form outline-checkbox-form2">
+                  <div class="wrapper-filter-box">筛选状态:
+                    <input type="checkbox" class="outline-checkbox2" checked name="status" id="outline-green2" value="审核通过"><label for="outline-green2">审核通过</label>
+                    <input type="checkbox" class="outline-checkbox2" checked name="status" id="outline-red2" value="审核未通过"><label for="outline-red2">审核未通过</label>
+                    <input type="checkbox" class="outline-checkbox2" checked name="status" id="outline-yellow2" value="待审核"><label for="outline-yellow2">待审核</label>
+                  </div>
+                </form>
+                <form class="wrapper-table-button form-box" id="outline-form2">
+                  <div class="wrapper-query-drop academic">
+                    <label>学院：</label><span>计算机与信息技术学院</span>
+                  </div>
+                  <div class="my-form">
+                    <div class="wrapper-table-query">
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-grade">学期：</label>
+                        <select name="semester" id="wrapper-contact-grade" class="drop-single select">
+                          <option value="0">全部</option>
+                          <option value="1">2020-2021第1学期</option>
+                          <option value="2">2020-2021第2学期</option>
+                          <option value="3">2021-2022第1学期</option>
+                          <option value="4">2021-2022第2学期</option>
+                          <option value="5">2022-2023第1学期</option>
+                          <option value="6">2022-2023第2学期</option>
+                          <option value="7">2023-2024第1学期</option>
+                          <option value="8">2023-2024第2学期</option>
+                        </select>
+                      </div>
+                      <!-- 这里是学院接口，先伪装成专业接口 -->
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-major">专业：</label>
+                        <select name="major" id="wrapper-contact-major" class="drop-single faculty select">
+                        </select>
+                      </div>
+                        <!-- <div class="wrapper-query-drop">
+                          <span>专业：</span>
+                          <select name="major" id="wrapper-contact-major" class="drop-single">
+                            <option value="1">计算机科学与技术</option>
+                            <option value="2">计算机网络</option>
+                            <option value="3">数据科学与大数据技术</option>
+                          </select>
+                        </div> -->
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">年级：</label>
+                          <select name="grade" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="2017">2017级</option>
+                            <option value="2018">2018级</option>
+                            <option value="2019">2019级</option>
+                            <option value="2020">2020级</option>
+                            <option value="2021">2021级</option>
+                            <option value="2022">2022级</option>
+                            <option value="2023">2023级</option>
+                            <option value="2024">2024级</option>
+                            <option value="2025">2025级</option>
+                            <option value="2026">2026级</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">课程：</label>
+                          <select name="fileName" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="《电路基础》">《电路基础》</option>
+                            <option value="《数字逻辑》">《数字逻辑》</option>
+                            <option value="《编译原理》">《编译原理》</option>
+                            <option value="《软件工程》">《软件工程》</option>
+                            <option value="《数据结构》">《数据结构》</option>
+                            <option value="《计算机网络》">《计算机网络》</option>
+                            <option value="《集合论和图论》">《集合论和图论》</option>
+                            <option value="《C语言课程设计》">《C语言课程设计》</option>
+                            <option value="《计算机组成原理》">《计算机组成原理》</option>
+                            <option value="《数据结构与算法》">《数据结构与算法》</option>
+                            <option value="《面向对象程序设计》">《面向对象程序设计》</option>
+                            <option value="《操作系统原理及应用》">《操作系统原理及应用》</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">层次：</label>
+                          <select name="level" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                          </select>
+                        </div>
+                          <div class="wrapper-operation">
+                            <input type="button" value="查询" class="operation-btn" id="outline-btn2">
+                            <input type="button" value="上传" class="operation-btn load-button">
+                          </div>
+                    </div>
+
+                </div>
+                </form>
+                <table class="wrapper-table">
+                  <thead>
+                    <th>序号</th>
+                    <th>学期</th>
+                    <th>学院</th>
+                    <th>专业</th>
+                    <th>年级</th>
+                    <th>课程名称</th>
+                    <th>层次</th>
+                    <th>状态</th>
+                    <!-- <th>文件详情</th> -->
+                    <th>操作</th>
+                  </thead>
+                  <tbody id="checkBox" class="wrapper-table-tbody tea-class-tbody">
+                    <!-- <tr>
+                      <td>1</td>
+                      <td>2020-2021第1学期</td>
+                      <td>计算机与信息技术学院</td>
+                      <td>2017级</td>
+                      <td>计算机科学与技术</td>
+                      <td>《电子技术》</td>
+                      <td>本科</td>
+                      <td>审核不通过</td>
+                      <td><a href="" class="skip">详情</a></td>
+                      <td><input type="button" class="wrapper-tbody-reupload" value="重新上传"></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+                <div class="pageation">
+                  <div class="pageation-info">
+                      <button class="batch-button">最前页</button>
+                      <button class="batch-button">上一页</button>
+                      <button class="batch-button">当前第1页</button>
+                      <button class="batch-button">下一页</button>
+                      <button class="batch-button">最末页</button>
+                  </div>
+                </div>
+                          <!-- -------------------------------------------以下是弹出层---------------------------------------- -->
+                          <div class="outer-box hidden">
+                            <div class="my-form pop-window">
+                              <div class="pop-back pop-back-active">返回</div>
+                              <form action="服务器端程序" class="pop-form">
+                                <div class="form-item outline-layer-span">
+                                  <label for="">学院：</label>
+                                  <span>计算机与信息技术</span>
+                                </div>
+                                <div class="form-item outline-layer-span">
+                                  <label for="">类型：</label>
+                                  <span>理论教学大纲</span>
+                                </div>
+                                <div class="form-item outline-layer">
+                                  <label for="">学期：</label>
+                                  <select name="institute" id="" class="item-select select">
+                                    <option value="请选择学期">请选择学期</option>
+                                    <option value="1">2020-2021第1学期</option>
+                                    <option value="2">2020-2021第2学期</option>
+                                    <option value="3">2021-2022第1学期</option>
+                                    <option value="4">2021-2022第2学期</option>
+                                    <option value="5">2022-2023第1学期</option>
+                                    <option value="6">2022-2023第2学期</option>
+                                    <option value="7">2023-2024第1学期</option>
+                                    <option value="8">2023-2024第2学期</option>
+                                  </select>
+                                </div>
+                                <div class="form-item outline-layer">
+                                  <label for="">年级：</label>
+                                  <select name="institute" id="" class="item-select select">
+                                    <option value="请选择学期">请选择年级</option>
+                                    <option value="2017">2017级</option>
+                                    <option value="2018">2018级</option>
+                                    <option value="2019">2019级</option>
+                                    <option value="2020">2020级</option>
+                                    <option value="2021">2021级</option>
+                                    <option value="2022">2022级</option>
+                                    <option value="2023">2023级</option>
+                                    <option value="2024">2024级</option>
+                                    <option value="2025">2025级</option>
+                                  </select>
+                                </div>
+                                <div class="form-item outline-layer">
+                                  <label for="">专业：</label>
+                                  <select name="institute" id="" class="item-select select faculty"></select>
+                                </div>
+                                <div class="form-item outline-layer">
+                                  <label for="">课程：</label>
+                                  <select name="institute" id="" class="item-select select"></select>
+                                </div>
+                                <div class="form-item outline-layer">
+                                  <label for="">层次：</label>
+                                  <select name="institute" id="" class="item-select select">
+                                    <option value="请选择层次">请选择层次</option>
+                                    <option value="0">本科</option>
+                                    <option value="1">专科</option>
+                                  </select>
+                                </div>
+                                <div class="form-item">
+                                  <input type="file" class="upload-file-files">
+                                  <div class="upload-doc">
+                                    <div class="text-button">
+                                      <span>文件上传：</span>
+                                      <input type="button" value="点击此处上传" class="upload-file-btn">
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+          <!-- ---------------------------------------------以上是弹出层---------------------------------- -->
+        </div>
+              <div class="hidden wrapper-div-table">
+                <form action="" class="wrapper-contact-filter status-form outline-checkbox-form3">
+                  <div class="wrapper-filter-box">筛选状态:
+                    <input type="checkbox" class="outline-checkbox3" checked name="status" id="outline-green3" value="审核通过"><label for="outline-green3">审核通过</label>
+                    <input type="checkbox" class="outline-checkbox3" checked name="status" id="outline-red3" value="审核未通过"><label for="outline-red3">审核未通过</label>
+                    <input type="checkbox" class="outline-checkbox3" checked name="status" id="outline-yellow3" value="待审核"><label for="outline-yellow3">待审核</label>
+                  </div>
+                </form>
+                <form class="wrapper-table-button form-box" id="outline-form3">
+                  <div class="wrapper-query-drop academic">
+                    <label>学院：</label><span>计算机与信息技术学院</span>
+                  </div>
+                  <div class="my-form">
+                    <div class="wrapper-table-query">
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-grade">学期：</label>
+                        <select name="semester" id="wrapper-contact-grade" class="drop-single select">
+                          <option value="0">全部</option>
+                          <option value="1">2020-2021第1学期</option>
+                          <option value="2">2020-2021第2学期</option>
+                          <option value="3">2021-2022第1学期</option>
+                          <option value="4">2021-2022第2学期</option>
+                          <option value="5">2022-2023第1学期</option>
+                          <option value="6">2022-2023第2学期</option>
+                          <option value="7">2023-2024第1学期</option>
+                          <option value="8">2023-2024第2学期</option>
+                        </select>
+                      </div>
+                      <!-- 这里是学院接口，先伪装成专业接口 -->
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-major">专业：</label>
+                        <select name="major" id="wrapper-contact-major" class="drop-single faculty select">
+                        </select>
+                      </div>
+                        <!-- <div class="wrapper-query-drop">
+                          <span>专业：</span>
+                          <select name="major" id="wrapper-contact-major" class="drop-single">
+                            <option value="1">计算机科学与技术</option>
+                            <option value="2">计算机网络</option>
+                            <option value="3">数据科学与大数据技术</option>
+                          </select>
+                        </div> -->
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">年级：</label>
+                          <select name="grade" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="2017">2017级</option>
+                            <option value="2018">2018级</option>
+                            <option value="2019">2019级</option>
+                            <option value="2020">2020级</option>
+                            <option value="2021">2021级</option>
+                            <option value="2022">2022级</option>
+                            <option value="2023">2023级</option>
+                            <option value="2024">2024级</option>
+                            <option value="2025">2025级</option>
+                            <option value="2026">2026级</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">课程：</label>
+                          <select name="fileName" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="《电路基础》">《电路基础》</option>
+                            <option value="《数字逻辑》">《数字逻辑》</option>
+                            <option value="《编译原理》">《编译原理》</option>
+                            <option value="《软件工程》">《软件工程》</option>
+                            <option value="《数据结构》">《数据结构》</option>
+                            <option value="《计算机网络》">《计算机网络》</option>
+                            <option value="《集合论和图论》">《集合论和图论》</option>
+                            <option value="《C语言课程设计》">《C语言课程设计》</option>
+                            <option value="《计算机组成原理》">《计算机组成原理》</option>
+                            <option value="《数据结构与算法》">《数据结构与算法》</option>
+                            <option value="《面向对象程序设计》">《面向对象程序设计》</option>
+                            <option value="《操作系统原理及应用》">《操作系统原理及应用》</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">层次：</label>
+                          <select name="level" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                          </select>
+                        </div>
+                          <div class="wrapper-operation">
+                            <input type="button" value="查询" class="operation-btn" id="outline-btn3">
+                            <input type="button" value="上传" class="operation-btn load-button">
+                          </div>
+                    </div>
+
+                </div>
+                </form>
+                <table class="wrapper-table">
+                  <thead>
+                    <th>序号</th>
+                    <th>学期</th>
+                    <th>学院</th>
+                    <th>专业</th>
+                    <th>年级</th>
+                    <th>课程名称</th>
+                    <th>层次</th>
+                    <th>状态</th>
+                    <!-- <th>文件详情</th> -->
+                    <th>操作</th>
+                  </thead>
+                  <tbody id="checkBox" class="wrapper-table-tbody tea-class-tbody">
+                    <!-- <tr>
+                      <td>1</td>
+                      <td>2020-2021第1学期</td>
+                      <td>计算机与信息技术学院</td>
+                      <td>2017级</td>
+                      <td>计算机科学与技术</td>
+                      <td>《计算机组成原理》</td>
+                      <td>本科</td>
+                      <td>审核不通过</td>
+                      <td><a href="" class="skip">详情</a></td>
+                      <td><input type="button" class="wrapper-tbody-reupload" value="重新上传"></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+                <div class="pageation">
+                  <div class="pageation-info">
+                      <button class="batch-button">最前页</button>
+                      <button class="batch-button">上一页</button>
+                      <button class="batch-button">当前第1页</button>
+                      <button class="batch-button">下一页</button>
+                      <button class="batch-button">最末页</button>
+                  </div>
+                </div>
+<!-- -------------------------------------------以下是弹出层---------------------------------------- -->
+                <div class="outer-box hidden">
+                  <div class="my-form pop-window">
+                    <div class="pop-back pop-back-active">返回</div>
+                    <form action="服务器端程序" class="pop-form">
+                      <div class="form-item outline-layer-span">
+                        <label for="">学院：</label>
+                        <span>计算机与信息技术</span>
+                      </div>
+                      <div class="form-item outline-layer-span">
+                        <label for="">类型：</label>
+                        <span>考试大纲</span>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">学期：</label>
+                        <select name="institute" id="" class="item-select select">
+                          <option value="请选择学期">请选择学期</option>
+                          <option value="1">2020-2021第1学期</option>
+                          <option value="2">2020-2021第2学期</option>
+                          <option value="3">2021-2022第1学期</option>
+                          <option value="4">2021-2022第2学期</option>
+                          <option value="5">2022-2023第1学期</option>
+                          <option value="6">2022-2023第2学期</option>
+                          <option value="7">2023-2024第1学期</option>
+                          <option value="8">2023-2024第2学期</option>
+                        </select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">年级：</label>
+                        <select name="institute" id="" class="item-select select">
+                          <option value="请选择年级">请选择年级</option>
+                          <option value="2017">2017级</option>
+                          <option value="2018">2018级</option>
+                          <option value="2019">2019级</option>
+                          <option value="2020">2020级</option>
+                          <option value="2021">2021级</option>
+                          <option value="2022">2022级</option>
+                          <option value="2023">2023级</option>
+                          <option value="2024">2024级</option>
+                          <option value="2025">2025级</option>
+                        </select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">专业：</label>
+                        <select name="institute" id="" class="item-select select faculty"></select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">课程：</label>
+                        <select name="institute" id="" class="item-select select"></select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">层次：</label>
+                        <select name="institute" id="" class="item-select select">
+                          <option value="请选择层次">请选择层次</option>
+                          <option value="0">本科</option>
+                          <option value="1">专科</option>
+                        </select>
+                      </div>
+                      <div class="form-item">
+                        <input type="file" class="upload-file-files">
+                        <div class="upload-doc">
+                          <div class="text-button">
+                            <span>文件上传：</span>
+                            <input type="button" value="点击此处上传" class="upload-file-btn">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+          <!-- ---------------------------------------------以上是弹出层---------------------------------- -->
+        </div>
+              <div class="hidden wrapper-div-table">
+                <form action="" class="wrapper-contact-filter status-form outline-checkbox-form4">
+                  <div class="wrapper-filter-box">筛选状态:
+                    <input type="checkbox" class="outline-checkbox4" checked name="status" id="outline-green4" value="审核通过"><label for="outline-green4">审核通过</label>
+                    <input type="checkbox" class="outline-checkbox4" checked name="status" id="outline-red4" value="审核未通过"><label for="outline-red4">审核未通过</label>
+                    <input type="checkbox" class="outline-checkbox4" checked name="status" id="outline-yellow4" value="待审核"><label for="outline-yellow4">待审核</label>
+                  </div>
+                </form>
+                <form class="wrapper-table-button form-box" id="outline-form4">
+                  <div class="wrapper-query-drop academic">
+                    <label>学院：</label><span>计算机与信息技术学院</span>
+                  </div>
+                  <div class="my-form">
+                    <div class="wrapper-table-query">
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-grade">学期：</label>
+                        <select name="semester" id="wrapper-contact-grade" class="drop-single select">
+                          <option value="0">全部</option>
+                          <option value="1">2020-2021第1学期</option>
+                          <option value="2">2020-2021第2学期</option>
+                          <option value="3">2021-2022第1学期</option>
+                          <option value="4">2021-2022第2学期</option>
+                          <option value="5">2022-2023第1学期</option>
+                          <option value="6">2022-2023第2学期</option>
+                          <option value="7">2023-2024第1学期</option>
+                          <option value="8">2023-2024第2学期</option>
+                        </select>
+                      </div>
+                      <!-- 这里是学院接口，先伪装成专业接口 -->
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-major">专业：</label>
+                        <select name="major" id="wrapper-contact-major" class="drop-single faculty select">
+                        </select>
+                      </div>
+                        <!-- <div class="wrapper-query-drop">
+                          <span>专业：</span>
+                          <select name="major" id="wrapper-contact-major" class="drop-single">
+                            <option value="1">计算机科学与技术</option>
+                            <option value="2">计算机网络</option>
+                            <option value="3">数据科学与大数据技术</option>
+                          </select>
+                        </div> -->
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">年级：</label>
+                          <select name="grade" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="2017">2017级</option>
+                            <option value="2018">2018级</option>
+                            <option value="2019">2019级</option>
+                            <option value="2020">2020级</option>
+                            <option value="2021">2021级</option>
+                            <option value="2022">2022级</option>
+                            <option value="2023">2023级</option>
+                            <option value="2024">2024级</option>
+                            <option value="2025">2025级</option>
+                            <option value="2026">2026级</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">课程：</label>
+                          <select name="fileName" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="《电路基础》">《电路基础》</option>
+                            <option value="《数字逻辑》">《数字逻辑》</option>
+                            <option value="《编译原理》">《编译原理》</option>
+                            <option value="《软件工程》">《软件工程》</option>
+                            <option value="《数据结构》">《数据结构》</option>
+                            <option value="《计算机网络》">《计算机网络》</option>
+                            <option value="《集合论和图论》">《集合论和图论》</option>
+                            <option value="《C语言课程设计》">《C语言课程设计》</option>
+                            <option value="《计算机组成原理》">《计算机组成原理》</option>
+                            <option value="《数据结构与算法》">《数据结构与算法》</option>
+                            <option value="《面向对象程序设计》">《面向对象程序设计》</option>
+                            <option value="《操作系统原理及应用》">《操作系统原理及应用》</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">层次：</label>
+                          <select name="level" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                          </select>
+                        </div>
+                          <div class="wrapper-operation">
+                            <input type="button" value="查询" class="operation-btn" id="outline-btn4">
+                            <input type="button" value="上传" class="operation-btn load-button">
+                          </div>
+                    </div>
+
+                </div>
+                </form>
+                <table class="wrapper-table">
+                  <thead>
+                    <th>序号</th>
+                    <th>学期</th>
+                    <th>学院</th>
+                    <th>专业</th>
+                    <th>年级</th>
+                    <th>课程名称</th>
+                    <th>层次</th>
+                    <th>状态</th>
+                    <!-- <th>文件详情</th> -->
+                    <th>操作</th>
+                  </thead>
+                  <tbody id="checkBox" class="wrapper-table-tbody tea-class-tbody">
+                    <!-- <tr>
+                      <td>1</td>
+                      <td>2020-2021第1学期</td>
+                      <td>计算机与信息技术学院</td>
+                      <td>2017级</td>
+                      <td>计算机科学与技术</td>
+                      <td>《数据结构》</td>
+                      <td>本科</td>
+                      <td>审核不通过</td>
+                      <td><a href="" class="skip">详情</a></td>
+                      <td><input type="button" class="wrapper-tbody-reupload" value="重新上传"></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+                <div class="pageation">
+                  <div class="pageation-info">
+                      <button class="batch-button">最前页</button>
+                      <button class="batch-button">上一页</button>
+                      <button class="batch-button">当前第1页</button>
+                      <button class="batch-button">下一页</button>
+                      <button class="batch-button">最末页</button>
+                  </div>
+                </div>
+<!-- -------------------------------------------以下是弹出层---------------------------------------- -->
+                <div class="outer-box hidden">
+                  <div class="my-form pop-window">
+                    <div class="pop-back pop-back-active">返回</div>
+                    <form action="服务器端程序" class="pop-form">
+                      <div class="form-item outline-layer-span">
+                        <label for="">学院：</label>
+                        <span>计算机与信息技术</span>
+                      </div>
+                      <div class="form-item outline-layer-span">
+                        <label for="">类型：</label>
+                        <span>理论教学大纲</span>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">学期：</label>
+                        <select name="institute" id="" class="item-select select">
+                          <option value="请选择学期">请选择学期</option>
+                          <option value="1">2020-2021第1学期</option>
+                          <option value="2">2020-2021第2学期</option>
+                          <option value="3">2021-2022第1学期</option>
+                          <option value="4">2021-2022第2学期</option>
+                          <option value="5">2022-2023第1学期</option>
+                          <option value="6">2022-2023第2学期</option>
+                          <option value="7">2023-2024第1学期</option>
+                          <option value="8">2023-2024第2学期</option>
+                        </select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">年级：</label>
+                        <select name="institute" id="" class="item-select select">
+                          <option value="请选择年级">请选择年级</option>
+                          <option value="2017">2017级</option>
+                          <option value="2018">2018级</option>
+                          <option value="2019">2019级</option>
+                          <option value="2020">2020级</option>
+                          <option value="2021">2021级</option>
+                          <option value="2022">2022级</option>
+                          <option value="2023">2023级</option>
+                          <option value="2024">2024级</option>
+                          <option value="2025">2025级</option>
+                        </select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">专业：</label>
+                        <select name="institute" id="" class="item-select select faculty"></select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">课程：</label>
+                        <select name="institute" id="" class="item-select select"></select>
+                      </div>
+                      <div class="form-item outline-layer">
+                        <label for="">层次：</label>
+                        <select name="institute" id="" class="item-select select">
+                          <option value="请选择层次">请选择层次</option>
+                          <option value="0">本科</option>
+                          <option value="1">专科</option>
+                        </select>
+                      </div>
+                      <div class="form-item">
+                        <input type="file" class="upload-file-files">
+                        <div class="upload-doc">
+                          <div class="text-button">
+                            <span>文件上传：</span>
+                            <input type="button" value="点击此处上传" class="upload-file-btn">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+          <!-- ---------------------------------------------以上是弹出层---------------------------------- -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- 教学进度计划表 -->
+        <div class="wrapper-right-item">
+          <!--    author: 常博文
+                  date: 2022/  02 / 14
+                  function： 教学进度计划表
+                  part；教师模块
+                  version: 1.0
+          -->
+            <div class="wrapper-contact-table" id="list">
+              <div class="hidden wrapper-div-table show">
+                <form action="" class="wrapper-contact-filter status-form plan-checkbox-form">
+                  <div class="wrapper-filter-box">筛选状态:
+                    <input type="checkbox" class="plan-checkbox" checked name="status" id="plan-green" value="审核通过"><label for="plan-green">审核通过</label>
+                    <input type="checkbox" class="plan-checkbox" checked name="status" id="plan-red" value="审核未通过"><label for="plam-red">审核未通过</label>
+                    <input type="checkbox" class="plan-checkbox" checked name="status" id="plan-yellow" value="待审核"><label for="plan-yellow">待审核</label>
+                  </div>
+                </form>
+                <form class="wrapper-table-button form-box" id="plan-form">
+                  <div class="wrapper-query-drop academic">
+                    <label>学院：</label><span>计算机与信息技术学院</span>
+                  </div>
+                  <div class="my-form">
+                    <div class="wrapper-table-query">
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-grade">学期：</label>
+                        <select name="semester" id="wrapper-contact-grade" class="drop-single select">
+                          <option value="0">全部</option>
+                          <option value="1">2020-2021第1学期</option>
+                          <option value="2">2020-2021第2学期</option>
+                          <option value="3">2021-2022第1学期</option>
+                          <option value="4">2021-2022第2学期</option>
+                          <option value="5">2022-2023第1学期</option>
+                          <option value="6">2022-2023第2学期</option>
+                          <option value="7">2023-2024第1学期</option>
+                          <option value="8">2023-2024第2学期</option>
+                        </select>
+                      </div>
+                      <!-- 这里是学院接口，先伪装成专业接口 -->
+                      <div class="wrapper-query-drop">
+                        <label for="wrapper-contact-major">专业：</label>
+                        <select name="major" id="wrapper-contact-major" class="drop-single faculty select">
+                        </select>
+                      </div>
+                        <!-- <div class="wrapper-query-drop">
+                          <span>专业：</span>
+                          <select name="major" id="wrapper-contact-major" class="drop-single">
+                            <option value="1">计算机科学与技术</option>
+                            <option value="2">计算机网络</option>
+                            <option value="3">数据科学与大数据技术</option>
+                          </select>
+                        </div> -->
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">年级：</label>
+                          <select name="grade" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="2017">2017级</option>
+                            <option value="2018">2018级</option>
+                            <option value="2019">2019级</option>
+                            <option value="2020">2020级</option>
+                            <option value="2021">2021级</option>
+                            <option value="2022">2022级</option>
+                            <option value="2023">2023级</option>
+                            <option value="2024">2024级</option>
+                            <option value="2025">2025级</option>
+                            <option value="2026">2026级</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">课程：</label>
+                          <select name="fileName" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="《电路基础》">《电路基础》</option>
+                            <option value="《数字逻辑》">《数字逻辑》</option>
+                            <option value="《编译原理》">《编译原理》</option>
+                            <option value="《软件工程》">《软件工程》</option>
+                            <option value="《数据结构》">《数据结构》</option>
+                            <option value="《计算机网络》">《计算机网络》</option>
+                            <option value="《集合论和图论》">《集合论和图论》</option>
+                            <option value="《C语言课程设计》">《C语言课程设计》</option>
+                            <option value="《计算机组成原理》">《计算机组成原理》</option>
+                            <option value="《数据结构与算法》">《数据结构与算法》</option>
+                            <option value="《面向对象程序设计》">《面向对象程序设计》</option>
+                            <option value="《操作系统原理及应用》">《操作系统原理及应用》</option>
+                          </select>
+                        </div>
+                        <div class="wrapper-query-drop">
+                          <label for="wrapper-contact-major">层次：</label>
+                          <select name="level" id="wrapper-contact-major" class="drop-single select">
+                            <option value="全部">全部</option>
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                          </select>
+                        </div>
+                          <div class="wrapper-operation">
+                            <input type="button" value="查询" class="operation-btn" id="plan-btn">
+                            <input type="button" value="上传" class="operation-btn load-button">
+                          </div>
+                    </div>
+
+                </div>
+                </form>
+                <table class="wrapper-table">
+                  <thead>
+                    <th>序号</th>
+                    <th>学期</th>
+                    <th>学院</th>
+                    <th>专业</th>
+                    <th>年级</th>
+                    <th>课程名称</th>
+                    <th>层次</th>
+                    <th>状态</th>
+                    <!-- <th>文件详情</th> -->
+                    <th>操作</th>
+                  </thead>
+                  <tbody id="checkBox" class="wrapper-table-tbody tea-class-tbody">
+                    
+                  </tbody>
+                </table>
+                <div class="pageation">
+                  <div class="pageation-info">
+                      <button class="batch-button">最前页</button>
+                      <button class="batch-button">上一页</button>
+                      <button class="batch-button">当前第1页</button>
+                      <button class="batch-button">下一页</button>
+                      <button class="batch-button">最末页</button>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+<!-- -------------------------------------------以下是弹出层---------------------------------------- -->
+            <div class="outer-box hidden">
+              <div class="my-form pop-window" id="clean">
+                <div class="pop-back pop-back-active">返回</div>
+                <form action="服务器端程序" class="pop-form">
+                  <div class="form-item outline-layer-span">
+                    <label for="">学院：</label>
+                    <span>计算机与信息技术</span>
+                  </div>
+                  <div class="form-item outline-layer-span">
+                    <label for="">类型：</label>
+                    <span>教学进度计划表</span>
+                  </div>
+                  <div class="form-item outline-layer">
+                    <label for="">学期：</label>
+                    <select name="institute" id="" class="item-select select">
+                      <option value="请选择学期">请选择学期</option>
+                      <option value="1">2020-2021第1学期</option>
+                      <option value="2">2020-2021第2学期</option>
+                      <option value="3">2021-2022第1学期</option>
+                      <option value="4">2021-2022第2学期</option>
+                      <option value="5">2022-2023第1学期</option>
+                      <option value="6">2022-2023第2学期</option>
+                      <option value="7">2023-2024第1学期</option>
+                      <option value="8">2023-2024第2学期</option>
+                    </select>
+                  </div>
+                  <div class="form-item outline-layer">
+                    <label for="">年级：</label>
+                    <select name="institute" id="" class="item-select select">
+                      <option value="全部">全部</option>
+                      <option value="2017">2017级</option>
+                      <option value="2018">2018级</option>
+                      <option value="2019">2019级</option>
+                      <option value="2020">2020级</option>
+                      <option value="2021">2021级</option>
+                      <option value="2022">2022级</option>
+                      <option value="2023">2023级</option>
+                      <option value="2024">2024级</option>
+                      <option value="2025">2025级</option>
+                    </select>
+                  </div>
+                  <div class="form-item outline-layer">
+                    <label for="">专业：</label>
+                    <select name="institute" id="" class="item-select select faculty"></select>
+                  </div>
+                  <div class="form-item outline-layer">
+                    <label for="">课程：</label>
+                    <select name="institute" id="" class="item-select select"></select>
+                  </div>
+                  <div class="form-item outline-layer">
+                    <label for="">层次：</label>
+                    <select name="institute" id="" class="item-select select">
+                      <option value="请选择层次">请选择层次</option>
+                      <option value="0">本科</option>
+                      <option value="1">专科</option>
+                    </select>
+                  </div>
+                  <div class="form-item">
+                    <input type="file" class="upload-file-files">
+                    <div class="upload-doc">
+                      <div class="text-button">
+                        <span>文件上传：</span>
+                        <input type="button" value="点击此处上传" class="upload-file-btn">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          <!-- ---------------------------------------------以上是弹出层---------------------------------- -->
+
+        </div>
+        <!-- 人才培养方案 -->
+        <div class="wrapper-right-item">
+          <!--  module：人才培养方案模块
+                function：1.支持查找、下载各年级人才培养方案的文档 2.需要跳转详情页查看文档具体内容
+                author: 洪炜婷
+                version：1.0
+                date: 2022/02/13 -->
+          <div class="wrapper-contact-table" id="list">
+            <div class="hidden wrapper-div-table show">
+              <form action="服务器端程序" class="wrapper-contact-filter personnel-status-form">
+                <div class="wrapper-filter-box">
+                  <span>筛选状态:</span>
+                  <input type="checkbox" class="personnel-status-checkbox" value="审核通过" checked name="status" id="doc-pass">
+                  <label for="doc-pass">审核通过</label>
+                  <input type="checkbox" class="personnel-status-checkbox" value="审核未通过" checked name="status" id="doc-not-pass">
+                  <label for="doc-not-pass">审核未通过</label>
+                  <input type="checkbox" class="personnel-status-checkbox" value="待审核" checked name="status" id="doc-waiting">
+                  <label for="doc-waiting">待审核</label>
+                </div>
+              </form>
+              <form class="wrapper-table-button form-box tea-personnel-form">
+                <div class="my-form">
+                  <div class="wrapper-query-drop academic">
+                    <label>学院：</label><span>计算机与信息技术学院</span>
+                  </div>
+                  <div class="wrapper-table-query">
+                    <!-- 这里是学院接口，先伪装成专业接口 -->
+                    <div class="wrapper-query-drop">
+                      <label>专业：</label>
+                      <select name="personnel-doc-major" id="wrapper-contact-major" class="drop-single faculty select">
+                      </select>
+                    </div>
+                    <div class="wrapper-query-drop">
+                      <label>年级：</label>
+                      <select name="personnerl-doc-grade" id="wrapper-contact-major" class="drop-single select">
+                        <option value="全部">全部</option>
+                        <option value="2017">2017级</option>
+                        <option value="2018">2018级</option>
+                        <option value="2019">2019级</option>
+                        <option value="2020">2020级</option>
+                        <option value="2021">2021级</option>
+                        <option value="2022">2022级</option>
+                        <option value="2023">2023级</option>
+                        <option value="2024">2024级</option>
+                        <option value="2025">2025级</option>
+                      </select>
+                    </div>
+                    <div class="wrapper-query-drop">
+                      <label>层次：</label>
+                      <select name="personnel-doc-level" id="wrapper-contact-major" class="drop-single select">
+                        <option value="全部">全部</option>
+                        <option value="1">本科</option>
+                        <option value="0">专科</option>
+                      </select>
+                    </div>
+                    <div class="wrapper-operation">
+                      <input type="button" value="查询" class="operation-btn inquire-button personnel-inquire-button">
+                      <input type="button" value="上传" class="operation-btn load-button">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <table class="wrapper-table">
+              <thead>
+                <th>序号</th>
+                <th>学院</th>
+                <th>专业</th>
+                <th>年级</th>
+                <th>层次</th>
+                <th>状态</th>
+                <th>操作</th>
+              </thead>
+              <tbody id="checkBox" class="wrapper-table-tbody tea-personnel-tbody">
+               <!--  <tr>
+                  <td>1</td>
+                  <td>计算机与信息技术学院</td>
+                  <td>计算机科学与技术</td>
+                  <td>2020级</td>
+                  <td>本科</td>
+                  <td>审核不通过</td>
+                  <td>
+                    <input type="button" class="wrapper-tbody-reupload" value="重新上传">
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+            <div class="pageation">
+              <div class="pageation-info">
+                  <button class="batch-button" value="">最前页</button>
+                  <button class="batch-button">上一页</button>
+                  <button class="batch-button">当前第1页</button>
+                  <button class="batch-button">下一页</button>
+                  <button class="batch-button">最末页</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- -------------------------------------------以下是弹出层---------------------------------------- -->
+          <div class="outer-box hidden">
+            <div class="my-form pop-window" id="clean">
+              <div class="pop-back pop-back-active">返回</div>
+              <form action="服务器端程序" class="pop-form">
+                <div class="form-item">
+                  <label for="">学院：</label>
+                  <span>计算机与信息技术</span>
+                </div>
+                <div class="form-item">
+                  <label for="">类型：</label>
+                  <span>人才培养方案</span>
+                </div>
+                <div class="form-item">
+                  <label for="">年级：</label>
+                  <select name="institute" id="" class="item-select select">
+                    <option value="请选择年级">请选择年级</option>
+                    <option value="2017">2017级</option>
+                    <option value="2018">2018级</option>
+                    <option value="2019">2019级</option>
+                    <option value="2020">2020级</option>
+                    <option value="2021">2021级</option>
+                    <option value="2022">2022级</option>
+                    <option value="2023">2023级</option>
+                    <option value="2024">2024级</option>
+                    <option value="2025">2025级</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <label for="">专业：</label>
+                  <select name="institute" id="" class="faculty item-select select"></select>
+                </div>
+                <div class="form-item">
+                  <label for="">层次：</label>
+                  <select name="institute" id="" class="item-select select">
+                    <option value="请选择层次">请选择层次</option>
+                    <option value="0">本科</option>
+                    <option value="1">专科</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <input type="file" class="upload-file-files">
+                  <div class="upload-doc">
+                    <div class="text-button">
+                      <span>文件上传：</span>
+                      <input type="button" value="点击此处上传" class="upload-file-btn">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ---------------------------------------------以上是弹出层---------------------------------- -->
+        </div>
+        <!-- 获奖情况>我的奖状 -->
+        <div class="wrapper-right-item">
+          <!--    author: 常博文
+                  date: 2022/  02 / 15
+                  function： 奖项
+                  part；教师模块
+                  version: 1.0
+          -->
+
+          <div class="teaching-program">
+            <div id="wrapper-tab">
+              <span class="tab-manage-award bgc">我的奖项</span>
+              <span class="tab-manage-award">学院奖项</span>
+            </div>
+            <div class="wrapper-contact-table" id="list">
+              <div class="hidden wrapper-award-table show">
+                <form action="" class="wrapper-contact-filter status-form award-checkbox-form">
+                  <div class="wrapper-filter-box">筛选状态:
+                    <input type="checkbox" class="award-checkbox" checked name="status" id="award-green" value="审核通过"><label for="award-green">审核通过</label>
+                    <input type="checkbox" class="award-checkbox" checked name="status" id="award-red" value="审核未通过"><label for="award-red">审核未通过</label>
+                    <input type="checkbox" class="award-checkbox" checked name="status" id="award-yellow" value="待审核"><label for="award-yellow">待审核</label>
+                  </div>
+                </form>
+                <table class="wrapper-table">
+                  <thead>
+                    <th>序号</th>
+                    <th>证书编号</th>
+                    <th>参赛人姓名</th>
+                    <th>比赛类型</th>
+                    <th>比赛名称</th>
+                    <th>奖项分类</th>
+                    <th>称号</th>
+                    <th>指导教师</th>
+                    <th>审核状态</th>
+                    <th>操作</th>
+                  </thead>
+                  <tbody id="checkBox" class="wrapper-table-tbody award-tbody ">
+
+                  </tbody>
+                </table>
+                <div class="pageation">
+                  <div class="pageation-info">
+                      <button class="batch-button">最前页</button>
+                      <button class="batch-button">上一页</button>
+                      <button class="batch-button">当前第1页</button>
+                      <button class="batch-button">下一页</button>
+                      <button class="batch-button">最末页</button>
+                  </div>
+              </div>
+              </div>
+              <div class="hidden wrapper-award-table">
+                <table class="wrapper-table">
+                  <thead>
+                    <th>序号</th>
+                    <th>获奖学院</th>
+                    <th>比赛名称</th>
+                    <th>获奖等级</th>
+                    <th>发证时间</th>
+                    <th>发证机构</th>
+                    <th>证书编号</th>
+                    <th>操作</th>
+                  </thead>
+                  <tbody id="checkBox" class="wrapper-table-tbody team-award-tbody">
+
+                  </tbody>
+                </table>
+                <div class="pageation">
+                  <div class="pageation-info">
+                      <button class="batch-button">最前页</button>
+                      <button class="batch-button">上一页</button>
+                      <button class="batch-button">当前第1页</button>
+                      <button class="batch-button">下一页</button>
+                      <button class="batch-button">最末页</button>
+                  </div>
+              </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- 获奖情况>内容填报 -->
+        <div class="wrapper-right-item">
+          <!--    author: 李昊润
+                  date: 2022/  02 / 13
+                  function： 奖项填报
+                  part；学生模块
+                  version: 1.0
+  
+            -->
+          <div class="upload-grade">
+            <form action="" name="update-grade" method="" id="upload-form" class="form-box">
+              <div class="my-form " id="upload-info">
+                <div class="upload-info">
+                  <div class="form-item" id="date-parent">
+                    <label for="certif-id">证书编号</label>
+                    <input type="text" name="certif-id" id="certif-id" placeholder="请填写证书编号" class="text-input" required>
+                  </div>
+                  <div class="form-item awardTeacher">
+                    <label for="contest-name">参赛人姓名</label>
+                    <input type="text" name="contest-name" id="contest-name" class="pwinner text-input"
+                      placeholder="请填写全部参赛人姓名" required>
+                    <span class="iconfont icon-sousuo teaSearch"></span>
+                      <!-- 2022/02/16 新增-->
+                    <div class="form-item guideTea">
+                      <ul class="teaInfo">
+
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <label for="">比赛类型</label>
+                    <input type="radio" checked name="contest-type" id="single" value="单人赛">
+                    <label for="single" class="radio">单人赛</label>
+                    <input type="radio" name="contest-type" id="team" value="团体赛">
+                    <label for="team" class="radio">团体赛</label>
+                  </div>
+                  <!-- <div class="form-item">
+                    <label for="grade-name">奖项名称</label>
+                    <input type="text" name="grade-name" id="grade-name" placeholder="请填写奖项名称" class="text-input"
+                      required>
+                  </div> -->
+                  <div class="form-item">
+                    <label for="contest-name">比赛名称</label>
+                    <input type="text" name="contest-name" id="contest-name" class="pname text-input"
+                      placeholder="请填写比赛名称" required>
+                  </div>
+                  <div class="form-item">
+                    <label for="award-level">获奖等级</label>
+                    <input type="text" name="award-level" id="award-level" class="plevel text-input" placeholder="请填写获奖等级"
+                      required>
+                  </div>
+                  <div class="form-item">
+                    <label for="award-design">称号</label>
+                    <input type="text" name="award-design" id="award-design" placeholder="请填写称号" class="text-input"
+                      required>
+                  </div>
+                  <div class="form-item">                  
+                    <label for="organize">发证机构</label>
+                    <input type="text" name="organize" id="organize" placeholder="请填写发证机构,多个发证机构用逗号(英文)隔开"
+                      class="text-input" required>
+                  </div>
+                  <div class="form-item ">
+                    <label for="date">发证日期</label>
+                    <input type="date" name="date" id="date" placeholder="请填写发证日期 " required>
+                  </div>
+                  <div class="form-item" id="category">
+                    <label for="">奖项分类</label>
+                    <input type="radio" checked name="awade-type" id="a-type" value="A类">
+                    <label for="a-type" class="radio awade-type">A类</label>
+                    <input type="radio" name="awade-type" id="b-type" value="B类">
+                    <label for="b-type" class="radio awade-type">B类</label>
+                    <input type="radio" name="awade-type" id="c1-type" value="C1类">
+                    <label for="c1-type" class="radio awade-type">C1类</label>
+                    <input type="radio" name="awade-type" id="c2-type" value="C2类">
+                    <label for="c2-type" class="radio awade-type">C2类</label>
+                    <input type="button" value="奖项类别说明" id="awade-type-info">
+                    <div class="awade-type-details">
+                      <span class="iconfont icon-guanbi close"></span>
+                      <span class="details-title">奖项类别说明</span>
+                      <p class="a">
+                        A类竞赛: 主要指竞赛项目主办方为多个国家级部委，如全国“互联网+”创新创业大赛等，简称“部委”；
+                      </p>
+                      <p class="b">
+                        B类竞赛: 主要指由教育部明确发文资助的竞赛，简称“教育部”；
+                      </p>
+                      <p class="admit">
+                        C1类竞赛: 主要指由高等教育学会或教育部高等学校教学指导委员会主办的竞赛，简称“教指委” ，但是这种奖项学校不承认，但是学院可能承认；
+                      </p>
+                      <p class="derecogn">
+                        C2类竞赛: 和C1类竞赛类似，不同的事改类竞赛学校承认
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="upload-file">
+                  <label for="">奖项材料</label>
+                  <div class="form-item">
+                    <input type="file" name="file" id="uploadFile" multiple style="display: none">
+                    <input type="button" id="upload-file-btn" value="单击上传图片" class="single-click"
+                      onclick="uploadFile.click()">
+                  </div>
+                </div>
+                <div class="my-form oper">
+                  <div class="form-item upload-oper">
+                    <input type="reset" value="重置" id="upload-reset" onmousemove="move(event)">
+                    <input type="button" value="确定提交" id="upload-btn" onmousemove="move(event)" class="common-btn">
+                  </div>
+                </div>
+              </div>
+              <div class="upload-file">
+                <div class="file-lists">
+                </div>
+              </div>
+  
+            </form>
+          </div>
+        </div>
+        <!-- 审查管理>审查奖项 -->
+        <div class="wrapper-right-item">审查奖项</div>
+        <!-- 后期扩招功能 -->
+        <div class="wrapper-right-item">8</div>
+        <div class="wrapper-right-item">9</div>
+        <div class="wrapper-right-item">10</div>
+        <div class="wrapper-right-item">11</div>
+        <!-- top right nav 个人信息 -->
+        <div class="wrapper-right-item">
+            <!--    author: 李昊润
+                date: 2022/  02 / 07
+                function： 显示个人信息
+                part；学生模块
+                version: 1.0
+          -->
+          <div class="profile-info">
+
+          </div>
+        </div>
+        <!-- top right nav 我的信箱 -->
+        <div class="wrapper-right-item">我的信箱</div>
+        <!-- top right nav 修改密码 -->
+        <div class="wrapper-right-item">
+          <!--    author: 李昊润
+                  date: 2022/  02 / 07
+                  function： 修改密码
+                  part；学生模块
+                  version: 1.0
+            -->
+          <form action="" method="" name="" class="update-form form-box">
+            <!-- <h3>修改密码</h3> -->
+            <div class="my-form">
+              <div class="info-update-oldPwd form-item updatePwd">
+                <label for="update-oldPwd">旧密码</label>
+                <input
+                  type="password"
+                  id="update-oldPwd"
+                  required
+                  class="text-input oldPwd oldPasswd"
+                  placeholder="请填写旧密码"/>
+                <span class="iconfont icon-yincangmima eye"></span>
+                <!-- <span><img src="../../../static/img/show.svg" th:src="@{/img/show.svg}" alt="" /></span> -->
+              </div>
+              <div class="info-update-pwd form-item updatePwd">
+                <label for="update-pwd">新密码</label>
+                <input type="password" id="update-pwd" required class="text-input newPwd" oninput="onPwdInput(event)"
+                  placeholder="请输入密码(8-20个字符，仅限英文字母，数字和下划线)" pattern="^\w{8,20}$" >
+                <span class="iconfont icon-yincangmima eye"></span>
+                <!-- <span><img src="../../../static/img/show.svg" th:src="@{/img/show.svg}" alt="" /></span> -->
+              </div>
+              <div class="info-check-pwd form-item updatePwd">
+                <label for="check-pwd">确认密码</label>
+                <input type="password" id="confirmPwd" class="text-input checkPwd" required placeholder="请确定密码"
+                  oninput="setCustomValidity('')" oninvalid="setCustomValidity('请和新密码保持一致>_<')" />
+                <span class="iconfont icon-yincangmima eye"></span>
+              </div>
+              <div class="info-btn form-item">
+                <input type="button" value="确定修改" id="update-submit" class="common-btn" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- top right nav 修改图像 -->
+        <div class="wrapper-right-item">
+          <!--    author: 李昊润
+                  date: 2022/  02 / 07
+                  function： 修改头像
+                  part；学生模块
+                  version:1.0
+            -->
+          <form action="" name="" class="update-photo form-box" method="">
+            <div class="my-form">
+              <img src="../../../static/img/lee.png" th:src="@{/img/lee.png}" alt="" id="default-img"/>
+              <input type="button" value="确定修改" class="update-photo-btn common-btn" />
+              <input type="file" id="fileBtn" style="display: none" />
+              <div class="update-icon" onclick="fileBtn.click()">
+                <span class="iconfont icon-tianjia"></span>
+                <span>点击修改头像</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- top right nav 退出登录 -->
+        <div class="wrapper-right-item">退出登录</div>
+        <!-- 后期扩展功能 -->
+        <div class="wrapper-right-item">14</div>
+      </div>
+    <script src="../../../static/js/commen/axios.js" th:src="@{/js/commen/axios.js}"></script>
+    <script th:src="@{/js/utils/request.js}" src="../../../static/js/utils/request.js"></script>
+    <script src="../../../static/js/commen/generationLeftNav.js" th:src="@{/js/commen/generationLeftNav.js}"></script>
+    <script src="../../../static/js/teacherIndex/index.js" th:src="@{/js/teacherIndex/index.js}"></script>
+    <script src="../../../static/js/teacherIndex/teachingProgram.js" th:src="@{/js/teacherIndex/teachingProgram.js}"></script>
+    <script src="../../../static/js/commen/form.js" th:src="@{/js/commen/form.js}"></script>
+    <script src="../../../static/js/teacherIndex/update-upload.js" th:src="@{/js/teacherIndex/update-upload.js}"></script>
+    <script src="../../../static/js/commen/form.js" th:src="@{/js/commen/form.js}"></script>
+    <script src="../../../static/js/teacherIndex/award.js" th:src="@{/js/teacherIndex/award.js}"></script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+table{
+	border-collapse: 0;
+	border-spacing: 0;
+}
+body {
+	font-size: 16px;
+}
+#list label{
+display: inline;
+}
+#list label:not(.radio, .checkbox):after{
+	content: '';
+  }
+#list select{
+	display: inline;
+}
+#list input[type='button']{
+	display: inline;
+	width: 97px;
+	background: #bbb;
+	color: #fff
+}
+#clean label:after{
+	content: "";
+}
+#clean input{
+	background-color: #ccc;
+}
+#clean input:hover{
+	background-color: #09f;
+}
+.wrapper-operation{
+	width: 350px;
+}
+.wrapper-filter-box{
+	position: relative;
+}
+
+#wrapper-tab {
+	display: flex;
+	justify-content: flex-start;
+}
+.wrapper-contact-table {
+	width: inherit;
+	margin-bottom: 20px;
+}
+.tab-manage {
+	display: block;
+	width: 25%;
+	min-width: 155px;
+	height: 40px;
+	margin: 0 10px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+.bgc {
+	background-color: #bbb;
+}
+.hidden {
+	display: none;
+}
+.wrapper-contact-filter{
+	font-size: 16px;
+}
+.wrapper-filter-box{
+	margin: 5px 30px;
+	
+}
+.wrapper-filter-box input{
+	zoom:150%;
+	/* font-size: 16px; */
+}
+.wrapper-table-button {
+	width: 90%;
+	min-width: 700px;
+	/* height: 40px; */
+	/* margin: 5px auto; */
+	/* display: flex; */
+	/* justify-content: flex-end; */
+}
+.form-button {
+	width: 80px;
+	margin: 0 5px;
+	margin: 0 10px;
+	border-radius: 35px;
+}
+.form-seek {
+	width: 150px;
+	padding: 0 10px;
+	height: 38px;
+}
+.form-select {
+	width: 55px;
+	margin: 0 10px;
+	border-radius: 35px;
+}
+.wrapper-table {
+	width: 100%;
+	/* min-width: 800px; */
+	margin: 0 auto;
+	margin-bottom: 30px;
+    text-align: center;
+    border-collapse: collapse;
+	margin-top: 5px;
+}
+.wrapper-table th {
+	background-color: #bbb;
+	font-size: 18px;
+}
+.wrapper-table-tbody tr {
+	height: 35px;
+}
+.wrapper-table-tbody td {
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+}
+.wrapper-tbody-reupload{
+	/* border: 1px solid #ccc; */
+	font-size: 16px;
+
+}
+.academic{
+	margin-left: 26px !important;
+	padding: 4px;
+	width: 260px;
+}
+.wrapper-query-drop select{
+	height: 35px;
+	outline: none;
+}
+.drop-single{
+	width: 250px;
+}
+.show {
+	display: block;
+}
+.wrapper-table-query{
+	/* width: 100%;
+	height: 100%; */
+	/* overflow: hidden; */
+	display: flex;
+	flex-flow: row wrap;
+	font-size: 16px;
+}
+.wrapper-table-query select{
+	font-size: 18px;
+}
+.wrapper-table a{
+	text-decoration: none;
+}
+.wrapper-operation{
+	margin-top: 4px;
+	/* height: 20px; */
+	/* border: 1px solid #000; */
+	flex-wrap: wrap;
+	margin-left: 37px;
+}
+#list .wrapper-operation input{
+	margin-left: 51px;
+}
+.wrapper-query-drop{
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	margin-right: 0px;
+}
+.operation-btn{
+	width: 80px;
+    height: 40px;
+    background: #bbb;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* 复选框 */
+input[type=checkbox]:checked::after{
+	background-color: #bbb;
+}
+.pageation {
+	display:flex;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+}
+.pageation .pageation-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	width: 50%;
+	height: 100%;
+}
+.pageation .pageation-info button {
+	margin: 0 15px;
+	font-size: 16px;
+}
+/*手机端隐藏分页按钮*/
+@media screen and (max-width:480px){
+	.pageation {
+		display: none;
+	}
+}
+.my-form .select {
+	width: 250px !important; 
+	padding: 2px;
+	border: 1px solid #bbb;
+	border-left: 5px solid #bbb;
+	color: #837b7b;
+	background: #fff;
+  }
+  .my-form .select option:nth-child(2) {
+	color: #000;
+  }
+  .my-form .select option:nth-child(3) {
+	color: #000;
+  }
+  .my-form .select option:nth-child(4) {
+	color: #000;
+  }
+  .my-form .select.active {
+	padding: 2px ;
+	border: 1px solid #056ffa;
+	border-left-width: 5px;
+	color: #000 !important;
+  }
+  #list input[type="checkbox"]{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+  }
+  #list input[type="button"]:hover{
+	background-color: #09f !important;
+  }
+
+/*------------------------------------弹出层样式------------------------------*/
+.outer-box {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3)
+}
+.pop-window {
+	width: 400px;
+	height: 500px;
+	border: 1px solid #000;
+    background: #fefefe;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+}
+.pop-back {
+	display: block;
+	width: 70px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	background-color: #bbb;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+}
+.pop-window label {
+	text-align: right;
+}
+.pop-form {
+	width: 100%;
+	margin-top: 10px;
+}
+.pop-back-active {
+	background-color: #09f;
+}
+.outline-layer{
+	margin-bottom: -5px !important;
+}
+.outline-layer-span{
+	margin-bottom: 0px !important;
+}
+.item-select{
+	width: 300px;
+	height: 40px;
+	margin: 5px 0;
+}
+.upload-file-files {
+	display: none;
+}
+.upload-doc {
+	width: 360px;
+	height: 120px;
+	margin: 0 auto;
+	border: 1px dashed #bbb;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+.text-button {
+	width: 225px;
+	line-height: 120px;
+	margin: 0 auto;
+}
+.batch-button {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    margin-right: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+	background-color: #bbb;
+}
+button:hover {
+    background-color: #09f !important;
+}
+/* 我的奖项 */
+.tab-manage-award {
+	display: block;
+	width: 25%;
+	min-width: 155px;
+	height: 40px;
+	margin: 0 10px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}

@@ -1,0 +1,27 @@
+{{each}}
+<tr>
+  <td><input type="checkbox" name="td-checkbox"></td>
+  <td>{{$value.username}}</td>
+  <td>{{$value.sex == 0 ? '男' : '女'}}</td>
+  <td>{{$value.identifyCard}}</td>
+  <td>{{$value.number}}</td>
+  <td>{{$value.major}}</td>
+  <td>{{$value.title}}</td>
+  <td>{{$value.teachingResearch}}</td>
+  <td>{{$value.phoneNumber}}</td>
+  <td>
+    {{if $value.roleId == 1}}
+      普通教师
+    {{else if $value.roleId == 2}}
+      课程负责人
+    {{else if $value.roleId == 3}}
+      教研室主任
+    {{/if}}
+  </td>
+  <td>
+    <a href="{{$value.changeLink}}">修改</a>
+    <button value="0">删除</button>
+    <a href="{{$value.detailsLink}}">查看详情</a>
+  </td>
+</tr>
+{{/each}}

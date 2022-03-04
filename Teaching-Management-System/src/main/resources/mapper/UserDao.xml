@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hafu.edu.teachingmanagementsystem.dao.UserDao">
+
+    <resultMap type="com.hafu.edu.teachingmanagementsystem.entity.User" id="UserMap">
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="roleId" column="role_id" jdbcType="VARCHAR"/>
+        <result property="passwd" column="passwd" jdbcType="VARCHAR"/>
+        <result property="number" column="number" jdbcType="VARCHAR"/>
+        <result property="identityCard" column="identity_card" jdbcType="VARCHAR"/>
+        <result property="phoneNumber" column="phone_number" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+        <result property="sex" column="sex" jdbcType="INTEGER"/>
+        <result property="clazz" column="clazz" jdbcType="VARCHAR"/>
+        <result property="faculty" column="faculty" jdbcType="VARCHAR"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="grade" column="grade" jdbcType="VARCHAR"/>
+        <result property="major" column="major" jdbcType="VARCHAR"/>
+        <result property="level" column="level" jdbcType="INTEGER"/>
+        <result property="teachingResearch" column="teaching_research" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="UserMap">
+        select uid,
+               username,
+               role_id,
+               passwd,
+               number,
+               identity_card,
+               phone_number,
+               status,
+               create_time,
+               modified_time,
+               sex,
+               clazz,
+               faculty,
+               title,
+               grade,
+               major,
+               level,
+               teaching_research
+        from user
+        where uid = #{uid}
+    </select>
+
+    <!--通过账号查询单个对象-->
+    <select id="queryByNumber" resultMap="UserMap">
+        select uid,
+               username,
+               role_id,
+               passwd,
+               number,
+               identity_card,
+               phone_number,
+               status,
+               create_time,
+               modified_time,
+               sex,
+               clazz,
+               faculty,
+               title,
+               grade,
+               major,
+               level,
+               teaching_research
+        from user
+        where number = #{number}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="UserMap">
+        select
+        uid, username, role_id, passwd, number, identity_card, phone_number, status, create_time, modified_time, sex,
+        clazz, faculty, title, grade, major, level, teaching_research
+        from user
+        <where>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="roleId != null and roleId != ''">
+                and role_id = #{roleId}
+            </if>
+            <if test="passwd != null and passwd != ''">
+                and passwd = #{passwd}
+            </if>
+            <if test="number != null and number != ''">
+                and number = #{number}
+            </if>
+            <if test="identityCard != null and identityCard != ''">
+                and identity_card = #{identityCard}
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                and phone_number = #{phoneNumber}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="clazz != null and clazz != ''">
+                and clazz = #{clazz}
+            </if>
+            <if test="faculty != null and faculty != ''">
+                and faculty = #{faculty}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="major != null and major != ''">
+                and major = #{major}
+            </if>
+            <if test="level != null">
+                and level = #{level}
+            </if>
+            <if test="teachingResearch != null and teachingResearch != ''">
+                and teaching_research = #{teachingResearch}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from user
+        <where>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="roleId != null and roleId != ''">
+                and role_id = #{roleId}
+            </if>
+            <if test="passwd != null and passwd != ''">
+                and passwd = #{passwd}
+            </if>
+            <if test="number != null and number != ''">
+                and number = #{number}
+            </if>
+            <if test="identityCard != null and identityCard != ''">
+                and identity_card = #{identityCard}
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                and phone_number = #{phoneNumber}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="clazz != null and clazz != ''">
+                and clazz = #{clazz}
+            </if>
+            <if test="faculty != null and faculty != ''">
+                and faculty = #{faculty}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="major != null and major != ''">
+                and major = #{major}
+            </if>
+            <if test="level != null">
+                and level = #{level}
+            </if>
+            <if test="teachingResearch != null and teachingResearch != ''">
+                and teaching_research = #{teachingResearch}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="uid" useGeneratedKeys="true">
+        insert into user(username, role_id, passwd, number, identity_card, phone_number, status, create_time,
+                         modified_time, sex, clazz, faculty, title, grade, major, level, teaching_research)
+        values (#{username}, #{roleId}, #{passwd}, #{number}, #{identityCard}, #{phoneNumber}, #{status}, #{createTime},
+                #{modifiedTime}, #{sex}, #{clazz}, #{faculty}, #{title}, #{grade}, #{major}, #{level},
+                #{teachingResearch})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="uid" useGeneratedKeys="true">
+        insert into user(username, role_id, passwd, number, identity_card, phone_number, status, create_time,
+        modified_time, sex, clazz, faculty, title, grade, major, level, teaching_research)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username}, #{entity.roleId}, #{entity.passwd}, #{entity.number}, #{entity.identityCard},
+            #{entity.phoneNumber}, #{entity.status}, #{entity.createTime}, #{entity.modifiedTime}, #{entity.sex},
+            #{entity.clazz}, #{entity.faculty}, #{entity.title}, #{entity.grade}, #{entity.major}, #{entity.level},
+            #{entity.teachingResearch})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="uid" useGeneratedKeys="true">
+        insert into user(username, role_id, passwd, number, identity_card, phone_number, status, create_time,
+        modified_time, sex, clazz, faculty, title, grade, major, level, teaching_research)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.username}, #{entity.roleId}, #{entity.passwd}, #{entity.number}, #{entity.identityCard},
+            #{entity.phoneNumber}, #{entity.status}, #{entity.createTime}, #{entity.modifiedTime}, #{entity.sex},
+            #{entity.clazz}, #{entity.faculty}, #{entity.title}, #{entity.grade}, #{entity.major}, #{entity.level},
+            #{entity.teachingResearch})
+        </foreach>
+        on duplicate key update
+        username = values(username),
+        role_id = values(role_id),
+        passwd = values(passwd),
+        number = values(number),
+        identity_card = values(identity_card),
+        phone_number = values(phone_number),
+        status = values(status),
+        create_time = values(create_time),
+        modified_time = values(modified_time),
+        sex = values(sex),
+        clazz = values(clazz),
+        faculty = values(faculty),
+        title = values(title),
+        grade = values(grade),
+        major = values(major),
+        level = values(level),
+        teaching_research = values(teaching_research)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update user
+        <set>
+            <if test="username != null and username != ''">
+                username = #{username},
+            </if>
+            <if test="roleId != null and roleId != ''">
+                role_id = #{roleId},
+            </if>
+            <if test="passwd != null and passwd != ''">
+                passwd = #{passwd},
+            </if>
+            <if test="number != null and number != ''">
+                number = #{number},
+            </if>
+            <if test="identityCard != null and identityCard != ''">
+                identity_card = #{identityCard},
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                phone_number = #{phoneNumber},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="modifiedTime != null">
+                modified_time = #{modifiedTime},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="clazz != null and clazz != ''">
+                clazz = #{clazz},
+            </if>
+            <if test="faculty != null and faculty != ''">
+                faculty = #{faculty},
+            </if>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="grade != null and grade != ''">
+                grade = #{grade},
+            </if>
+            <if test="major != null and major != ''">
+                major = #{major},
+            </if>
+            <if test="level != null">
+                level = #{level},
+            </if>
+            <if test="teachingResearch != null and teachingResearch != ''">
+                teaching_research = #{teachingResearch},
+            </if>
+        </set>
+        where uid = #{uid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from user
+        where uid = #{uid}
+    </delete>
+
+
+    <!--通过number修改密码-->
+    <update id="updatePwByNumber">
+        update user
+        set passwd = #{passwd}
+        where number = #{number};
+    </update>
+
+
+    <!--通过账号获取用户信息-->
+    <select id="queryByUserName" resultMap="UserMap">
+        select uid,
+               username,
+               role_id,
+               passwd,
+               number,
+               identity_card,
+               phone_number,
+               status,
+               create_time,
+               modified_time,
+               sex,
+               clazz,
+               faculty,
+               title,
+               grade,
+               major,
+               level,
+               teaching_research
+        from user
+        where username = #{username}
+    </select>
+<!--    管理员查询所有符合条件的老师-->
+    <select id="selectAllTeacher" resultType="com.hafu.edu.teachingmanagementsystem.entity.User">
+        select
+            *
+        from user
+        <where>
+            <if test="faculty != null and faculty != ''">
+                faculty = #{faculty}
+            </if>
+            <if test="major != null and major != ''">
+                and major = #{major}
+            </if>
+            <if test="clazz != null and clazz != ''">
+                and clazz = #{clazz}
+            </if>
+            <if test="number != null and number != ''">
+                and number = #{number}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="level != null and level != ''">
+                and level = #{level}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="teachingResearch != null and teachingResearch != ''">
+                and teaching_research = #{teachingResearch}
+            </if>
+                and role_id != "0"
+        </where>
+
+    </select>
+<!--    管理员查询所有符合条件的学生-->
+    <select id="selectAllStudent" resultType="com.hafu.edu.teachingmanagementsystem.entity.User">
+        select
+         *
+        from user
+        <where>
+            <if test="faculty != null and faculty != ''">
+                faculty = #{faculty}
+            </if>
+            <if test="major != null and major != ''">
+                and major = #{major}
+            </if>
+            <if test="roleId != null and roleId != ''">
+                and role_id = #{roleId}
+            </if>
+            <if test="clazz != null and clazz != ''">
+                and clazz = #{clazz}
+            </if>
+            <if test="number != null and number != ''">
+                and number = #{number}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="level != null and level != ''">
+                and level = #{level}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>
+

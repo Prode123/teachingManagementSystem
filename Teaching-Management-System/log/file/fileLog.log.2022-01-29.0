@@ -1,0 +1,25 @@
+2022-01-29 11:25:47,329 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_291 on CSY with PID 8112 (D:\Java\IdeaProjects\Teaching-Management-System\target\classes started by 程世玉 in D:\Java\IdeaProjects\Teaching-Management-System)
+2022-01-29 11:25:47,336 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-01-29 11:25:48,377 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem]' package. Please check your configuration.
+2022-01-29 11:25:48,786 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2022-01-29 11:25:48,787 INFO (DirectJDKLog.java:173)- An older version [1.2.28] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-29 11:25:48,788 INFO (DirectJDKLog.java:173)- Loaded Apache Tomcat Native library [1.2.28] using APR version [1.7.0].
+2022-01-29 11:25:48,788 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-29 11:25:48,788 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-29 11:25:48,802 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-29 11:25:48,813 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-29 11:25:48,814 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-01-29 11:25:48,814 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-29 11:25:48,908 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-01-29 11:25:48,908 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1504 ms
+2022-01-29 11:25:49,520 INFO (UserDetailsServiceAutoConfiguration.java:87)- 
+
+Using generated security password: 03b9d670-5ddc-4a25-81af-5aef4efa4bea
+
+2022-01-29 11:25:49,737 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f7da3d3, org.springframework.security.web.context.SecurityContextPersistenceFilter@382c90c2, org.springframework.security.web.header.HeaderWriterFilter@20de05e5, org.springframework.security.web.csrf.CsrfFilter@49fe3142, org.springframework.security.web.authentication.logout.LogoutFilter@396ef8b2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f668f29, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4eb1c69, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@103082dd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49ec6a9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28737371, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@760245e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a22bad6, org.springframework.security.web.session.SessionManagementFilter@5e1fc2aa, org.springframework.security.web.access.ExceptionTranslationFilter@3a175162, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52169758]
+2022-01-29 11:25:49,802 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2022-01-29 11:25:49,822 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-29 11:25:49,840 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 3.597 seconds (JVM running for 6.544)
+2022-01-29 11:26:18,589 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-29 11:26:18,589 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-01-29 11:26:18,590 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms

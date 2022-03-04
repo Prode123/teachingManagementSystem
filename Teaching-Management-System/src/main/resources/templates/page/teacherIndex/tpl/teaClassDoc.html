@@ -1,0 +1,20 @@
+{{each}}
+<tr>
+	<td>{{$index + 1}}</td>
+	<td>{{$value.semester}}</td>
+  <td>{{$value.faculty}}</td>
+	<td>{{$value.major}}</td>
+	<td>{{$value.grade}}</td>
+	<td>{{$value.fileName}}</td>
+	<td>{{$value.level == 0 ? '专科' : '本科'}}</td>
+	<td>{{ if $value.status == 0 }} 
+		待审核
+		  {{ else if $value.status == 1}}
+		通过
+			{{else if $value.status == 2}}
+		不通过
+			{{/if}}
+	</td>
+	<td><a href="{{$value.operation}}">{{$value.operation == 0 ? '重新上传' :'查看详情'}}</a></td>
+</tr>
+{{/each}}

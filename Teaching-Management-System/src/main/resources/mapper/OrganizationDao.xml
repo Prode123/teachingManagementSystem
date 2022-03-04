@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hafu.edu.teachingmanagementsystem.dao.OrganizationDao">
+
+    <resultMap type="com.hafu.edu.teachingmanagementsystem.entity.Organization" id="OrganizationMap">
+        <result property="collegeId" column="college_id" jdbcType="INTEGER"/>
+        <result property="faculty" column="faculty" jdbcType="VARCHAR"/>
+        <result property="teachingResearch" column="teaching_research" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+        <result property="condition" column="condition" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="OrganizationMap">
+        select college_id,
+               faculty,
+               teaching_research,
+               create_time,
+               modified_time,
+               condition
+        from organization
+        where college_id = #{collegeId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="OrganizationMap">
+        select
+        college_id, faculty, teaching_research, create_time, modified_time, condition
+        from organization
+        <where>
+            <if test="collegeId != null">
+                and college_id = #{collegeId}
+            </if>
+            <if test="faculty != null and faculty != ''">
+                and faculty = #{faculty}
+            </if>
+            <if test="teachingResearch != null and teachingResearch != ''">
+                and teaching_research = #{teachingResearch}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+            <if test="condition != null and condition != ''">
+                and condition = #{condition}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+
+    <select id="queryByCommonAndCondition" resultType="java.lang.String">
+        select teaching_research
+        from organization
+        <where>
+            <if test="faculty != null and faculty != ''">
+                and faculty = #{faculty}
+            </if>
+            <if test="condition != null and condition != ''">
+                and organization.condition = #{condition}
+            </if>
+        </where>
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from organization
+        <where>
+            <if test="collegeId != null">
+                and college_id = #{collegeId}
+            </if>
+            <if test="faculty != null and faculty != ''">
+                and faculty = #{faculty}
+            </if>
+            <if test="teachingResearch != null and teachingResearch != ''">
+                and teaching_research = #{teachingResearch}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+            <if test="condition != null and condition != ''">
+                and condition = #{condition}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="collegeId" useGeneratedKeys="true">
+        insert into organization(faculty, teaching_research, create_time, modified_time, condition)
+        values (#{faculty}, #{teachingResearch}, #{createTime}, #{modifiedTime}, #{condition})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="collegeId" useGeneratedKeys="true">
+        insert into organization(faculty, teaching_research, create_time, modified_time, condition)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.faculty}, #{entity.teachingResearch}, #{entity.createTime}, #{entity.modifiedTime},
+            #{entity.condition})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="collegeId" useGeneratedKeys="true">
+        insert into organization(faculty, teaching_research, create_time, modified_time, condition)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.faculty}, #{entity.teachingResearch}, #{entity.createTime}, #{entity.modifiedTime},
+            #{entity.condition})
+        </foreach>
+        on duplicate key update
+        faculty = values(faculty),
+        teaching_research = values(teaching_research),
+        create_time = values(create_time),
+        modified_time = values(modified_time),
+        condition = values(condition)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update organization
+        <set>
+            <if test="faculty != null and faculty != ''">
+                faculty = #{faculty},
+            </if>
+            <if test="teachingResearch != null and teachingResearch != ''">
+                teaching_research = #{teachingResearch},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="modifiedTime != null">
+                modified_time = #{modifiedTime},
+            </if>
+            <if test="condition != null and condition != ''">
+                condition = #{condition},
+            </if>
+        </set>
+        where college_id = #{collegeId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from organization
+        where college_id = #{collegeId}
+    </delete>
+
+</mapper>
+

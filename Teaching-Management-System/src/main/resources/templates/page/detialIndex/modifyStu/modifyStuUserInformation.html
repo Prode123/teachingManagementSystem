@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modifyStuUserInformation</title>
+    <link rel="stylesheet" href="../../../../static/css/commen/commenPageIndex.css" th:href=@{/css/commen/commenPageIndex.css}>
+    <link rel="stylesheet" href="../../../../static/css/detialIndex/modifyUserInformation.css" th:href="@{/css/detialIndex/modifyUserInformation.css}">
+    <script type="text/javascript" src="../../../../static/js/detialIndex/modifyStu/modifyStuInformation.js" th:href="@{/js/detialIndex/modifyStu/modifyStuInformation.js}"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.25.0/axios.js"></script>
+    <script type="text/javascript" src="../../../../static/js/utils/request.js"></script>
+    <script type="text/javascript" src="../../../../static/js/detialIndex/modifyStu/build/template.js" th:href="@{/js/detialIndex/modifyStu/build/template.js}"></script>
+    <link rel="stylesheet" href="../../../../static/css/commen/commenform.css" th:href="@{/css/commen/commenform.css}">
+    <script src="../../../../static/js/commen/form.js" th:href="@{/js/commen/form.js}"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="../../../../static/img/commen/logo.png" th:href="@{/img/commen/logo.png}" alt="" />
+            <span>河南财政金融学院教学管理系统</span>
+        </div>
+        <div class="header-right">
+            <div class="user-img">
+                <img src="../../../../static/img/lee.png" th:href="@{/img/lee.png}" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper-right">
+            <!--
+                module：用户信息管理
+                function：修改用户（学生）信息
+                author:董诗杰
+                version: 1.0
+                date:2022-02-10
+                     -->
+            <div class="modifyTeachContent">
+                <div class="modify">
+                    <p>修改用户信息</p>
+                </div>
+                <div class="enterbox-content">
+                    <div class="box-message" id="box-message">
+                        <div class="stu-message">
+                            <!-- 模板渲染出数据 -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

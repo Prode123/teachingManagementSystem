@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>教学业务管理系统</title>
+    <link
+      rel="stylesheet"
+      th:href="@{/css/loginInitialization.css}"
+      href="../static/css/loginInitialization.css"
+    />
+    <link rel="stylesheet" th:href="@{/css/index.css}" href="../static/css/index.css" />
+    <link rel="stylesheet" th:href="@{/css/commen/iconfont/iconfont.css}" href="../static/css/commen/iconfont/iconfont.css">
+  </head>
+  <body>
+    <div class="login">
+      <form>
+        <div class="login-content">
+          <h2>教学业务管理系统</h2>
+          <div class="login-content-username">
+            <div class="login-eye form-item"><span class="iconfont icon-zhanghaodenglu"></span><input type="text" id="username" name="username" placeholder="学号或工号" class="text-input" pattern="^\w{6,20}$" required/></div>
+          </div>
+          <div class="login-content-password update-form">
+              <div class="login-eye form-item">
+              <span class="iconfont icon-mima"></span><input type="password" id="password" name="password" placeholder="输入密码" class="text-input" required/>
+              <span class="iconfont icon-yincangmima eye"></span>
+            </div>
+          </div>
+          <div class="login-content-verification">
+            <div class="login-eye verification form-item"><span class="iconfont icon-yanzhengyanzhengma"></span><input type="text" id="verification" name="verification" placeholder="输入验证码" class="text-input" required/></div>
+            <canvas width="115px" height="23px"></canvas>
+          </div>
+          <input value="登 录" class="login-content-submit" type="button" />
+        </div>
+      </form>
+    </div>
+    <a href="./page/studentIndex/index.html">登录成功,跳转到Student首页</a><br />
+    <a href="./page/teacherIndex/index.html">登录成功,跳转到Teacher首页</a><br />
+    <a href="./page/adminIndex/index.html">登录成功,跳转到Admin首页</a><br />
+    <a href="./page/superAdminIndex/index.html">登录成功,跳转到SuperAdmin首页</a><br />
+    <script src="../static/js/commen/axios.js" th:src="@{/js/commen/axios.js}"></script>
+    <script th:src="@{/js/utils/request.js}" src="../static/js/utils/request.js"></script>
+    <script th:src="@{/js/index.js}" src="../static/js/index.js"></script>
+  </body>
+</html>

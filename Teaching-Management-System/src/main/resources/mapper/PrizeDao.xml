@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hafu.edu.teachingmanagementsystem.dao.PrizeDao">
+
+    <resultMap type="com.hafu.edu.teachingmanagementsystem.entity.Prize" id="PrizeMap">
+        <result property="pizId" column="piz_id" jdbcType="INTEGER"/>
+        <result property="ptime" column="ptime" jdbcType="TIMESTAMP"/>
+        <result property="pwinner" column="pwinner" jdbcType="VARCHAR"/>
+        <result property="psponsor" column="psponsor" jdbcType="VARCHAR"/>
+        <result property="plevel" column="plevel" jdbcType="VARCHAR"/>
+        <result property="category" column="category" jdbcType="INTEGER"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="number" column="number" jdbcType="VARCHAR"/>
+        <result property="pname" column="pname" jdbcType="VARCHAR"/>
+        <result property="tid" column="tid" jdbcType="VARCHAR"/>
+        <result property="tname" column="tname" jdbcType="VARCHAR"/>
+        <result property="pathFront" column="path_front" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
+        <result property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="faculty" column="faculty" jdbcType="VARCHAR"/>
+        <result property="grade" column="grade" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="reason" column="reason" jdbcType="VARCHAR"/>
+        <result property="auditId" column="audit_id" jdbcType="INTEGER"/>
+        <result property="isDelete" column="is_delete" jdbcType="VARCHAR"/>
+        <result property="level" column="level" jdbcType="VARCHAR"/>
+<!--        <result property="sta" column="status" jdbcType="INTEGER"/>-->
+    </resultMap>
+    <!--    通过用户id查询当前用户的所有奖项-->
+    <!--    lt        -->
+    <select id="selectAllPrize" resultType="com.hafu.edu.teachingmanagementsystem.entity.Prize">
+        select
+            piz_id, ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front, create_time,
+            modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level
+        from prize
+        <where>
+            status in
+            <foreach collection="sta" item="s"
+                     open="(" close=")" separator=",">
+                #{s}
+            </foreach>
+            and   uid = #{uid}
+        </where>
+
+
+    </select>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="PrizeMap">
+        select piz_id,
+               ptime,
+               pwinner,
+               psponsor,
+               plevel,
+               category,
+               title,
+               number,
+               pname,
+               tid,
+               tname,
+               path_front,
+               create_time,
+               modified_time,
+               uid,
+               faculty,
+               grade,
+               status,
+               reason,
+               audit_id,
+               is_delete,
+               level
+        from prize
+        where piz_id = #{pizId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="PrizeMap">
+        select
+        piz_id, ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front, create_time,
+        modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level
+        from prize
+        <where>
+            <if test="pizId != null">
+                and piz_id = #{pizId}
+            </if>
+            <if test="ptime != null">
+                and ptime = #{ptime}
+            </if>
+            <if test="pwinner != null and pwinner != ''">
+                and pwinner = #{pwinner}
+            </if>
+            <if test="psponsor != null and psponsor != ''">
+                and psponsor = #{psponsor}
+            </if>
+            <if test="plevel != null and plevel != ''">
+                and plevel = #{plevel}
+            </if>
+            <if test="category != null">
+                and category = #{category}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="number != null and number != ''">
+                and number = #{number}
+            </if>
+            <if test="pname != null and pname != ''">
+                and pname = #{pname}
+            </if>
+            <if test="tid != null and tid != ''">
+                and tid = #{tid}
+            </if>
+            <if test="tname != null and tname != ''">
+                and tname = #{tname}
+            </if>
+            <if test="pathFront != null and pathFront != ''">
+                and path_front = #{pathFront}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="faculty != null and faculty != ''">
+                and faculty = #{faculty}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="reason != null and reason != ''">
+                and reason = #{reason}
+            </if>
+            <if test="auditId != null">
+                and audit_id = #{auditId}
+            </if>
+            <if test="isDelete != null">
+                and is_delete = #{isDelete}
+            </if>
+            <if test="level != null and level != '' ">
+                and level = #{level}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from prize
+        <where>
+            <if test="pizId != null">
+                and piz_id = #{pizId}
+            </if>
+            <if test="ptime != null">
+                and ptime = #{ptime}
+            </if>
+            <if test="pwinner != null and pwinner != ''">
+                and pwinner = #{pwinner}
+            </if>
+            <if test="psponsor != null and psponsor != ''">
+                and psponsor = #{psponsor}
+            </if>
+            <if test="plevel != null and plevel != ''">
+                and plevel = #{plevel}
+            </if>
+            <if test="category != null">
+                and category = #{category}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="number != null and number != ''">
+                and number = #{number}
+            </if>
+            <if test="pname != null and pname != ''">
+                and pname = #{pname}
+            </if>
+            <if test="tid != null and tid != ''">
+                and tid = #{tid}
+            </if>
+            <if test="tname != null and tname != ''">
+                and tname = #{tname}
+            </if>
+            <if test="pathFront != null and pathFront != ''">
+                and path_front = #{pathFront}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="modifiedTime != null">
+                and modified_time = #{modifiedTime}
+            </if>
+            <if test="uid != null">
+                and uid = #{uid}
+            </if>
+            <if test="faculty != null and faculty != ''">
+                and faculty = #{faculty}
+            </if>
+            <if test="grade != null and grade != ''">
+                and grade = #{grade}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="reason != null and reason != ''">
+                and reason = #{reason}
+            </if>
+            <if test="auditId != null">
+                and audit_id = #{auditId}
+            </if>
+            <if test="isDelete != null">
+                and is_delete = #{isDelete}
+            </if>
+            <if test="level != null and level != '' ">
+                and level = #{level}
+            </if>
+        </where>
+    </select>
+
+    <!--    管理员通过审核状态查询所有奖项-->
+    <select id="findAllPrize" resultType="com.hafu.edu.teachingmanagementsystem.entity.Prize">
+        select
+        piz_id, ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front, create_time,
+        modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level
+        from prize
+        <where>
+            prize.status in
+            <foreach collection="sta" item="s"
+                     open="(" close=")" separator=",">
+                #{s}
+            </foreach>
+
+        </where>
+    </select>
+<!--    管理员通过条件查询本学院的奖项 用于下载Excel文件-->
+    <select id="adminFindAllPrize" resultType="com.hafu.edu.teachingmanagementsystem.entity.Prize">
+        select
+        piz_id, ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front, create_time,
+        modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level
+        from prize
+        <where>
+            <if test="grade !=null and grade !=''">
+                and grade = #{grade}
+            </if>
+                and faculty = #{faculty}
+                and status = "1"
+
+        </where>
+    </select>
+<!--    管理员查询该学院老师的奖项-->
+    <select id="adminFindAllTeacherPrize" resultType="com.hafu.edu.teachingmanagementsystem.entity.Prize">
+        select
+        piz_id, ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front, create_time,
+        modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level
+        from prize
+        <where>
+            <if test="grade !=null and grade !=''">
+                and grade = #{grade}
+            </if>
+            and faculty = #{faculty}
+            and status = "1"
+            and tid = "0"
+
+        </where>
+    </select>
+<!--    管理员查询所有学生的奖项-->
+    <select id="adminFindAllStudentPrize" resultType="com.hafu.edu.teachingmanagementsystem.entity.Prize">
+        select
+        piz_id, ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front, create_time,
+        modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level
+        from prize
+        <where>
+            <if test="grade !=null and grade !=''">
+                and grade = #{grade}
+            </if>
+            and faculty = #{faculty}
+            and status = "1"
+            and tid != "0"
+
+        </where>
+    </select>
+<!--    测试多status查询-->
+    <select id="testStatus" resultType="com.hafu.edu.teachingmanagementsystem.entity.Prize">
+        select
+        piz_id, ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front, create_time,
+        modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level
+        from prize
+        <where>
+
+                  prize.status in
+            <foreach collection="sta" item="s"
+                open="(" close=")" separator=",">
+                #{s}
+            </foreach>
+            <if test="grade !=null and grade !=''">
+                and grade = #{grade}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="pizId" useGeneratedKeys="true">
+        insert into prize(ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front,
+                          create_time, modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level)
+        values (#{ptime}, #{pwinner}, #{psponsor}, #{plevel}, #{category}, #{title}, #{number}, #{pname}, #{tid},
+                #{tname}, #{pathFront}, #{createTime}, #{modifiedTime}, #{uid}, #{faculty}, #{grade}, #{status},
+                #{reason}, #{auditId}, #{isDelete},#{level})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="pizId" useGeneratedKeys="true">
+        insert into prize(ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front,
+        create_time, modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.ptime}, #{entity.pwinner}, #{entity.psponsor}, #{entity.plevel}, #{entity.category},
+            #{entity.title}, #{entity.number}, #{entity.pname}, #{entity.tid}, #{entity.tname}, #{entity.pathFront},
+            #{entity.createTime}, #{entity.modifiedTime}, #{entity.uid}, #{entity.faculty}, #{entity.grade},
+            #{entity.status}, #{entity.reason}, #{entity.auditId}, #{entity.isDelete},#{level})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="pizId" useGeneratedKeys="true">
+        insert into prize(ptime, pwinner, psponsor, plevel, category, title, number, pname, tid, tname, path_front,
+        create_time, modified_time, uid, faculty, grade, status, reason, audit_id, is_delete,level)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.ptime}, #{entity.pwinner}, #{entity.psponsor}, #{entity.plevel}, #{entity.category},
+            #{entity.title}, #{entity.number}, #{entity.pname}, #{entity.tid}, #{entity.tname}, #{entity.pathFront},
+            #{entity.createTime}, #{entity.modifiedTime}, #{entity.uid}, #{entity.faculty}, #{entity.grade},
+            #{entity.status}, #{entity.reason}, #{entity.auditId}, #{entity.isDelete},#{entity.level})
+        </foreach>
+        on duplicate key update
+        ptime = values(ptime),
+        pwinner = values(pwinner),
+        psponsor = values(psponsor),
+        plevel = values(plevel),
+        category = values(category),
+        title = values(title),
+        number = values(number),
+        pname = values(pname),
+        tid = values(tid),
+        tname = values(tname),
+        path_front = values(path_front),
+        create_time = values(create_time),
+        modified_time = values(modified_time),
+        uid = values(uid),
+        faculty = values(faculty),
+        grade = values(grade),
+        status = values(status),
+        reason = values(reason),
+        audit_id = values(audit_id),
+        is_delete = values(is_delete),
+        level = values(level)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update prize
+        <set>
+            <if test="ptime != null">
+                ptime = #{ptime},
+            </if>
+            <if test="pwinner != null and pwinner != ''">
+                pwinner = #{pwinner},
+            </if>
+            <if test="psponsor != null and psponsor != ''">
+                psponsor = #{psponsor},
+            </if>
+            <if test="plevel != null and plevel != ''">
+                plevel = #{plevel},
+            </if>
+            <if test="category != null">
+                category = #{category},
+            </if>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="number != null and number != ''">
+                number = #{number},
+            </if>
+            <if test="pname != null and pname != ''">
+                pname = #{pname},
+            </if>
+            <if test="tid != null and tid != ''">
+                tid = #{tid},
+            </if>
+            <if test="tname != null and tname != ''">
+                tname = #{tname},
+            </if>
+            <if test="pathFront != null and pathFront != ''">
+                path_front = #{pathFront},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="modifiedTime != null">
+                modified_time = #{modifiedTime},
+            </if>
+            <if test="uid != null">
+                uid = #{uid},
+            </if>
+            <if test="faculty != null and faculty != ''">
+                faculty = #{faculty},
+            </if>
+            <if test="grade != null and grade != ''">
+                grade = #{grade},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="reason != null and reason != ''">
+                reason = #{reason},
+            </if>
+            <if test="auditId != null">
+                audit_id = #{auditId},
+            </if>
+            <if test="isDelete != null">
+                is_delete = #{isDelete},
+            </if>
+            <if test="level != null and level != ''">
+                level = #{level},
+            </if>
+        </set>
+        where piz_id = #{pizId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from prize
+        where piz_id = #{pizId}
+    </delete>
+<!--    通过pathFront删除-->
+    <delete id="deleteByPathFront">
+        delete
+        from prize
+        where path_front = #{pathFront}
+    </delete>
+
+</mapper>
+

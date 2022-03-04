@@ -1,0 +1,3 @@
+2022-01-26 18:37:00,833 DEBUG (BaseJdbcLogger.java:137)- ==>  Preparing: select id, name, title, category_id from t_auth
+2022-01-26 18:37:00,880 DEBUG (BaseJdbcLogger.java:137)- ==> Parameters: 
+2022-01-26 18:37:00,914 DEBUG (BaseJdbcLogger.java:137)- <==      Total: 9

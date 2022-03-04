@@ -1,0 +1,12 @@
+{{each}}
+<tr>
+	<td>{{$index + 1}}</td>
+	<td>{{$value.faculty}}</td>
+	<td>{{$value.pname}}</td>
+	<td>{{$value.plevel}}</td>
+	<td>{{$value.ptime}}</td>
+	<td>{{$value.psponsor}}</td>
+	<td>{{$value.number}}</td>
+	<td><a href="{{$value.path}}">查看详情</a></td>
+</tr>
+{{/each}}

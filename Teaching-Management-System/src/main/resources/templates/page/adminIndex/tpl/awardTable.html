@@ -1,0 +1,26 @@
+{{each}}
+<tr>
+	<td><input type="checkbox" class="td-checkbox" name="td-checkbox"></td>
+	<td>{{$value.number}}</td>
+	<td>{{$value.pwinner}}</td>
+	<td>{{$value.category == 0? '单人赛' : '团体赛'}}</td>
+	<td>{{$value.pname}}</td>
+	<td>{{$value.plevel}}</td>
+	<td>{{$value.level}}</td>
+	<td>{{$value.title}}</td>
+	<td>{{$value.tname}}</td>
+	<td>
+		{{if $value.status == 0}}
+			待审核
+		{{else if $value.status == 1}}
+			通过
+		{{else if $value.status == 2}}
+			不通过
+		{{/if}}
+	</td>
+    <td>
+		<button>删除</button>
+        <a href="{{$value.path}}" target="_blank">查看详情</a>
+    </td>
+</tr>
+{{/each}}

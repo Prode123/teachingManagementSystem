@@ -1,0 +1,59 @@
+<form action="" name="review-award" method="" id="review-form">
+    <div class="review-info">
+        <div class="certif">
+            <label for="certif-id">证书编号:</label>
+            <span>{{number}}</span>
+        </div>
+        <div class="contestants">
+            <label for="contest-name">参赛人姓名:</label>
+            <span>{{pwinner}}</span>
+        </div>
+        <div class="contest-type">
+            <label for="type">比赛类型:</label>
+            <span>{{category == 0 ?'单人':'团体'}}</span>
+        </div>
+        <div class="contest-name">
+            <label for="contest-name">比赛名称:</label>
+            <span>{{pname}}</span>
+        </div>
+        <div class="award-level">
+            <label for="award-level">获奖等级: </label>
+            <span>{{level}}</span>
+        </div>
+        <div class="award-design">
+            <label for="award-design">称号:</label>
+            <span>{{title}}</span>
+        </div>
+        <div class="organize">
+            <label for="organize">发证机构:</label>
+            <span>{{psponsor}}</span>
+        </div>
+        <div class="data">
+            <label for="data">发证日期: </label>
+            <span>{{ptime}}</span>
+        </div>
+        <div class="adsive-tea">
+            <label for="adsive-tea">指导老师: </label>
+            <span>{{tname}}</span>
+        </div>
+        <div class="awade-type">
+            <label for="awade-type">奖项分类:</label>
+            <span>{{plevel}}</span>
+        </div>
+    </div>
+    <div class="preview-awardimg">
+        {{each pathFront}}
+        <div>
+            <span>{{pname}}奖项材料{{$index+1}}</span>
+
+            <button id="btn-img">预览</button>
+        </div>
+        <div id="box-img" class="file-lists">
+            <span class="iconfont icon-guanbi close"></span>
+            <img src="{{$value}}" alt="">
+        </div>
+
+        {{/each}}
+    </div>
+
+</form>

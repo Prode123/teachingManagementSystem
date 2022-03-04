@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>examineAwardDetails</title>
+    <link rel="stylesheet" th:href="@{/css/detialIndex/index.css}" href="../../../../static/css/detialIndex/index.css" />
+
+    <link rel="stylesheet" href="../../../../static/css/studentIndex/iconfont-add/iconfont.css" th:href="@{/css/studentIndex/iconfont-add/iconfont.css}" />
+    <link rel="stylesheet" href="../../../../static/css/detialIndex/examineAwardDetails.css" th:href="@{/css/detialIndex/examineAwardDetails.css}" />
+    <script type="text/javascript" src="../../../../static/js/detialIndex/examine/examineAwardDetails.js" th:href="@{/js/detialIndex/examine/examineAwardDetails.js}"></script>
+    <!-- 导入模板 -->
+    <script type="text/javascript" src="../../../../static/js/detialIndex/examine/build/template.js" th:href="@{/js/detialIndex/examine/build/template.js}"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.25.0/axios.js"></script>
+    <script th:src="@{/js/utils/request.js}" src="../../../../static/js/utils/request.js"></script>
+    <!-- <script src="../../../"></script> -->
+    <link rel="stylesheet" href="../../../../static/css/commen/iconfont/iconfont.css" th:href="@{/css/commen/iconfont/iconfont.css}">
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="../../../../static/img/commen/logo.png" th:href="@{/img/commen/logo.png}" alt="" />
+            <span>河南财政金融学院教学管理系统</span>
+        </div>
+        <div class="header-right">
+            <div class="user-img">
+                <img src="../../../../static/img/lee.png" th:href="@{/img/lee.png}" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper-right">
+            <!--    author:董诗杰
+                date: 2022/  02 / 12
+                function： 审查奖项是否通过详情页
+                part：管理员审查奖项模块
+                version: 1.0
+          -->
+            <div class="review-award">
+                <div class="review-detail">
+                    <p>审查奖状详情页</p>
+                </div>
+                <div class="examineAward" id="examineAward">
+                    <!-- 模板渲染数据区域 -->
+                </div>
+
+                <div class="box-check">
+                    <div class="check-changes">
+                        <ul>
+                            <li>
+                                <input type="button" name="pass" id="btn-success" value="通过" placeholder="通过" />
+                            </li>
+
+                            <li>
+                                <label for="" class="li-select">选择不通过理由：</label>
+                                <select id="selector">
+                    <option value="0">请选择不通过理由</option>
+                    <option value="1">奖项名称不全</option>
+                    <option value="2">上传奖项证书与所填信息完全不相符</option>
+                    <option value="3">发证机构名称不全</option>
+                    <option value="4">奖项分类不符</option>
+                    <option value="5">发证日期不正确</option>
+                    <option value="6">比赛类型不正确</option>
+                    <option value="7">上传奖项照片模糊无效</option>
+                  </select>
+                            </li>
+                            <li>
+                                <input type="button" name="nopass" id="btn-fail" value="不通过" placeholder="不通过" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="check-text">
+                        <form name="my-form" method="POST">
+                            <label for="">自定义理由：（该框内容不可为空）</label>
+                            <textarea cols="50" rows="6" placeholder="请输入其他不通过理由" class="content"></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        let pass = document.querySelector('#btn-success');
+        let noPass = document.querySelector('#btn-fail');
+        pass.addEventListener('click', function(e) {
+            request
+                .get('/manangmentSystem/verify/successPrize', {
+                    pizIdList: 2,
+                    auditId: 2
+                })
+                .then((res) => {
+                    console.log(res);
+                });
+        });
+        noPass.addEventListener('click', function(e) {
+            request
+                .get('/manangmentSystem/verify/successPrize', {
+                    pizId: 1,
+                    auditId: '001',
+                    resaon: 'xxx',
+                })
+                .then((res) => {
+                    console.log(res);
+                });
+        });
+    </script> -->
+</body>
+
+</html>

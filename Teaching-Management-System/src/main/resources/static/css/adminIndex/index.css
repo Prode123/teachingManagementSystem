@@ -1,0 +1,364 @@
+body,
+div,
+ul,
+li,
+form,
+input,
+select,
+button,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px !important;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*角色信息模块*/
+/*最外层大盒子*/
+
+.inner-tab {
+    /*给属性的目的是方便滚动盒子中的内容*/
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+/*选项卡*/
+
+#wrapper-tab {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+.tab-manage {
+    display: block;
+    width: 200px;
+    min-width: 130px;
+    height: 40px;
+    margin: 5px 10px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*选项卡背景颜色*/
+
+.bgc {
+    background-color: #bbb;
+}
+
+
+/*选项内容盒子*/
+
+.wrapper-div-table {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+/*表单布局(通用)*/
+
+.flex-form {
+    display: flex;
+    width: 1450px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+/*角色信息表单内容*/
+
+.form-item .batch-label {
+    flex: 110px 0 0 !important;
+    text-align: right !important;
+}
+
+.form-item span {
+    width: 120px;
+    height: 50px;
+    margin: 0 10px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.form-item input {
+    width: 277px !important;
+    margin: 0;
+}
+
+
+/*所有的按钮覆盖模板样式*/
+
+#stu-add,
+#stu-inquire,
+#tea-add,
+#tea-inquire,
+#stu-start,
+#stu-last,
+#stu-now,
+#stu-next,
+#stu-end,
+#tea-start,
+#tea-last,
+#tea-now,
+#tea-next,
+#tea-end,
+#award-add,
+#batch-award {
+    width: 100px !important;
+    background-color: #bbb;
+}
+
+.my-form button:hover {
+    background-color: #09f !important;
+}
+
+.my-form input[type="button"]:hover {
+    background-color: #09f !important;
+}
+
+
+/*所有按钮 单拎出来*/
+
+.batch-button {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    margin-right: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.stu-inquire-button {
+    margin-left: 110px !important;    
+    margin-right: 24px !important;
+}
+
+.tea-inquire-button {
+    margin-left: 70px !important;
+    margin-right: 40px !important;
+}
+
+
+/*上传文件的按钮*/
+
+#upload {
+    display: none;
+}
+
+
+/*表单外面的盒子*/
+
+.my-form-div {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: inherit;
+}
+
+
+/*审查奖状/文档模块*/
+
+.inquire-form {
+    display: flex;
+    width: 1450px;
+    height: 40px;
+    flex-wrap: wrap;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+
+/*表单中的块*/
+
+.form-item-inquire {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.form-item-inquire label {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.form-item-inquire input {
+    width: 320px;
+}
+
+.form-input-button {
+    width: 300px;
+}
+
+.batch-button-div {
+    /*按钮居中*/
+    text-align: center;
+    width: 1450px;
+}
+
+
+/*所有模块通用部分*/
+
+
+/*四个表格统一样式*/
+
+.table-stu,
+.table-tea,
+.table-award,
+.table-doc {
+    width: 1450px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+/*盖住label的伪元素*/
+
+.wrapper .wrapper-right-item .wrapper-div-table label:not(.radio, .checkbox):after {
+    content: '';
+}
+
+
+/*表单下的span标签*/
+
+.my-form .form-item .item-screen-span {
+    width: 200px;
+    margin: 0 10px;
+    align-items: center;
+}
+
+
+/*表单外的span,专门放学院的*/
+
+.form-span {
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 33px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+thead tr {
+    height: 35px;
+    background-color: #bbb;
+}
+
+tbody tr {
+    height: 35px;
+}
+
+tbody td {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+td a {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+/*复选框变大*/
+
+input[type=checkbox] {
+    zoom: 150%;
+}
+
+
+/*下拉框*/
+
+.my-form .select {
+    width: 277px !important;
+    padding: 2px;
+    border: 1px solid #bbb;
+    border-left: 5px solid #bbb;
+    color: #837b7b;
+    background: #fff;
+    outline: none;
+}
+
+.my-form .select option:nth-child(2) {
+    color: #000;
+}
+
+.my-form .select option:nth-child(3) {
+    color: #000;
+}
+
+.my-form .select option:nth-child(4) {
+    color: #000;
+}
+
+.my-form .select.active {
+    padding: 2px;
+    border: 1px solid #056ffa;
+    border-left-width: 5px;
+    color: #000 !important;
+}
+
+
+/*前一页/后一页的按钮*/
+
+.pageation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+.pageation .pageation-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 50%;
+    height: 100%;
+}
+
+.pageation .pageation-info button {
+    margin: 0 15px;
+}
+
+
+/*手机端隐藏分页按钮*/
+
+@media screen and (max-width:480px) {
+    .pageation {
+        display: none;
+    }
+}
+
+.status,
+.statuss {
+    color: #09f;
+}

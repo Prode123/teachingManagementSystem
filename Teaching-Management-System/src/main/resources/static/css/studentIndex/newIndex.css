@@ -1,0 +1,330 @@
+.wrapper-right-item.show {
+  overflow-y: scroll !important; 
+} 
+input {
+  margin: 0;
+  padding: 0;
+}
+input[type="password"]::-ms-reveal {
+  display: none !important;
+}
+input[type="password"].text-input {
+  padding-right: 30px !important;
+}
+.form-box {
+  width: 100% !important;
+} 
+#upload-info.my-form {
+  max-width: 660px;
+}
+.upload-grade #upload-form.form-box {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.upload-grade .my-form {
+  display:flex;
+  /* width: 70%; */
+  /* width: 100%; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.upload-info {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  /* align-items: flex-start; */
+  margin-left: 50px;
+}
+.upload-info label {
+  flex: 112px 0 0 !important;
+}
+.upload-info  #category {
+  display: flex;
+  align-self: space-around;
+}
+.upload-info #category  #awade-type-info{
+  max-width: 100px;
+}
+.upload-info .form-item.awardTeacher,
+.upload-info .form-item.awardStudent {
+  position: relative;
+}
+/* 搜索指导老师 */
+.upload-info .form-item.awardTeacher .guideTea,
+.upload-info .form-item.awardStudent .constu {
+  display: none;
+  background: #bbb;
+  /* width: 100%; */
+  position: absolute;
+  z-index: 1111;
+  left: 112px;
+  top: 41px;
+  width: 488px;
+}
+/* 搜索出来的指导老师信息 */
+.upload-info .form-item.awardTeacher .guideTea li,
+.upload-info .form-item.awardStudent .constu li {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-content: flex-start;
+  height: 40px;
+  cursor: pointer;
+}
+
+.upload-info .form-item.awardTeacher .guideTea .teaInfo,
+.upload-info .form-item.awardStudent .constu .stuInfo {
+  color: #fff;
+  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+.upload-info .form-item.awardTeacher span.teaSearch,
+.upload-info .form-item.awardStudent span.stuSearch {
+  position: absolute;
+  right: 5px;
+  font-size: 24px;
+}
+
+.upload-file {
+  display: flex;
+  min-width: 500px;
+  /* width: 20%;s */
+  max-width: 620px;
+  align-self: space-between;
+  margin-left: 50px;
+  flex-direction: row;
+}
+.upload-file .file-lists {
+  max-width: 500px;
+  display: flex;
+  width: 449px;
+  min-height: 440px;
+  max-height: 440px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.upload-file .file-lists .my-form .upload-filename {
+  display: flex;
+  min-width: 30px;
+  /* max-width: 150px; */
+  flex: 1;
+  justify-self: self-start;
+  /* float: left; */
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.upload-file .file-lists div.my-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 5%;
+}
+.upload-file .form-item .single-click {
+  max-width: 200px;
+  margin: 0 auto;
+  height: 50px;
+  min-width: 150px;
+}
+.my-form.oper {
+    width: 705px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.my-form .form-item.upload-oper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin-left: 50px; */
+  margin: 10px auto;
+  align-items: center;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+}
+.my-form .form-item.upload-oper input {
+  width: 240px;
+  height: 45px;
+}
+/* 奖项详情*/
+.awade-type-details,
+.alert-photo-div {
+  display:none;
+  border-radius: 2%;
+  position: absolute;
+  width: 400px;
+  height: 260px;
+  z-index: 999999;
+  box-shadow: 4px 4px 11px 4px #6455551a;
+  /* display:flex; */
+  /* flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap; */
+  background: rgb(243, 243, 243);
+}
+/* 奖项详情的标题˜ */
+.awade-type-details .details-title {
+ display: block;
+ width: 400px;
+ background: #09f;
+ color:#fff;
+ padding-left:5px; 
+ padding-top: 6px;
+ padding-bottom:6px;
+}
+/* 奖项详情 */
+.awade-type-details .close,
+.alert-photo-div .close {
+  position: absolute;
+  right: 4px;
+  top: 8px;
+  font-size: 20px ;
+  color:#fff;
+}
+.file-lists .my-form .alert-show {
+  display: block;
+  top: 150px;
+  left: 300px;
+}
+/* 奖项详情的p */
+.awade-type-details p {
+  padding: 4px;
+}
+.alert-photo-div {
+  width: 678px;
+  height: 460px;
+  object-fit: cover;
+  z-index: 1000000;
+  display: none;
+}
+.alert-photo-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.upload-file .file-lists div.my-form .info-oper {
+  align-self: flex-start;
+  max-width: 50px;
+  word-break: break-all;
+}
+
+#upload-form label {
+  /* width: 110px; */
+  display: block;
+  font-size: 16px;
+  flex: 110px 0 0;
+}
+
+.awade-type {
+  margin-right: -76px !important;
+}
+/*¯ 个人信息*/
+.profile-info {
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.profile-info>div {
+  display: flex;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+  margin:10px;
+  word-wrap: break-word;
+  /* letter-spacing: wrap; */
+}
+/* .profile-info .twoFont {
+ letter-spacing: 4px; 
+} */
+.profile-info>div>span:nth-child(1) {
+  width: 80px;
+}
+/* 修改密码 */
+.oldPwd,.newPwd,.checkPwd {
+  width: 350px !important;
+}
+.update-form .my-form  .updatePwd input {
+  width: 464px !important;
+}
+#update-submit {
+  width: 230px !important;
+  margin-left: 88px !important;
+}
+.update-form .updatePwd {
+  position: relative;
+}
+.eye {
+  position: absolute;
+  font-size: 20px !important;
+  right: 10px;
+  z-index: 666;
+}
+/* 修改头像 */
+/* 修改头像的表单*/
+.update-photo .my-form {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.update-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 10px 25px;
+  object-fit: cover;
+  /* cursor: pointer; */
+}
+.update-photo .update-photo-btn {
+  width: 150px !important;
+}
+.wrapper-right-item .update-form,
+.wrapper-right-item .update-photo {
+  display: flex;
+  font-size: 1rem;
+  flex-flow: column nowrap;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.update-icon,
+.update-icon-active {
+  display: flex;
+  font-size: 16px;
+  position: absolute;
+  z-index: 222;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  margin: 10px 25px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  top: 10px;
+}
+.update-icon:hover,
+.upload-info .awade-type #awade-type-info,
+.upload-btn  input {
+  opacity: 1;
+}
+.iconfont.icon-tianjia {
+  font-size: 1rem;
+}
+
+
+

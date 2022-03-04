@@ -1,0 +1,32 @@
+/* 教学大纲Css */
+#list .wrapper-operation input{
+	margin-left: 71px !important;
+}
+/*人才培养方案css*/
+.stu-view-a {
+	display: block;
+	width: 150px;
+	height: 40px;
+	margin: 0 20px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	background: #bbb;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+}
+.stu-view-doc a:hover {
+	background: #09f;
+}
+/* 我的奖项 */
+.tab-manage-award {
+	display: block;
+	width: 25%;
+	min-width: 155px;
+	height: 40px;
+	margin: 0 10px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}

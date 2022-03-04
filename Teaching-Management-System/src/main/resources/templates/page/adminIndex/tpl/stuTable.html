@@ -1,0 +1,20 @@
+{{each}}
+<tr>
+  <td><input type="checkbox" name="td-checkbox"></td>
+  <td>{{$value.username}}</td>
+  <td>{{$value.sex == 0 ? '男' : '女'}}</td>
+  <td>{{$value.identifyCard}}</td>
+  <td>{{$value.number}}</td>
+  <td>{{$value.faculty}}</td>
+  <td>{{$value.major}}</td>
+  <td>{{$value.level == 0 ? '专科' : '本科'}}</td>
+  <td>{{$value.clazz}}</td>
+  <td>{{$value.phoneNumber}}</td>
+  <td>{{'学生'}}</td>
+  <td>
+    <a href="{{$value.changeLink}}">修改</a>
+    <button value="0">删除</button>
+    <a href="{{$value.path}}">查看详情</a>
+  </td>
+</tr>
+{{/each}}

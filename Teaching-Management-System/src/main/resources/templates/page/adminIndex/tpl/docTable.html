@@ -1,0 +1,22 @@
+{{each}}
+<tr>
+	<td><input type="checkbox" class="td-checkbox" name="td-checkbox"></td>
+	<td>{{$value.fileName}}</td>
+	<td>{{$value.faculty}}</td>
+	<td>{{$value.major}}</td>
+	<td>{{$value.clazz}}</td>
+	<td>{{$value.fileType}}</td>
+	<td>
+		{{if $value.status == 0}}
+			待审核
+		{{else if $value.status == 1}}
+			通过
+		{{else if $value.status == 2}}
+			不通过
+		{{/if}}
+	</td>
+	<td>
+		<a href="{{$value.path}}" target="_blank">查看详情</a>
+	</td>
+</tr>
+{{/each}}

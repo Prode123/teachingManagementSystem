@@ -1,0 +1,139 @@
+2022-01-27 18:05:53,136 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_291 on CSY with PID 15560 (D:\Java\IdeaProjects\Teaching-Management-System\target\classes started by 程世玉 in D:\Java\IdeaProjects\Teaching-Management-System)
+2022-01-27 18:05:53,141 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-01-27 18:05:54,640 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem]' package. Please check your configuration.
+2022-01-27 18:05:55,217 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2022-01-27 18:05:55,219 INFO (DirectJDKLog.java:173)- An older version [1.2.28] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-27 18:05:55,220 INFO (DirectJDKLog.java:173)- Loaded Apache Tomcat Native library [1.2.28] using APR version [1.7.0].
+2022-01-27 18:05:55,220 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-27 18:05:55,220 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-27 18:05:55,238 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-27 18:05:55,250 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-27 18:05:55,251 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-01-27 18:05:55,252 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 18:05:55,404 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-01-27 18:05:55,404 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 2153 ms
+2022-01-27 18:05:56,589 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 18:05:56,595 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-01-27 18:05:56,617 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 18:05:56,642 ERROR (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 18:08:13,467 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_291 on CSY with PID 29220 (D:\Java\IdeaProjects\Teaching-Management-System\target\classes started by 程世玉 in D:\Java\IdeaProjects\Teaching-Management-System)
+2022-01-27 18:08:13,473 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-01-27 18:08:14,584 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem]' package. Please check your configuration.
+2022-01-27 18:08:15,249 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2022-01-27 18:08:15,252 INFO (DirectJDKLog.java:173)- An older version [1.2.28] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-27 18:08:15,253 INFO (DirectJDKLog.java:173)- Loaded Apache Tomcat Native library [1.2.28] using APR version [1.7.0].
+2022-01-27 18:08:15,253 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-27 18:08:15,254 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-27 18:08:15,258 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-27 18:08:15,275 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-27 18:08:15,277 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-01-27 18:08:15,278 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 18:08:15,438 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-01-27 18:08:15,438 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1892 ms
+2022-01-27 18:08:16,333 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 18:08:16,340 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-01-27 18:08:16,361 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 18:08:16,379 ERROR (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 18:10:25,621 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_291 on CSY with PID 26584 (D:\Java\IdeaProjects\Teaching-Management-System\target\classes started by 程世玉 in D:\Java\IdeaProjects\Teaching-Management-System)
+2022-01-27 18:10:25,635 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-01-27 18:10:27,136 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem]' package. Please check your configuration.
+2022-01-27 18:10:28,137 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2022-01-27 18:10:28,140 INFO (DirectJDKLog.java:173)- An older version [1.2.28] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-27 18:10:28,141 INFO (DirectJDKLog.java:173)- Loaded Apache Tomcat Native library [1.2.28] using APR version [1.7.0].
+2022-01-27 18:10:28,142 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-27 18:10:28,143 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-27 18:10:28,154 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-27 18:10:28,172 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-27 18:10:28,174 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-01-27 18:10:28,174 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 18:10:28,320 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-01-27 18:10:28,323 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 2553 ms
+2022-01-27 18:10:29,091 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 18:10:29,101 INFO (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-01-27 18:10:29,120 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 18:10:29,143 ERROR (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 18:12:44,255 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_291 on CSY with PID 26748 (D:\Java\IdeaProjects\Teaching-Management-System\target\classes started by 程世玉 in D:\Java\IdeaProjects\Teaching-Management-System)
+2022-01-27 18:12:44,261 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-01-27 18:12:45,549 WARN (Logger.java:44)- No MyBatis mapper was found in '[com.hafu.edu.teachingmanagementsystem]' package. Please check your configuration.
+2022-01-27 18:12:46,088 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8080 (http)
+2022-01-27 18:12:46,090 INFO (DirectJDKLog.java:173)- An older version [1.2.28] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-27 18:12:46,090 INFO (DirectJDKLog.java:173)- Loaded Apache Tomcat Native library [1.2.28] using APR version [1.7.0].
+2022-01-27 18:12:46,090 INFO (DirectJDKLog.java:173)- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-27 18:12:46,091 INFO (DirectJDKLog.java:173)- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-27 18:12:46,095 INFO (DirectJDKLog.java:173)- OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-27 18:12:46,113 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8080"]
+2022-01-27 18:12:46,115 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-01-27 18:12:46,115 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 18:12:46,267 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-01-27 18:12:46,268 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1909 ms
+2022-01-27 18:12:47,179 INFO (UserDetailsServiceAutoConfiguration.java:87)- 
+
+Using generated security password: 7644f4bc-9126-4ccc-a589-7dd76abf9c59
+
+2022-01-27 18:12:47,535 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f172d4a, org.springframework.security.web.context.SecurityContextPersistenceFilter@295bf2a, org.springframework.security.web.header.HeaderWriterFilter@28737371, org.springframework.security.web.csrf.CsrfFilter@2f66f0d0, org.springframework.security.web.authentication.logout.LogoutFilter@1866da85, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35eb4a3b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4487c0c2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@77ec6a3d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64fe9da7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ff6efdc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4eb1c69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67efd2c2, org.springframework.security.web.session.SessionManagementFilter@760245e1, org.springframework.security.web.access.ExceptionTranslationFilter@5e1fc2aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7eae3764]
+2022-01-27 18:12:47,641 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8080"]
+2022-01-27 18:12:47,672 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-27 18:12:47,690 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 4.928 seconds (JVM running for 10.148)
+2022-01-27 18:12:58,158 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 18:12:58,159 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-01-27 18:12:58,161 INFO (FrameworkServlet.java:547)- Completed initialization in 2 ms

@@ -1,0 +1,13 @@
+{{each items}}
+<tr>
+	<td>{{$value.number}}</td>
+	<td>{{$value.institute}}</td>
+	<td>{{$value.major}}</td>
+	<td>{{$value.grade}}</td>
+	<td>{{$value.level == 0 ? '本科' : '专科'}}</td>
+	<td>{{$value.status}}</td>
+	<td>
+		<a href="{{$value.operation}}">{{$value.operation == 0 ? '重新上传' :'查看详情'}}</a>
+	</td>
+</tr>
+{{/each}}

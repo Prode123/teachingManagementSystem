@@ -1,0 +1,13 @@
+2022-02-19 16:28:38,407 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 11816 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-19 16:28:38,418 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-19 16:28:39,954 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-19 16:28:39,961 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-19 16:28:39,962 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-19 16:28:39,962 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-19 16:28:40,246 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-19 16:28:40,247 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1786 ms
+2022-02-19 16:28:41,034 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6917bb4, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a8406c2, org.springframework.security.web.header.HeaderWriterFilter@4715ae33, org.springframework.security.web.authentication.logout.LogoutFilter@6a638c79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@eca6a74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6850b758, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d7ca698, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ed16657, org.springframework.security.web.session.SessionManagementFilter@1fac1d5c, org.springframework.security.web.access.ExceptionTranslationFilter@a2ddf26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e43e323]
+2022-02-19 16:28:41,191 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-19 16:28:41,346 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-19 16:28:41,359 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-19 16:28:41,366 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 3.695 seconds (JVM running for 5.478)

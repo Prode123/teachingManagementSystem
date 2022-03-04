@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hafu.edu.teachingmanagementsystem.dao.PermissionDao">
+
+    <resultMap type="com.hafu.edu.teachingmanagementsystem.entity.Permission" id="PermissionMap">
+        <result property="pid" column="pid" jdbcType="INTEGER"/>
+        <result property="ctype" column="ctype" jdbcType="VARCHAR"/>
+        <result property="restype" column="restype" jdbcType="VARCHAR"/>
+        <result property="operation" column="operation" jdbcType="VARCHAR"/>
+        <result property="purl" column="purl" jdbcType="VARCHAR"/>
+        <result property="pname" column="pname" jdbcType="VARCHAR"/>
+        <result property="roleId" column="role_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="PermissionMap">
+        select pid,
+               ctype,
+               restype,
+               operation,
+               purl,
+               pname,
+               role_id
+        from permission
+        where pid = #{pid}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="PermissionMap">
+        select
+        pid, ctype, restype, operation, purl, pname, role_id
+        from permission
+        <where>
+            <if test="pid != null">
+                and pid = #{pid}
+            </if>
+            <if test="ctype != null and ctype != ''">
+                and ctype = #{ctype}
+            </if>
+            <if test="restype != null and restype != ''">
+                and restype = #{restype}
+            </if>
+            <if test="operation != null and operation != ''">
+                and operation = #{operation}
+            </if>
+            <if test="purl != null and purl != ''">
+                and purl = #{purl}
+            </if>
+            <if test="pname != null and pname != ''">
+                and pname = #{pname}
+            </if>
+            <if test="roleId != null and roleId != ''">
+                and role_id = #{roleId}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from permission
+        <where>
+            <if test="pid != null">
+                and pid = #{pid}
+            </if>
+            <if test="ctype != null and ctype != ''">
+                and ctype = #{ctype}
+            </if>
+            <if test="restype != null and restype != ''">
+                and restype = #{restype}
+            </if>
+            <if test="operation != null and operation != ''">
+                and operation = #{operation}
+            </if>
+            <if test="purl != null and purl != ''">
+                and purl = #{purl}
+            </if>
+            <if test="pname != null and pname != ''">
+                and pname = #{pname}
+            </if>
+            <if test="roleId != null and roleId != ''">
+                and role_id = #{roleId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="pid" useGeneratedKeys="true">
+        insert into permission(ctype, restype, operation, purl, pname, role_id)
+        values (#{ctype}, #{restype}, #{operation}, #{purl}, #{pname}, #{roleId})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="pid" useGeneratedKeys="true">
+        insert into permission(ctype, restype, operation, purl, pname, role_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.ctype}, #{entity.restype}, #{entity.operation}, #{entity.purl}, #{entity.pname}, #{entity.roleId})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="pid" useGeneratedKeys="true">
+        insert into permission(ctype, restype, operation, purl, pname, role_id)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.ctype}, #{entity.restype}, #{entity.operation}, #{entity.purl}, #{entity.pname}, #{entity.roleId})
+        </foreach>
+        on duplicate key update
+        ctype = values(ctype),
+        restype = values(restype),
+        operation = values(operation),
+        purl = values(purl),
+        pname = values(pname),
+        role_id = values(role_id)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update permission
+        <set>
+            <if test="ctype != null and ctype != ''">
+                ctype = #{ctype},
+            </if>
+            <if test="restype != null and restype != ''">
+                restype = #{restype},
+            </if>
+            <if test="operation != null and operation != ''">
+                operation = #{operation},
+            </if>
+            <if test="purl != null and purl != ''">
+                purl = #{purl},
+            </if>
+            <if test="pname != null and pname != ''">
+                pname = #{pname},
+            </if>
+            <if test="roleId != null and roleId != ''">
+                role_id = #{roleId},
+            </if>
+        </set>
+        where pid = #{pid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from permission
+        where pid = #{pid}
+    </delete>
+
+
+    <!--queryPermissByRoleId 通过roleid获取对应的权限-->
+    <select id="queryPermissIdByRoleId" resultType="long">
+        SELECT pid
+        FROM role_permission
+        WHERE role_permission.role_id = #{role_id}
+    </select>
+
+</mapper>
+

@@ -1,0 +1,44 @@
+2022-02-17 20:15:03,463 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 53808 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-17 20:15:03,485 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-17 20:15:05,238 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-17 20:15:05,250 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-17 20:15:05,251 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-17 20:15:05,252 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-17 20:15:05,345 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-17 20:15:05,345 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1809 ms
+2022-02-17 20:15:06,043 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a04fea7, org.springframework.security.web.context.SecurityContextPersistenceFilter@4207609e, org.springframework.security.web.header.HeaderWriterFilter@6850b758, org.springframework.security.web.authentication.logout.LogoutFilter@3b4d50b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ed16657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d7ca698, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bddc676, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bc49bc5, org.springframework.security.web.session.SessionManagementFilter@704641e3, org.springframework.security.web.access.ExceptionTranslationFilter@1fac1d5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48840594]
+2022-02-17 20:15:06,311 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-17 20:15:06,518 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-17 20:15:06,537 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-17 20:15:06,548 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 3.623 seconds (JVM running for 5.121)
+2022-02-17 20:58:47,169 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 13764 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-17 20:58:47,172 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-17 20:58:48,838 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-17 20:58:48,846 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-17 20:58:48,847 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-17 20:58:48,847 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-17 20:58:48,986 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-17 20:58:48,987 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1742 ms
+2022-02-17 20:58:49,843 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10643593, org.springframework.security.web.context.SecurityContextPersistenceFilter@17d32e9b, org.springframework.security.web.header.HeaderWriterFilter@7c251f90, org.springframework.security.web.authentication.logout.LogoutFilter@5d7ca698, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7915bca3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e6f610d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65d57e4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f91da5e, org.springframework.security.web.session.SessionManagementFilter@5ba26eb0, org.springframework.security.web.access.ExceptionTranslationFilter@29138d3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@743e66f7]
+2022-02-17 20:58:50,109 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-17 20:58:50,322 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-17 20:58:50,344 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-17 20:58:50,354 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 3.948 seconds (JVM running for 5.273)
+2022-02-17 20:59:05,716 INFO (StartupInfoLogger.java:55)- Starting TeachingManagementSystemApplication using Java 1.8.0_181 on LAPTOP-7O89U4ED with PID 56684 (D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System\target\classes started by lenovo001 in D:\idea_space\后端源码（开发版）\trunk\Teaching-Management-System)
+2022-02-17 20:59:05,718 INFO (SpringApplication.java:637)- No active profile set, falling back to default profiles: default
+2022-02-17 20:59:06,875 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 80 (http)
+2022-02-17 20:59:06,882 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-80"]
+2022-02-17 20:59:06,883 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-02-17 20:59:06,883 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-17 20:59:06,974 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-02-17 20:59:06,975 INFO (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1214 ms
+2022-02-17 20:59:07,694 INFO (DefaultSecurityFilterChain.java:51)- Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a67b4ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@a2ddf26, org.springframework.security.web.header.HeaderWriterFilter@1e86a5a7, org.springframework.security.web.authentication.logout.LogoutFilter@29a1505c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@cf518cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6daf7d37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a8406c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10643593, org.springframework.security.web.session.SessionManagementFilter@741f8dbe, org.springframework.security.web.access.ExceptionTranslationFilter@435e60ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2133661d]
+2022-02-17 20:59:07,881 INFO (WelcomePageHandlerMapping.java:57)- Adding welcome page template: index
+2022-02-17 20:59:08,066 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-80"]
+2022-02-17 20:59:08,079 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 80 (http) with context path '/manangmentSystem'
+2022-02-17 20:59:08,088 INFO (StartupInfoLogger.java:61)- Started TeachingManagementSystemApplication in 2.827 seconds (JVM running for 3.831)
+2022-02-17 21:00:35,228 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-17 21:00:35,228 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-02-17 21:00:35,229 INFO (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-02-17 21:00:35,405 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-02-17 21:00:36,302 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.

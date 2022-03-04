@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdminIndex</title>
+    <link rel="stylesheet" href="../../../static/css/commen/commenPageIndex.css" th:href="@{/css/commen/commenPageIndex.css}" />
+    <link rel="stylesheet" href="../../../static/css/adminIndex/index.css" th:href="@{/css/adminIndex/index.css}" />
+    <link rel="stylesheet" href="../../../static/css/commen/commenform.css" th:href="@{/css/commen/commenform.css}" />
+    <link rel="stylesheet" href="../../../static/css/adminIndex/addUserStu.css" th:href="@{/css/adminIndex/addUserStu.css}" />
+    <script type="text/javascript" src="../../../static/js/adminIndex/build/template.js" th:src="@{/js/adminIndex/build/template.js}"></script>
+    <link rel="stylesheet" href="../../../static/css/adminIndex/addUserTeach.css" th:href="@{/css/adminIndex/addUserTeach.css}">
+    <script src="../../../static/js/commen/axios.js" th:src="@{/js/commen/axios.js}"></script>
+    <!-- <script type="text/javascript" src="../../../static/js/adminIndex/addUserTeach.js" th:href="@{/js/adminIndex/addUserTeach.js}"></script> -->
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="../../../static/img/commen/logo.png" th:href="@{/img/commen/logo.png}" alt="" />
+            <span>河南财政金融学院教学管理系统</span>
+        </div>
+        <div class="header-right">
+            <div class="user-img">
+                <img src="../../../static/img/lee.png" th:href="@{/img/lee.png}" alt="" />
+                <ul>
+                    <li>Admin</li>
+                    <li>修改图像</li>
+                    <li>我的信箱</li>
+                    <li>退出登录</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="center"></div>
+    <div class="wrapper">
+        <div class="wrapper-nav">
+            <ul></ul>
+        </div>
+        <div class="wrapper-right">
+            <div class="wrapper-right-item show">首页</div>
+            <!-- 角色信息管理 -->
+            <div class="wrapper-right-item">
+
+                <!--  module：角色信息管理
+                  function：1.支持对角色信息进行增删改查 2.支持修改教师的角色
+                  author: 洪炜婷
+                  version：1.0
+                  date: 2022/02/10 -->
+                <div id="wrapper-tab">
+                    <span class="tab-manage bgc">学生用户管理</span>
+                    <span class="tab-manage">教职工用户管理</span>
+                </div>
+                <div class="wrapper-contact-table">
+                    <!-- 学生信息管理 -->
+                    <div class="hidden wrapper-div-table show">
+                        <div class="form-span">
+                            <span>学院：</span>
+                            <span class="item-screen-span">计算机与信息技术学院</span>
+                        </div>
+
+                        <div class="my-form">
+                            <form action="服务器端程序" class="flex-form stu-form" name="stu-info-form">
+                                <div class="form-item">
+
+                                    <label class="batch-label" for="">层次：</label>
+                                    <select class="select" name="stu-level">
+                                      <option selected value="全部">全部</option>
+                                      <option value="1">本科</option>
+                                      <option value="0">专科</option>
+                                    </select>
+                                    <label class="batch-label" for="">专业：</label>
+                                    <select class="select" name="stu-major" class="">
+                                      <!-- 根据学院变化 后端给 -->
+                                      <option selected value="0">全部</option>
+                                      <option value="计算机科学与技术">计算机与科学</option>
+                                      <option value="软件工程">软件工程</option>
+                                    </select>
+                                    <label class="batch-label" for="">年级：</label>
+                                    <select class="select" name="stu-grade">
+                                        <option selected value="全部">全部</option>
+                                        <option value="2017">2017级</option>
+                                        <option value="2018">2018级</option>
+                                        <option value="2019">2019级</option>
+                                        <option value="2020">2020级</option>
+                                        <option value="2021">2021级</option>
+                                        <option value="2022">2022级</option>
+                                        <option value="2023">2023级</option>
+                                        <option value="2024">2024级</option>
+                                        <option value="2025">2025级</option>
+                                    </select>
+                                    <label class="batch-label" for="">班级：</label>
+                                    <select class="select" name="stu-class">
+                                      <option selected value="全部">全部</option>
+                                      <option value="1班">1班</option>
+                                      <option value="2班">2班</option>
+                                      <option value="3班">3班</option>
+                                      <option value="4班">4班</option>
+                                      <option value="5班">5班</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label class="batch-label" for="stu-name">学生：</label>
+                                    <input type="text" placeholder="请输入学生姓名或学号" name="stu-name" id="stu-name" class="text-input" pattern="^[0-9]{8,14}|[\u4e00-\u9fa5]{2,5}$" required>
+                                </div>
+                                <div class="form-item">
+                                    <input type="button" name="stu-inquire" id="stu-inquire" class="stu-inquire-button" value="查询">
+                                    <input type="button" value="添加学生" name="stu-add" id="stu-add" class="stu-add-button">
+                                </div>
+                            </form>
+                        </div>
+                        <table class="table-stu">
+                            <thead>
+                                <th><input type="checkbox" name="th-checkbox" id="checkAll" /></th>
+                                <th>姓名</th>
+                                <th>性别</th>
+                                <th>身份证号</th>
+                                <th>学号</th>
+                                <th>院系</th>
+                                <th>专业</th>
+                                <th>层次</th>
+                                <th>班级</th>
+                                <th>手机号</th>
+                                <th>角色</th>
+                                <th>操作</th>
+                            </thead>
+                            <tbody id="checkBox" class="stu-tbody">
+                                <!-- <tr>
+                                    <td><input type="checkbox" name="td-checkbox"></td>
+                                    <td>张三</td>
+                                    <td>男</td>
+                                    <td>xxxxxxxxxxxxxxxxxx</td>
+                                    <td>20201230322</td>
+                                    <td>计算机与信息技术学院</td>
+                                    <td>计算机与科学</td>
+                                    <td>本科</td>
+                                    <td>20级计科三班</td>
+                                    <td>12345678901</td>
+                                    <td>学生</td>
+                                    <td><a class="modifileStudentInfo">修改</a><a href="javascript:;">删除</a><a
+                                            href="javascript:;">查看详情</a></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        <div class="my-form">
+                            <div class="pageation">
+                                <div class="pageation-info">
+                                    <button class="batch-button" id="stu-start">最前页</button>
+                                    <button class="batch-button" id="stu-last">上一页</button>
+                                    <button class="batch-button" id="stu-now">当前第1页</button>
+                                    <button class="batch-button" id="stu-next">下一页</button>
+                                    <button class="batch-button" id="stu-end">最末页</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--
+                            module：角色信息管理
+                            function：添加学生
+                            author: 董诗杰
+                            version：1.0
+                            date: 2022/02/14
+
+                         -->
+
+                        <div class="addboxcontent" id="addboxcontent">
+                            <div class="addStu" id="addStu">
+                                <span class="close"> &times; </span>
+                                <ul id="nav">
+                                    <li class="ul-bgc">单个添加</li>
+                                    <li>批量添加</li>
+                                    <li>邀请学生加入</li>
+                                    <li>我的学生库</li>
+                                </ul>
+                                <!-- 4个页面切换 -->
+                                <div class="addStuContent">
+                                    <div class="single-add addshow" id="addbox">
+                                        <form class="form-box formStudent" id="form1" onsubmit="onSubmit(event)">
+                                            <div class="my-form">
+                                                <div class="form-item">
+                                                    <label for="faculty">学院</label>
+                                                    <span>计算机与信息技术学院</span>
+
+                                                </div>
+
+                                                <div class="form-item">
+
+                                                    <label for="add-username">姓名</label>
+                                                    <input type="text" name="username" id="add-username" class="text-input" pattern="^[0-9]{8,14}|[\u4e00-\u9fa5]{2,5}$" required />
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="sex" id="info-sex">性别</label>
+
+                                                    <input type="radio" name="sex" value="0" id="sex" /><label for="male">男</label>
+                                                    <input type="radio" name="sex" value="1" id="sex" /> <label for="female">女</label>
+
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="id-number">身份证号</label>
+                                                    <input type="text" name="identityCard" id="id-number" class="text-input" placeholder="请输入身份证号(18个字符，仅限大写字母，数字)" pattern="^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$" oninvalid="setCustomValidity('请输入合法的身份证号>_<')"
+                                                        required />
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="student-number">学号</label>
+                                                    <input type="text" name="number" id="student-number" class="text-input" pattern="^[0-9]{8,14}$" required />
+                                                </div>
+
+                                                <div class="form-item">
+                                                    <label for="major">专业</label>
+                                                    <select name="major" id="selectes" class="select">
+                                                            <option value="请选择">请选择</option>
+                                                            <option value="计算机科学与技术">计算机科学与技术</option>
+                                                            <option value="数据科学与大数据技术">数据科学与大数据技术</option>
+                                                            <option value="计算机网络技术">计算机网络技术</option>
+                                                            <option value="物联网应用技术">物联网应用技术</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-item">
+                                                    <label for="levels">层次</label>
+                                                    <select name="level" id="selectes" class="select">
+                                                            <option value="0">请选择</option>
+                                                            <option value="1">本科</option>
+                                                            <option value="2">专科</option>
+                                                        </select>
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="grade">年级</label>
+                                                    <select name="grade" id="selectes" class="select">
+                                                        <option value="请选择">请选择</option>
+                                                        <option value="2017">2017级</option>
+                                                        <option value="2018">2018级</option>
+                                                        <option value="2019">2019级</option>
+                                                        <option value="2020">2020级</option>
+                                                        <option value="2021">2021级</option>
+                                                        <option value="2022">2022级</option>
+                                                        <option value="2023">2023级</option>
+                                                        <option value="2024">2024级</option>
+                                                        <option value="2025">2025级</option>
+                                        
+                                                  </select>
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="class">班级</label>
+                                                    <select name="clazz" id="selectes" class="select">
+                                                        <option value="请选择">请选择</option>
+                                                        <option value="一班">一班</option>
+                                                        <option value="二班">二班</option>
+                                                        <option value="三班">三班</option>
+                                                        <option value="四班">四班</option>
+                                                        <option value="五班">五班</option>
+                                                        <option value="六班">六班</option>
+                                                  </select>
+
+                                                </div>
+                                                <div class="form-item" id="date-parent">
+                                                    <label for="phoneNumber">手机号</label>
+                                                    <input type="text" name="phoneNumber" id="phonenumber" class="text-input" pattern="^1\d{10}$" required />
+                                                </div>
+
+                                            </div>
+                                            <input type="button" name="add" value="确定添加" id="stu-addmessage" />
+                                        </form>
+                                    </div>
+                                    <div class="batch-add" id="addbox">
+                                        <div class="myfiles">
+                                            <label for="" class="explain">批量导入</label>
+                                            <!-- 如果没有 multiple属性，则只能单选-->
+                                            <label for="files" id="upload">
+                                                <input type="file" placeholder="单击此处添加文件" id="files"/>
+                                                <p>单击此处添加文件</p>
+                                                <span class="filles-name"></span>
+                                                <div class="status"></div>
+                                            </label>
+                                            <div>
+                                                <input type="submit" name="add" value="批量添加" id="stu-addmessages" />
+                                                <!-- <a>批量添加</a> -->
+                                                <a href="JavaScript:;" style="margin-left:-10px;">点击此处下载模板</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invite-students" id="addbox">
+                                        <div>邀请学生加入</div>
+                                    </div>
+                                    <div class="student-bank" id="addbox">
+                                        <div>我的学生库</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 教师信息管理 -->
+                    <div class="wrapper-div-table hidden">
+                        <div class="my-form">
+                            <div class="form-span">
+                                <span>学院/部门：</span>
+                                <span class="item-screen-span">计算机与信息技术学院</span>
+                            </div>
+                            <form action="服务器端程序" class="flex-form tea-form">
+                                <div class="form-item">
+                                    <label class="batch-label" for="">教研室/部门：</label>
+                                    <select class="select" name="tea-office">
+                                      <option selected value="全部">全部</option>
+                                      <option value="计算机科学与技术教研室">计算机科学与技术教研室</option>
+                                      <option value="数据科学与大数据技术教研室">数据科学与大数据技术教研室</option>
+                                      <option value="计算机网络技术教研室">计算机网络技术教研室</option>
+                                      <option value="物联网应用技术教研室">物联网应用技术教研室</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label class="batch-label" for="">职称：</label>
+                                    <select class="select" name="tea-profession">
+                                      <option value="0">全部</option>
+                                      <option value="副教授">副教授</option>
+                                      <option value="助教">助教</option>
+                                      <option value="无">无</option>
+                                      <option value="其他正高级">其他正高级</option>
+                                      <option value="其他副高级">其他副高级</option>
+                                      <option value="其他中级">其他中级</option>
+                                      <option value="其他初级">其他初级</option>
+                                      <option value="讲师">讲师</option>
+                                      <option value="教授">教授</option>
+                                    </select>
+                                </div>
+                                <div class="form-item">
+                                    <label class="batch-label" for="tea-name">教师：</label>
+                                    <input type="text" name="tea-name" id="tea-name" placeholder="请输入教师姓名或工号" class="text-input" pattern="^[0-9]{0,8}|[\u4e00-\u9fa5]{2,7}$" required>
+                                </div>
+                                <div class="form-item">
+                                    <input type="button" value="查询" id="tea-inquire" name="tea-inquire" class="tea-inquire-button">
+                                    <input type="button" value="添加老师" name="tea-add" id="tea-add" class="tea-add-button">
+                                </div>
+                            </form>
+                        </div>
+                        <table class="table-tea">
+                            <thead>
+                                <th><input type="checkbox" name="th-checkbox" id="checkAll" /></th>
+                                <th>姓名</th>
+                                <th>性别</th>
+                                <th>身份证号</th>
+                                <th>工号</th>
+                                <th>学院/部门</th>
+                                <th>职称</th>
+                                <th>教研室/部门</th>
+                                <th>手机号</th>
+                                <th>角色</th>
+                                <th>操作</th>
+                            </thead>
+                            <tbody id="checkBox" class="tea-tbody">
+                                <!-- <tr>
+                                    <td><input type="checkbox" name="td-checkbox"></td>
+                                    <td>张三</td>
+                                    <td>男</td>
+                                    <td>xxxxxxxxxxxxxxxxxx</td>
+                                    <td>3123467</td>
+                                    <td>计算机与信息技术学院</td>
+                                    <td>无</td>
+                                    <td>第一教研室</td>
+                                    <td>12356790322</td>
+                                    <td>普通教师</td>
+                                    <td><a class="modifileTeacherInfo">修改</a><a href="javascript:;">删除</a><a
+                                            href="javascript:;">查看详情</a></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        <div class="my-form">
+                            <div class="pageation">
+                                <div class="pageation-info">
+                                    <input type="button" value="最前页" id="tea-start" />
+                                    <input type="button" value="上一页" id="tea-last" />
+                                    <input type="button" value="当前第1页" id="tea-now" />
+                                    <input type="button" value="下一页" id="tea-next" />
+                                    <input type="button" value="最末页" id="tea-end" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                            module：角色信息管理
+                            function：添加教师
+                            author: 董诗杰
+                            version：1.0
+                            date: 2022/02/14
+
+                         -->
+                    <!-- 添加教师 -->
+                    <div class="addcontent" id="addcontent">
+                        <div class="addTeach" id="addTeach">
+                            <span class="closes">
+                                &times;
+                              </span>
+                            <ul id="navteach">
+                                <li class="teach-bgc">单个添加</li>
+                                <li>批量添加</li>
+                                <li>邀请教师加入</li>
+                                <li>我的教师库</li>
+                            </ul>
+                            <!-- 4个页面切换 -->
+                            <div class="addTeachContent">
+                                <div class="single-add boxshow" id="addboxs">
+                                    <form class="form-box" id="form2" onsubmit="onSubmit(event)">
+                                        <div class="my-form">
+                                            <div class="form-item">
+                                                <label for="faculty">学院/部门</label>
+                                                <span>计算机与信息技术学院</span>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="add-username">姓名</label>
+                                                <input type="text" name="username" id="add-username" class="text-input" pattern="^[0-9]{8,14}|[\u4e00-\u9fa5]{2,5}$" required />
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="sex" id="info-sexs">性别</label>
+                                                <input type="radio" name="sex" value="0" id="sex" /><label for="male" class="teachsex">男</label>
+                                                <input type="radio" name="sex" value="1" id="sex" checked/><label for="famle" class="teachsex">女</label>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="id-number">身份证号</label>
+                                                <input type="text" name="identityCard" id="id-number" class="text-input " placeholder="请输入身份证号(18个字符，仅限大写字母，数字)" pattern="^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$" oninvalid="setCustomValidity('请输入合法的身份证号>_<')"
+                                                    required />
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="student-number">工号</label>
+                                                <input type="text" name="number" id="student-number" class="text-input" pattern="^[0-9]{8,14}$" required />
+                                            </div>
+
+                                            <div class="form-item">
+                                                <label for="office">教研室/部门</label>
+                                                <select class="select" name="teachingResearch" id="select">
+                                                <option selected value="0">全部</option>
+                                                <option value="0"> 请选择</option>
+                                                <option value="1">计算机科学与技术教研室</option>
+                                                <option value="2">数据科学与大数据技术教研室</option>
+                                                <option value="3">计算机网络技术教研室</option>
+                                                <option value="4">物联网应用技术教研室</option>
+                                            </select>
+                                            </div>
+                                            <div class="form-item">
+                                                <label for="title">职称</label>
+                                                <select name="title" id="select" class="select">
+                                                  <option value="0"> 请选择</option>
+                                                  <option value="1"> 副教授</option>
+                                                  <option value="2">助教</option>
+                                                  <option value="3">其他正高级</option>
+                                                  <option value="4">其他副高级</option>
+                                                  <option value="5">其他中级</option>
+                                                  <option value="6">其他初级</option>
+                                                  <option value="7">讲师</option>
+                                                  <option value="8">教授</option>
+                                              </select>
+                                            </div>
+                                            <div class="form-item ">
+                                                <label for="selectrole">选择角色</label>
+                                                <input type="text " name="roleId" id="roleId" class="text-input checkRole" value="" placeholder="请选择下面的复选框" required>
+                                            </div>
+                                            <div class="form-item " id="margin">
+                                                <input type="checkbox" name="role" id="teacher role" value="1">
+                                                <label for="teacher" class="checkboxes ">普通教师</label>
+                                                <input type="checkbox" name="role" id="course-leader role" value="2">
+                                                <label for="course-leader" class="checkboxes">课程负责人</label>
+                                                <input type="checkbox" name="role" id="director role" value="3">
+                                                <label for="director" class="checkboxes">教研室主任</label>
+                                            </div>
+                                            <div class="form-item" id="date-parent">
+                                                <label for="phone-number">手机号</label>
+                                                <input type="text" name="phoneNumber" id="phone-number" class="text-input" pattern="^1\d{10}$" required />
+                                            </div>
+
+                                        </div>
+                                        <input type="submit" name="add" value="确定添加" id="teach-addmessage" />
+                                    </form>
+                                </div>
+                                <div class="batch-add" id="addboxs">
+                                    <div class="myfiless">
+                                        <label for="" class="explain">批量导入</label>
+                                        <!-- 如果没有 multiple属性，则只能单选-->
+                                        <label for="filess" id="upload">
+                                            <input type="file" placeholder="单击此处添加文件" id="filess">
+                                            <p>单击此处添加文件</p>
+                                            <span class="filless-name"></span>
+                                            <div class="statuss"></div>
+                                        </label>
+                                        <div>
+                                            <input type="submit" name="add" value="批量添加" id="teach-addmessages">
+                                            <a href="JavaScript:;">点击此处下载模板</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="invite-teachers" id="addboxs">
+                                    <div>邀请教师加入</div>
+                                </div>
+                                <div class="teachers-bank" id="addboxs">
+                                    <div> 我的教师库</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 角色权限管理 -->
+            <div class="wrapper-right-item">角色权限管理</div>
+            <!-- 审查管理>审查奖状 -->
+            <div class="wrapper-right-item">
+                <!--  module：审查奖状
+                function：1.支持选中奖项后批量通过 2.支持点击查看详情跳转到详情页进行审查
+                author: 洪炜婷
+                version：1.0
+                date: 2022/02/09 -->
+                <div class="inner-tab">
+                    <div class="my-form">
+                        <form action="服务器端程序" class="flex-form award-inquire-form" name="award-inquire">
+                            <span class="item-screen-span">筛选奖项状态：</span>
+                            <div class="form-item-inquire">
+                                <label for="award-pass">审核通过</label>
+                                <input type="checkbox" checked id="award-pass" class="award-check" name="status" value="审核通过" />
+                            </div>
+                            <div class="form-item-inquire">
+                                <label for="award-not-pass">审核未通过</label>
+                                <input type="checkbox" checked id="award-not-pass" class="award-check" name="status" value="审核未通过" />
+                            </div>
+                            <div class="form-item-inquire">
+                                <label for="award-waiting">待审核</label>
+                                <input type="checkbox" checked id="award-waiting" class="award-check" name="status" value="待审核" />
+                            </div>
+                            <div class="form-input-button">
+                                <input type="file" name="upload-file" id="upload" />
+                                <input type="button" value="上传学院奖项" name="upload-button" id="award-add">
+                            </div>
+                        </form>
+                    </div>
+                    <table class="table-award">
+                        <thead>
+                            <th><input type="checkbox" class="check-all" name="th-checkbox" /></th>
+                            <th>证书编号</th>
+                            <th>参赛人姓名</th>
+                            <th>比赛类型</th>
+                            <th>比赛名称</th>
+                            <th>奖项分类</th>
+                            <th>奖项等级</th>
+                            <th>称号</th>
+                            <th>指导教师</th>
+                            <th>审核状态</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody class="check-box award-tbody">
+                            <!-- <tr>
+                                <td><input type="checkbox" name="td-checkbox"></td>
+                                <td>sn1238795789127491</td>
+                                <td>张三</td>
+                                <td>个人赛</td>
+                                <td>传智杯</td>
+                                <td>B类</td>
+                                <td>传智杯</td>
+                                <td>A组三等奖</td>
+                                <td>无</td>
+                                <td>王老师、陈老师</td>
+                                <td>通过</td>
+                                <td>
+                                    <a href="javascript:;">删除</a>
+                                    <a href="javascript:;" target="_blank">查看详情</a>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="my-form batch-button-div">
+                    <form action="服务器端程序">
+                        <button type="button" class="batch-button" id="batch-award">批量通过</button>
+                    </form>
+                </div>
+            </div>
+            <!-- 审查管理>审查文件 -->
+            <div class="wrapper-right-item">
+                <!--  module：审查文件
+                      function：1.支持选中文件后批量通过 2.支持点击查看详情跳转到详情页进行审查
+                      author: 洪炜婷
+                      version：2.0
+                      date: 2022/02/13 -->
+                <div class="inner-tab">
+                    <div class="my-form">
+                        <form action="服务器端程序" class="flex-form doc-inquire-form" name="doc-inquire">
+                            <span class="item-screen-span">筛选文件状态：</span>
+                            <div class="form-item-inquire">
+                                <label for="doc-pass">审核通过</label>
+                                <input type="checkbox" checked id="doc-pass" name="status" class="doc-check" value="审核通过" />
+                            </div>
+                            <div class="form-item-inquire">
+                                <label for="doc-not-pass">审核未通过</label>
+                                <input type="checkbox" checked id="doc-not-pass" name="status" class="doc-check" value="审核未通过" />
+                            </div>
+                            <div class="form-item-inquire">
+                                <label for="doc-waiting">待审核</label>
+                                <input type="checkbox" checked id="doc-waiting" name="status" class="doc-check" value="待审核" />
+                            </div>
+                        </form>
+                    </div>
+                    <table class="table-doc">
+                        <thead>
+                            <th><input type="checkbox" class="check-all" name="th-checkbox" /></th>
+                            <th>文件名称</th>
+                            <th>院系</th>
+                            <th>专业</th>
+                            <th>班级</th>
+                            <th>文件类型</th>
+                            <th>审核状态</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody class="check-box doc-tbody">
+                            <!-- <tr>
+                                <td><input type="checkbox" name="td-checkbox" /></td>
+                                <td>李四</td>
+                                <td>20级人才培养方案</td>
+                                <td>计算机与信息技术学院</td>
+                                <td>计算机与科学</td>
+                                <td>全部</td>
+                                <td>人才培养方案类</td>
+                                <td>待审察</td>
+                                <td><a href="javascript:;" target="_blank">查看详情</a></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="my-form batch-button-div">
+                    <form action="服务器端程序">
+                        <button type="button" class="batch-button" id="batch-award">批量通过</button>
+                    </form>
+                </div>
+            </div>
+            <!-- 教学大纲 -->
+            <div class="wrapper-right-item">发送通知</div>
+            <!-- 获奖情况>我的奖状 -->
+            <div class="wrapper-right-item">数据导出</div>
+            <!-- 获奖情况>内容填报 -->
+            <div class="wrapper-right-item">8</div>
+            <!-- 后期扩招功能 -->
+            <div class="wrapper-right-item">9</div>
+            <div class="wrapper-right-item">10</div>
+            <div class="wrapper-right-item">11</div>
+            <!-- top right nav 修改图像 -->
+            <div class="wrapper-right-item">修改图像</div>
+            <!-- top right nav 我的信箱 -->
+            <div class="wrapper-right-item">我的信箱</div>
+            <!-- top right nav 退出登录 -->
+            <div class="wrapper-right-item">退出登录</div>
+            <!-- 后期扩展功能 -->
+            <div class="wrapper-right-item">15</div>
+        </div>
+    </div>
+
+    <script th:src="@{/js/utils/request.js}" src="../../../static/js/utils/request.js"></script>
+    <script src="../../../static/js/commen/generationLeftNav.js" th:src="@{/js/commen/generationLeftNav.js}"></script>
+    <script src="../../../static/js/adminIndex/index.js" th:src="@{/js/adminIndex/index.js}"></script>
+    <script src="../../../static/js/utils/tabCheck.js" th:src="@{/js/utils/tabCheck.js}"></script>
+    <script type="text/javascript" src="../../../static/js/utils/checkbox.js" th:src="@{/js/utils/checkbox.js}"></script>
+    <script src="../../../static/js/adminIndex/addUserStu.js" th:href="@{/js/adminIndex/addUserStu.js}"></script>
+    <script src="../../../static/js/adminIndex/addUserTeach.js" th:href="@{/js/adminIndex/addUserTeach.js}"></script>
+    <script type="text/javascript" src="../../../static/js/commen/form.js" th:src="@{/js/commen/form.js}"></script>
+</body>
+
+</html>
